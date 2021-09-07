@@ -6,7 +6,7 @@
 /*   By: mishin <mishin@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/07 16:42:25 by mishin            #+#    #+#             */
-/*   Updated: 2021/09/07 19:17:46 by mishin           ###   ########.fr       */
+/*   Updated: 2021/09/07 20:26:23 by mishin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,4 +41,7 @@ t_ll	*ll_new(long long data);
 void	ll_push(t_ll **head, t_ll *new);
 int		ll_clear(t_ll **head);
 int		input_to_ll(t_ll_handler *ll, char *arg);
+
+t_philo	*make_philos(t_philo_handler ph);
+void	ll_to_ph(t_ll_handler ll, t_philo_handler *ph);
 #endif
