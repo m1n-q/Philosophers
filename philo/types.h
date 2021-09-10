@@ -6,7 +6,7 @@
 /*   By: mishin <mishin@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/07 19:09:14 by mishin            #+#    #+#             */
-/*   Updated: 2021/09/07 19:36:29 by mishin           ###   ########.fr       */
+/*   Updated: 2021/09/10 17:58:23 by mishin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,24 +19,28 @@ typedef struct s_ll
 	struct s_ll	*next;
 }				t_ll;
 
-typedef struct s_ll_handler
+typedef struct s_ll_meta
 {
 	struct s_ll	*head;
 	int			size;
-}				t_ll_handler;
+}				t_ll_meta;
+
+typedef struct s_philo_meta
+{
+	int				*num_philos;
+	int				*time_to_die;
+	int				*time_to_eat;
+	int				*time_to_sleep;
+	int				*must_eat;
+}				t_philo_meta;
 
 typedef struct s_philo
 {
-	unsigned int	id;
+	struct timeval	*start;
+	t_philo_meta	*info;
+	pthread_mutex_t	*forks;
 	pthread_t		tid;
+	int				id;
 }				t_philo;
-
-typedef struct s_philo_handler
-{
-	int	num_philos;
-	int	time_to_die;
-	int	time_to_eat;
-	int	must_eat;
-}				t_philo_handler;
 
 #endif

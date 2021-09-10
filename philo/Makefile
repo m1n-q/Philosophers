@@ -1,5 +1,5 @@
 CC = gcc
-CFLAGS = -Wall -Wextra -Werror
+CFLAGS = -Wall -Wextra -Werror -pthread #-g -fsanitize=address
 
 SRCS = $(wildcard *.c)
 
@@ -10,7 +10,7 @@ NAME = philo
 all : $(NAME)
 
 $(NAME) : $(OBJS)
-	$(CC) $(CFLAGS) $^ -o $@
+	$(CC) $(CFLAGS) $^ -o $@ -lpthread
 
 %.o: %.c
 	$(CC) $(CFLAGS) -c $< -o $@

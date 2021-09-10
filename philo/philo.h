@@ -6,7 +6,7 @@
 /*   By: mishin <mishin@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/07 16:42:25 by mishin            #+#    #+#             */
-/*   Updated: 2021/09/07 20:26:23 by mishin           ###   ########.fr       */
+/*   Updated: 2021/09/10 18:02:06 by mishin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,12 +36,25 @@
 # include "types.h"
 
 # define NON_NUMERIC -4444444444LL
+# define LEFT 42
+# define RIGHT 24
 
-t_ll	*ll_new(long long data);
-void	ll_push(t_ll **head, t_ll *new);
-int		ll_clear(t_ll **head);
-int		input_to_ll(t_ll_handler *ll, char *arg);
+t_ll			*ll_new(long long data);
+void			ll_push(t_ll **head, t_ll *new);
+int				ll_clear(t_ll **head);
+int				input_to_ll(t_ll_meta *ll, char *arg);
+void			ll_to_ph(t_ll_meta ll, t_philo_meta *ph);
 
-t_philo	*make_philos(t_philo_handler ph);
-void	ll_to_ph(t_ll_handler ll, t_philo_handler *ph);
+pthread_mutex_t	*make_forks(int num_philos);
+int				get_fork(t_philo *philo, int direction);
+
+
+t_philo			*make_philos(t_philo_meta *ph);
+struct timeval	timestamp(t_philo *philo, char *msg);
+
+
+int				left(t_philo *philo);
+int				right(t_philo *philo);
+void			eat(t_philo *philo);
+int				last(t_philo *philo);
 #endif
