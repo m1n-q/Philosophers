@@ -6,7 +6,7 @@
 /*   By: mishin <mishin@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/07 17:05:56 by mishin            #+#    #+#             */
-/*   Updated: 2021/09/10 17:57:09 by mishin           ###   ########.fr       */
+/*   Updated: 2021/09/11 15:29:21 by mishin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,6 +40,7 @@ int	main(int argc, char **argv)
 		return (3);
 	i = -1;
 	while (++i < *(ph.num_philos))
-		pthread_join(philos[i].tid, NULL);
+		pthread_detach(philos[i].tid);
+	pthread_join(*make_monitor(philos), NULL);
 
 }

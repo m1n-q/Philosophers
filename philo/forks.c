@@ -6,7 +6,7 @@
 /*   By: mishin <mishin@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/08 19:12:41 by mishin            #+#    #+#             */
-/*   Updated: 2021/09/10 18:01:52 by mishin           ###   ########.fr       */
+/*   Updated: 2021/09/11 15:14:36 by mishin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,18 @@ pthread_mutex_t	*make_forks(int num_philos)
 	while (--num_philos >= 0)
 		pthread_mutex_init(&forks[num_philos], NULL);
 	return (forks);
+}
+
+pthread_mutex_t	*make_eating(int num_philos)
+{
+	pthread_mutex_t	*eating;
+
+	eating = (pthread_mutex_t *)malloc(sizeof(pthread_mutex_t) * num_philos);
+	if (!eating)
+		return (NULL);
+	while (--num_philos >= 0)
+		pthread_mutex_init(&eating[num_philos], NULL);
+	return (eating);
 }
 
 int		get_fork(t_philo *philo, int direction)

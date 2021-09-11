@@ -1,0 +1,5784 @@
+[0ms] 2 take left fork
+[0ms] 2 take right fork
+[0ms] 2 is eating
+[0ms] 4 take right fork
+[0ms] 4 take left fork
+[0ms] 4 is eating
+[200ms] 2 is sleeping
+[200ms] 4 is sleeping
+[200ms] 1 take left fork
+[201ms] 1 take right fork
+[201ms] 1 is eating
+[200ms] 3 take left fork
+[201ms] 3 take right fork
+[201ms] 3 is eating
+[406ms] 1 is sleeping
+[406ms] 2 take left fork
+[406ms] 2 take right fork
+[406ms] 2 is eating
+[406ms] 3 is sleeping
+[406ms] 4 take right fork
+[406ms] 4 take left fork
+[406ms] 4 is eating
+[611ms] 4 is sleeping
+[611ms] 2 is sleeping
+[611ms] 1 take left fork
+[611ms] 1 take right fork
+[611ms] 1 is eating
+[611ms] 3 take left fork
+[611ms] 3 take right fork
+[611ms] 3 is eating
+[813ms] 3 is sleeping
+[813ms] 2 take left fork
+[813ms] 2 take right fork
+[813ms] 2 is eating
+[813ms] 1 is sleeping
+[813ms] 4 take right fork
+[813ms] 4 take left fork
+[813ms] 4 is eating
+[1018ms] 2 is sleeping
+[1018ms] 4 is sleeping
+[1018ms] 3 take left fork
+[1018ms] 3 take right fork
+[1018ms] 3 is eating
+[1018ms] 1 take left fork
+[1018ms] 1 take right fork
+[1018ms] 1 is eating
+[1219ms] 3 is sleeping
+[1219ms] 1 is sleeping
+[1219ms] 2 take left fork
+[1219ms] 2 take right fork
+[1219ms] 2 is eating
+[1219ms] 4 take right fork
+[1219ms] 4 take left fork
+[1219ms] 4 is eating
+[1424ms] 4 is sleeping
+[1424ms] 2 is sleeping
+[1424ms] 3 take left fork
+[1424ms] 3 take right fork
+[1424ms] 3 is eating
+[1424ms] 1 take left fork
+[1424ms] 1 take right fork
+[1424ms] 1 is eating
+[1628ms] 3 is sleeping
+[1628ms] 1 is sleeping
+[1628ms] 2 take left fork
+[1628ms] 2 take right fork
+[1628ms] 2 is eating
+[1628ms] 4 take right fork
+[1628ms] 4 take left fork
+[1628ms] 4 is eating
+[1830ms] 2 is sleeping
+[1830ms] 4 is sleeping
+[1830ms] 1 take left fork
+[1830ms] 1 take right fork
+[1830ms] 3 take left fork
+[1830ms] 3 take right fork
+[1830ms] 3 is eating
+[1830ms] 1 is eating
+[2033ms] 4 take right fork
+[2033ms] 2 take left fork
+[2033ms] 2 take right fork
+[2033ms] 2 is eating
+[2033ms] 3 is sleeping
+[2033ms] 1 is sleeping
+[2033ms] 4 take left fork
+[2033ms] 4 is eating
+[2234ms] 2 is sleeping
+[2234ms] 4 is sleeping
+[2234ms] 1 take left fork
+[2234ms] 1 take right fork
+[2234ms] 1 is eating
+[2234ms] 3 take left fork
+[2234ms] 3 take right fork
+[2234ms] 3 is eating
+[2438ms] 3 is sleeping
+[2438ms] 1 is sleeping
+[2438ms] 4 take right fork
+[2438ms] 4 take left fork
+[2438ms] 4 is eating
+[2438ms] 2 take left fork
+[2438ms] 2 take right fork
+[2438ms] 2 is eating
+[2644ms] 4 is sleeping
+[2644ms] 2 is sleeping
+[2644ms] 3 take left fork
+[2644ms] 3 take right fork
+[2644ms] 3 is eating
+[2644ms] 1 take left fork
+[2644ms] 1 take right fork
+[2644ms] 1 is eating
+[2849ms] 3 is sleeping
+[2849ms] 1 is sleeping
+[2849ms] 2 take left fork
+[2849ms] 2 take right fork
+[2849ms] 2 is eating
+[2849ms] 4 take right fork
+[2849ms] 4 take left fork
+[2849ms] 4 is eating
+[3051ms] 4 is sleeping
+[3051ms] 2 is sleeping
+[3051ms] 3 take left fork
+[3051ms] 3 take right fork
+[3051ms] 3 is eating
+[3051ms] 1 take left fork
+[3051ms] 1 take right fork
+[3051ms] 1 is eating
+[3256ms] 3 is sleeping
+[3256ms] 1 is sleeping
+[3256ms] 4 take right fork
+[3256ms] 4 take left fork
+[3256ms] 4 is eating
+[3256ms] 2 take left fork
+[3256ms] 2 take right fork
+[3256ms] 2 is eating
+[3459ms] 4 is sleeping
+[3459ms] 2 is sleeping
+[3460ms] 1 take left fork
+[3460ms] 1 take right fork
+[3460ms] 1 is eating
+[3460ms] 3 take left fork
+[3460ms] 3 take right fork
+[3460ms] 3 is eating
+[3665ms] 3 is sleeping
+[3665ms] 1 is sleeping
+[3665ms] 2 take left fork
+[3665ms] 2 take right fork
+[3665ms] 2 is eating
+[3665ms] 4 take right fork
+[3665ms] 4 take left fork
+[3665ms] 4 is eating
+[3868ms] 2 is sleeping
+[3868ms] 4 is sleeping
+[3868ms] 3 take left fork
+[3868ms] 3 take right fork
+[3868ms] 1 take left fork
+[3868ms] 1 take right fork
+[3868ms] 1 is eating
+[3868ms] 3 is eating
+[4073ms] 1 is sleeping
+[4074ms] 2 take left fork
+[4074ms] 2 take right fork
+[4074ms] 2 is eating
+[4074ms] 4 take right fork
+[4074ms] 4 take left fork
+[4074ms] 4 is eating
+[4073ms] 3 is sleeping
+[4274ms] 2 is sleeping
+[4274ms] 4 is sleeping
+[4274ms] 1 take left fork
+[4274ms] 1 take right fork
+[4274ms] 1 is eating
+[4274ms] 3 take left fork
+[4274ms] 3 take right fork
+[4274ms] 3 is eating
+[4479ms] 1 is sleeping
+[4479ms] 3 is sleeping
+[4479ms] 2 take left fork
+[4479ms] 2 take right fork
+[4479ms] 2 is eating
+[4479ms] 4 take right fork
+[4479ms] 4 take left fork
+[4479ms] 4 is eating
+[4680ms] 4 is sleeping
+[4680ms] 2 is sleeping
+[4680ms] 3 take left fork
+[4680ms] 3 take right fork
+[4680ms] 3 is eating
+[4680ms] 1 take left fork
+[4680ms] 1 take right fork
+[4680ms] 1 is eating
+[4885ms] 3 is sleeping
+[4885ms] 2 take left fork
+[4885ms] 2 take right fork
+[4885ms] 2 is eating
+[4885ms] 4 take right fork
+[4885ms] 4 take left fork
+[4885ms] 4 is eating
+[4885ms] 1 is sleeping
+[5090ms] 2 is sleeping
+[5090ms] 4 is sleeping
+[5091ms] 3 take left fork
+[5091ms] 3 take right fork
+[5091ms] 3 is eating
+[5091ms] 1 take left fork
+[5091ms] 1 take right fork
+[5091ms] 1 is eating
+[5296ms] 3 is sleeping
+[5296ms] 2 take left fork
+[5296ms] 2 take right fork
+[5296ms] 1 is sleeping
+[5296ms] 4 take right fork
+[5296ms] 4 take left fork
+[5296ms] 4 is eating
+[5296ms] 2 is eating
+[5501ms] 2 is sleeping
+[5501ms] 4 is sleeping
+[5501ms] 3 take left fork
+[5501ms] 3 take right fork
+[5501ms] 3 is eating
+[5501ms] 1 take left fork
+[5501ms] 1 take right fork
+[5501ms] 1 is eating
+[5706ms] 3 is sleeping
+[5706ms] 1 is sleeping
+[5706ms] 4 take right fork
+[5706ms] 4 take left fork
+[5706ms] 4 is eating
+[5706ms] 2 take left fork
+[5706ms] 2 take right fork
+[5706ms] 2 is eating
+[5910ms] 4 is sleeping
+[5910ms] 2 is sleeping
+[5910ms] 3 take left fork
+[5910ms] 3 take right fork
+[5910ms] 3 is eating
+[5910ms] 1 take left fork
+[5910ms] 1 take right fork
+[5910ms] 1 is eating
+[6115ms] 3 is sleeping
+[6115ms] 1 is sleeping
+[6115ms] 4 take right fork
+[6115ms] 4 take left fork
+[6115ms] 4 is eating
+[6115ms] 2 take left fork
+[6115ms] 2 take right fork
+[6115ms] 2 is eating
+[6317ms] 4 is sleeping
+[6317ms] 2 is sleeping
+[6317ms] 3 take left fork
+[6317ms] 3 take right fork
+[6317ms] 3 is eating
+[6317ms] 1 take left fork
+[6318ms] 1 take right fork
+[6318ms] 1 is eating
+[6523ms] 2 take left fork
+[6523ms] 2 take right fork
+[6523ms] 2 is eating
+[6523ms] 1 is sleeping
+[6523ms] 3 is sleeping
+[6523ms] 4 take right fork
+[6523ms] 4 take left fork
+[6523ms] 4 is eating
+[6724ms] 2 is sleeping
+[6724ms] 4 is sleeping
+[6724ms] 3 take left fork
+[6724ms] 3 take right fork
+[6724ms] 3 is eating
+[6724ms] 1 take left fork
+[6724ms] 1 take right fork
+[6724ms] 1 is eating
+[6931ms] 3 is sleeping
+[6931ms] 1 is sleeping
+[6931ms] 4 take right fork
+[6931ms] 4 take left fork
+[6931ms] 4 is eating
+[6931ms] 2 take left fork
+[6931ms] 2 take right fork
+[6931ms] 2 is eating
+[7135ms] 4 is sleeping
+[7135ms] 2 is sleeping
+[7135ms] 3 take left fork
+[7135ms] 3 take right fork
+[7135ms] 3 is eating
+[7135ms] 1 take left fork
+[7135ms] 1 take right fork
+[7135ms] 1 is eating
+[7340ms] 3 is sleeping
+[7340ms] 2 take left fork
+[7340ms] 4 take right fork
+[7340ms] 1 is sleeping
+[7340ms] 2 take right fork
+[7341ms] 2 is eating
+[7340ms] 4 take left fork
+[7341ms] 4 is eating
+[7546ms] 2 is sleeping
+[7546ms] 4 is sleeping
+[7546ms] 1 take left fork
+[7546ms] 1 take right fork
+[7546ms] 1 is eating
+[7546ms] 3 take left fork
+[7546ms] 3 take right fork
+[7546ms] 3 is eating
+[7751ms] 3 is sleeping
+[7751ms] 2 take left fork
+[7751ms] 2 take right fork
+[7751ms] 2 is eating
+[7751ms] 1 is sleeping
+[7751ms] 4 take right fork
+[7751ms] 4 take left fork
+[7751ms] 4 is eating
+[7956ms] 2 is sleeping
+[7956ms] 4 is sleeping
+[7957ms] 3 take left fork
+[7957ms] 3 take right fork
+[7957ms] 3 is eating
+[7957ms] 1 take left fork
+[7957ms] 1 take right fork
+[7957ms] 1 is eating
+[8157ms] 2 take left fork
+[8157ms] 4 take right fork
+[8157ms] 4 take left fork
+[8157ms] 1 is sleeping
+[8157ms] 4 is eating
+[8157ms] 3 is sleeping
+[8157ms] 2 take right fork
+[8158ms] 2 is eating
+[8363ms] 2 is sleeping
+[8363ms] 4 is sleeping
+[8363ms] 1 take left fork
+[8363ms] 1 take right fork
+[8363ms] 1 is eating
+[8363ms] 3 take left fork
+[8363ms] 3 take right fork
+[8363ms] 3 is eating
+[8565ms] 3 is sleeping
+[8565ms] 1 is sleeping
+[8565ms] 2 take left fork
+[8565ms] 2 take right fork
+[8565ms] 2 is eating
+[8565ms] 4 take right fork
+[8565ms] 4 take left fork
+[8565ms] 4 is eating
+[8765ms] 2 is sleeping
+[8765ms] 3 take left fork
+[8765ms] 4 is sleeping
+[8765ms] 3 take right fork
+[8765ms] 3 is eating
+[8765ms] 1 take left fork
+[8765ms] 1 take right fork
+[8765ms] 1 is eating
+[8969ms] 3 is sleeping
+[8970ms] 4 take right fork
+[8969ms] 1 is sleeping
+[8969ms] 2 take left fork
+[8970ms] 4 take left fork
+[8970ms] 4 is eating
+[8970ms] 2 take right fork
+[8970ms] 2 is eating
+[9174ms] 4 is sleeping
+[9174ms] 2 is sleeping
+[9174ms] 3 take left fork
+[9174ms] 3 take right fork
+[9174ms] 3 is eating
+[9174ms] 1 take left fork
+[9174ms] 1 take right fork
+[9174ms] 1 is eating
+[9374ms] 3 is sleeping
+[9374ms] 1 is sleeping
+[9374ms] 2 take left fork
+[9374ms] 2 take right fork
+[9374ms] 2 is eating
+[9374ms] 4 take right fork
+[9374ms] 4 take left fork
+[9374ms] 4 is eating
+[9580ms] 2 is sleeping
+[9580ms] 4 is sleeping
+[9580ms] 3 take left fork
+[9580ms] 3 take right fork
+[9580ms] 3 is eating
+[9580ms] 1 take left fork
+[9580ms] 1 take right fork
+[9580ms] 1 is eating
+[9785ms] 1 is sleeping
+[9785ms] 4 take right fork
+[9785ms] 4 take left fork
+[9785ms] 4 is eating
+[9785ms] 2 take left fork
+[9785ms] 2 take right fork
+[9785ms] 2 is eating
+[9785ms] 3 is sleeping
+[9991ms] 2 is sleeping
+[9991ms] 4 is sleeping
+[9991ms] 1 take left fork
+[9991ms] 1 take right fork
+[9991ms] 1 is eating
+[9991ms] 3 take left fork
+[9992ms] 3 take right fork
+[9992ms] 3 is eating
+[10191ms] 4 take right fork
+[10191ms] 4 take left fork
+[10191ms] 4 is eating
+[10191ms] 1 is sleeping
+[10191ms] 2 take left fork
+[10191ms] 2 take right fork
+[10191ms] 2 is eating
+[10191ms] 3 is sleeping
+[10396ms] 4 is sleeping
+[10396ms] 2 is sleeping
+[10397ms] 1 take left fork
+[10397ms] 1 take right fork
+[10397ms] 1 is eating
+[10397ms] 3 take left fork
+[10397ms] 3 take right fork
+[10397ms] 3 is eating
+[10602ms] 2 take left fork
+[10602ms] 2 take right fork
+[10602ms] 2 is eating
+[10602ms] 1 is sleeping
+[10602ms] 4 take right fork
+[10602ms] 3 is sleeping
+[10602ms] 4 take left fork
+[10602ms] 4 is eating
+[10807ms] 2 is sleeping
+[10807ms] 4 is sleeping
+[10807ms] 3 take left fork
+[10807ms] 3 take right fork
+[10807ms] 3 is eating
+[10807ms] 1 take left fork
+[10807ms] 1 take right fork
+[10807ms] 1 is eating
+[11008ms] 3 is sleeping
+[11008ms] 2 take left fork
+[11008ms] 1 is sleeping
+[11008ms] 4 take right fork
+[11009ms] 4 take left fork
+[11009ms] 4 is eating
+[11009ms] 2 take right fork
+[11009ms] 2 is eating
+[11214ms] 4 is sleeping
+[11214ms] 2 is sleeping
+[11214ms] 1 take left fork
+[11214ms] 1 take right fork
+[11214ms] 1 is eating
+[11214ms] 3 take left fork
+[11214ms] 3 take right fork
+[11214ms] 3 is eating
+[11419ms] 2 take left fork
+[11419ms] 4 take right fork
+[11419ms] 1 is sleeping
+[11419ms] 3 is sleeping
+[11419ms] 2 take right fork
+[11419ms] 2 is eating
+[11419ms] 4 take left fork
+[11419ms] 4 is eating
+[11621ms] 2 is sleeping
+[11621ms] 4 is sleeping
+[11621ms] 1 take left fork
+[11621ms] 1 take right fork
+[11621ms] 1 is eating
+[11621ms] 3 take left fork
+[11621ms] 3 take right fork
+[11621ms] 3 is eating
+[11826ms] 1 is sleeping
+[11826ms] 2 take left fork
+[11826ms] 2 take right fork
+[11826ms] 2 is eating
+[11826ms] 3 is sleeping
+[11826ms] 4 take right fork
+[11826ms] 4 take left fork
+[11826ms] 4 is eating
+[12032ms] 4 is sleeping
+[12032ms] 2 is sleeping
+[12032ms] 1 take left fork
+[12032ms] 1 take right fork
+[12032ms] 1 is eating
+[12032ms] 3 take left fork
+[12032ms] 3 take right fork
+[12032ms] 3 is eating
+[12237ms] 2 take left fork
+[12237ms] 2 take right fork
+[12237ms] 2 is eating
+[12237ms] 1 is sleeping
+[12237ms] 3 is sleeping
+[12237ms] 4 take right fork
+[12237ms] 4 take left fork
+[12237ms] 4 is eating
+[12442ms] 2 is sleeping
+[12442ms] 4 is sleeping
+[12443ms] 1 take left fork
+[12443ms] 1 take right fork
+[12443ms] 1 is eating
+[12443ms] 3 take left fork
+[12443ms] 3 take right fork
+[12443ms] 3 is eating
+[12647ms] 3 is sleeping
+[12647ms] 1 is sleeping
+[12647ms] 2 take left fork
+[12647ms] 2 take right fork
+[12647ms] 2 is eating
+[12647ms] 4 take right fork
+[12647ms] 4 take left fork
+[12647ms] 4 is eating
+[12850ms] 4 is sleeping
+[12850ms] 2 is sleeping
+[12850ms] 3 take left fork
+[12851ms] 3 take right fork
+[12851ms] 3 is eating
+[12850ms] 1 take left fork
+[12851ms] 1 take right fork
+[12851ms] 1 is eating
+[13052ms] 3 is sleeping
+[13052ms] 2 take left fork
+[13052ms] 1 is sleeping
+[13052ms] 2 take right fork
+[13052ms] 2 is eating
+[13052ms] 4 take right fork
+[13052ms] 4 take left fork
+[13052ms] 4 is eating
+[13255ms] 4 is sleeping
+[13255ms] 2 is sleeping
+[13255ms] 3 take left fork
+[13255ms] 3 take right fork
+[13255ms] 3 is eating
+[13255ms] 1 take left fork
+[13255ms] 1 take right fork
+[13255ms] 1 is eating
+[13458ms] 3 is sleeping
+[13458ms] 2 take left fork
+[13458ms] 2 take right fork
+[13458ms] 4 take right fork
+[13458ms] 4 take left fork
+[13458ms] 1 is sleeping
+[13458ms] 4 is eating
+[13458ms] 2 is eating
+[13660ms] 2 is sleeping
+[13660ms] 4 is sleeping
+[13661ms] 1 take left fork
+[13661ms] 1 take right fork
+[13661ms] 1 is eating
+[13661ms] 3 take left fork
+[13661ms] 3 take right fork
+[13661ms] 3 is eating
+[13862ms] 3 is sleeping
+[13862ms] 1 is sleeping
+[13862ms] 2 take left fork
+[13862ms] 2 take right fork
+[13862ms] 2 is eating
+[13862ms] 4 take right fork
+[13862ms] 4 take left fork
+[13862ms] 4 is eating
+[14065ms] 2 is sleeping
+[14065ms] 4 is sleeping
+[14065ms] 1 take left fork
+[14065ms] 1 take right fork
+[14065ms] 1 is eating
+[14065ms] 3 take left fork
+[14065ms] 3 take right fork
+[14065ms] 3 is eating
+[14268ms] 3 is sleeping
+[14268ms] 1 is sleeping
+[14268ms] 4 take right fork
+[14268ms] 4 take left fork
+[14268ms] 2 take left fork
+[14268ms] 2 take right fork
+[14268ms] 2 is eating
+[14268ms] 4 is eating
+[14469ms] 2 is sleeping
+[14469ms] 4 is sleeping
+[14469ms] 1 take left fork
+[14469ms] 1 take right fork
+[14469ms] 1 is eating
+[14469ms] 3 take left fork
+[14469ms] 3 take right fork
+[14469ms] 3 is eating
+[14671ms] 2 take left fork
+[14671ms] 2 take right fork
+[14671ms] 2 is eating
+[14671ms] 1 is sleeping
+[14671ms] 4 take right fork
+[14672ms] 4 take left fork
+[14672ms] 4 is eating
+[14671ms] 3 is sleeping
+[14874ms] 2 is sleeping
+[14874ms] 4 is sleeping
+[14875ms] 1 take left fork
+[14875ms] 1 take right fork
+[14875ms] 1 is eating
+[14875ms] 3 take left fork
+[14875ms] 3 take right fork
+[14875ms] 3 is eating
+[15077ms] 1 is sleeping
+[15077ms] 4 take right fork
+[15077ms] 2 take left fork
+[15077ms] 3 is sleeping
+[15077ms] 2 take right fork
+[15077ms] 2 is eating
+[15077ms] 4 take left fork
+[15077ms] 4 is eating
+[15280ms] 2 is sleeping
+[15280ms] 4 is sleeping
+[15280ms] 1 take left fork
+[15280ms] 1 take right fork
+[15280ms] 1 is eating
+[15280ms] 3 take left fork
+[15280ms] 3 take right fork
+[15280ms] 3 is eating
+[15483ms] 3 is sleeping
+[15483ms] 1 is sleeping
+[15483ms] 4 take right fork
+[15483ms] 4 take left fork
+[15483ms] 4 is eating
+[15483ms] 2 take left fork
+[15483ms] 2 take right fork
+[15483ms] 2 is eating
+[15685ms] 4 is sleeping
+[15685ms] 2 is sleeping
+[15685ms] 3 take left fork
+[15685ms] 3 take right fork
+[15685ms] 3 is eating
+[15685ms] 1 take left fork
+[15685ms] 1 take right fork
+[15685ms] 1 is eating
+[15888ms] 3 is sleeping
+[15888ms] 1 is sleeping
+[15888ms] 2 take left fork
+[15888ms] 2 take right fork
+[15888ms] 2 is eating
+[15888ms] 4 take right fork
+[15888ms] 4 take left fork
+[15888ms] 4 is eating
+[16091ms] 4 is sleeping
+[16091ms] 2 is sleeping
+[16091ms] 3 take left fork
+[16091ms] 1 take left fork
+[16091ms] 1 take right fork
+[16091ms] 1 is eating
+[16091ms] 3 take right fork
+[16091ms] 3 is eating
+[16293ms] 3 is sleeping
+[16293ms] 1 is sleeping
+[16293ms] 4 take right fork
+[16293ms] 4 take left fork
+[16293ms] 4 is eating
+[16293ms] 2 take left fork
+[16293ms] 2 take right fork
+[16293ms] 2 is eating
+[16496ms] 4 is sleeping
+[16496ms] 2 is sleeping
+[16496ms] 3 take left fork
+[16496ms] 3 take right fork
+[16497ms] 3 is eating
+[16497ms] 1 take left fork
+[16497ms] 1 take right fork
+[16497ms] 1 is eating
+[16699ms] 3 is sleeping
+[16699ms] 1 is sleeping
+[16699ms] 4 take right fork
+[16699ms] 4 take left fork
+[16699ms] 4 is eating
+[16699ms] 2 take left fork
+[16699ms] 2 take right fork
+[16699ms] 2 is eating
+[16902ms] 2 is sleeping
+[16902ms] 4 is sleeping
+[16902ms] 3 take left fork
+[16902ms] 3 take right fork
+[16902ms] 3 is eating
+[16902ms] 1 take left fork
+[16902ms] 1 take right fork
+[16902ms] 1 is eating
+[17106ms] 3 is sleeping
+[17106ms] 1 is sleeping
+[17106ms] 4 take right fork
+[17106ms] 2 take left fork
+[17106ms] 2 take right fork
+[17106ms] 2 is eating
+[17106ms] 4 take left fork
+[17106ms] 4 is eating
+[17306ms] 2 is sleeping
+[17307ms] 1 take left fork
+[17307ms] 3 take left fork
+[17307ms] 3 take right fork
+[17307ms] 1 take right fork
+[17307ms] 4 is sleeping
+[17307ms] 3 is eating
+[17307ms] 1 is eating
+[17509ms] 3 is sleeping
+[17509ms] 1 is sleeping
+[17509ms] 4 take right fork
+[17509ms] 4 take left fork
+[17509ms] 4 is eating
+[17509ms] 2 take left fork
+[17509ms] 2 take right fork
+[17509ms] 2 is eating
+[17712ms] 4 is sleeping
+[17712ms] 2 is sleeping
+[17712ms] 1 take left fork
+[17712ms] 1 take right fork
+[17712ms] 1 is eating
+[17712ms] 3 take left fork
+[17712ms] 3 take right fork
+[17712ms] 3 is eating
+[17915ms] 3 is sleeping
+[17915ms] 1 is sleeping
+[17916ms] 4 take right fork
+[17915ms] 2 take left fork
+[17916ms] 2 take right fork
+[17916ms] 2 is eating
+[17916ms] 4 take left fork
+[17916ms] 4 is eating
+[18117ms] 2 is sleeping
+[18117ms] 4 is sleeping
+[18118ms] 3 take left fork
+[18118ms] 3 take right fork
+[18118ms] 1 take left fork
+[18118ms] 1 take right fork
+[18118ms] 1 is eating
+[18118ms] 3 is eating
+[18320ms] 3 is sleeping
+[18320ms] 1 is sleeping
+[18320ms] 2 take left fork
+[18320ms] 2 take right fork
+[18320ms] 2 is eating
+[18320ms] 4 take right fork
+[18320ms] 4 take left fork
+[18320ms] 4 is eating
+[18522ms] 4 is sleeping
+[18522ms] 2 is sleeping
+[18523ms] 1 take left fork
+[18523ms] 1 take right fork
+[18523ms] 1 is eating
+[18523ms] 3 take left fork
+[18523ms] 3 take right fork
+[18523ms] 3 is eating
+[18725ms] 3 is sleeping
+[18725ms] 1 is sleeping
+[18725ms] 4 take right fork
+[18725ms] 4 take left fork
+[18725ms] 4 is eating
+[18725ms] 2 take left fork
+[18725ms] 2 take right fork
+[18725ms] 2 is eating
+[18929ms] 2 is sleeping
+[18929ms] 4 is sleeping
+[18929ms] 1 take left fork
+[18929ms] 1 take right fork
+[18929ms] 1 is eating
+[18929ms] 3 take left fork
+[18929ms] 3 take right fork
+[18929ms] 3 is eating
+[19131ms] 3 is sleeping
+[19131ms] 2 take left fork
+[19131ms] 2 take right fork
+[19131ms] 2 is eating
+[19131ms] 1 is sleeping
+[19131ms] 4 take right fork
+[19131ms] 4 take left fork
+[19131ms] 4 is eating
+[19333ms] 2 is sleeping
+[19333ms] 4 is sleeping
+[19333ms] 3 take left fork
+[19333ms] 3 take right fork
+[19333ms] 3 is eating
+[19333ms] 1 take left fork
+[19333ms] 1 take right fork
+[19333ms] 1 is eating
+[19535ms] 3 is sleeping
+[19536ms] 1 is sleeping
+[19536ms] 2 take left fork
+[19536ms] 2 take right fork
+[19536ms] 2 is eating
+[19536ms] 4 take right fork
+[19536ms] 4 take left fork
+[19536ms] 4 is eating
+[19738ms] 2 is sleeping
+[19738ms] 4 is sleeping
+[19739ms] 1 take left fork
+[19739ms] 1 take right fork
+[19739ms] 1 is eating
+[19739ms] 3 take left fork
+[19739ms] 3 take right fork
+[19739ms] 3 is eating
+[19942ms] 3 is sleeping
+[19942ms] 1 is sleeping
+[19942ms] 4 take right fork
+[19942ms] 2 take left fork
+[19942ms] 4 take left fork
+[19942ms] 4 is eating
+[19942ms] 2 take right fork
+[19942ms] 2 is eating
+[20143ms] 4 is sleeping
+[20143ms] 2 is sleeping
+[20144ms] 1 take left fork
+[20144ms] 1 take right fork
+[20144ms] 1 is eating
+[20144ms] 3 take left fork
+[20144ms] 3 take right fork
+[20144ms] 3 is eating
+[20346ms] 3 is sleeping
+[20346ms] 2 take left fork
+[20346ms] 2 take right fork
+[20346ms] 2 is eating
+[20346ms] 4 take right fork
+[20346ms] 4 take left fork
+[20346ms] 1 is sleeping
+[20346ms] 4 is eating
+[20549ms] 2 is sleeping
+[20549ms] 4 is sleeping
+[20549ms] 3 take left fork
+[20549ms] 3 take right fork
+[20549ms] 3 is eating
+[20549ms] 1 take left fork
+[20549ms] 1 take right fork
+[20549ms] 1 is eating
+[20750ms] 3 is sleeping
+[20750ms] 1 is sleeping
+[20750ms] 4 take right fork
+[20750ms] 4 take left fork
+[20750ms] 4 is eating
+[20750ms] 2 take left fork
+[20750ms] 2 take right fork
+[20750ms] 2 is eating
+[20954ms] 2 is sleeping
+[20954ms] 4 is sleeping
+[20955ms] 3 take left fork
+[20955ms] 3 take right fork
+[20955ms] 3 is eating
+[20955ms] 1 take left fork
+[20955ms] 1 take right fork
+[20955ms] 1 is eating
+[21156ms] 3 is sleeping
+[21156ms] 1 is sleeping
+[21156ms] 2 take left fork
+[21156ms] 2 take right fork
+[21156ms] 2 is eating
+[21156ms] 4 take right fork
+[21156ms] 4 take left fork
+[21156ms] 4 is eating
+[21359ms] 4 is sleeping
+[21359ms] 2 is sleeping
+[21359ms] 3 take left fork
+[21359ms] 3 take right fork
+[21359ms] 3 is eating
+[21359ms] 1 take left fork
+[21359ms] 1 take right fork
+[21359ms] 1 is eating
+[21561ms] 3 is sleeping
+[21561ms] 1 is sleeping
+[21561ms] 2 take left fork
+[21561ms] 2 take right fork
+[21561ms] 2 is eating
+[21561ms] 4 take right fork
+[21561ms] 4 take left fork
+[21561ms] 4 is eating
+[21764ms] 2 is sleeping
+[21764ms] 4 is sleeping
+[21764ms] 3 take left fork
+[21764ms] 3 take right fork
+[21764ms] 3 is eating
+[21764ms] 1 take left fork
+[21764ms] 1 take right fork
+[21764ms] 1 is eating
+[21969ms] 2 take left fork
+[21969ms] 2 take right fork
+[21969ms] 2 is eating
+[21969ms] 3 is sleeping
+[21969ms] 4 take right fork
+[21969ms] 4 take left fork
+[21969ms] 4 is eating
+[21969ms] 1 is sleeping
+[22174ms] 2 is sleeping
+[22174ms] 4 is sleeping
+[22174ms] 3 take left fork
+[22174ms] 3 take right fork
+[22174ms] 3 is eating
+[22174ms] 1 take left fork
+[22174ms] 1 take right fork
+[22174ms] 1 is eating
+[22379ms] 3 is sleeping
+[22379ms] 2 take left fork
+[22379ms] 1 is sleeping
+[22379ms] 2 take right fork
+[22379ms] 2 is eating
+[22379ms] 4 take right fork
+[22379ms] 4 take left fork
+[22379ms] 4 is eating
+[22584ms] 2 is sleeping
+[22584ms] 4 is sleeping
+[22585ms] 1 take left fork
+[22585ms] 1 take right fork
+[22585ms] 1 is eating
+[22585ms] 3 take left fork
+[22585ms] 3 take right fork
+[22585ms] 3 is eating
+[22787ms] 3 is sleeping
+[22787ms] 2 take left fork
+[22787ms] 4 take right fork
+[22787ms] 4 take left fork
+[22787ms] 4 is eating
+[22787ms] 2 take right fork
+[22787ms] 2 is eating
+[22787ms] 1 is sleeping
+[22993ms] 4 is sleeping
+[22993ms] 2 is sleeping
+[22993ms] 3 take left fork
+[22993ms] 3 take right fork
+[22993ms] 3 is eating
+[22994ms] 1 take left fork
+[22994ms] 1 take right fork
+[22994ms] 1 is eating
+[23197ms] 3 is sleeping
+[23198ms] 2 take left fork
+[23198ms] 2 take right fork
+[23198ms] 2 is eating
+[23198ms] 4 take right fork
+[23198ms] 1 is sleeping
+[23198ms] 4 take left fork
+[23198ms] 4 is eating
+[23402ms] 2 is sleeping
+[23402ms] 4 is sleeping
+[23403ms] 3 take left fork
+[23403ms] 3 take right fork
+[23403ms] 3 is eating
+[23403ms] 1 take left fork
+[23403ms] 1 take right fork
+[23403ms] 1 is eating
+[23608ms] 3 is sleeping
+[23608ms] 1 is sleeping
+[23608ms] 2 take left fork
+[23608ms] 2 take right fork
+[23608ms] 2 is eating
+[23608ms] 4 take right fork
+[23608ms] 4 take left fork
+[23608ms] 4 is eating
+[23813ms] 4 is sleeping
+[23813ms] 2 is sleeping
+[23813ms] 3 take left fork
+[23813ms] 3 take right fork
+[23813ms] 3 is eating
+[23813ms] 1 take left fork
+[23813ms] 1 take right fork
+[23813ms] 1 is eating
+[24018ms] 3 is sleeping
+[24018ms] 1 is sleeping
+[24018ms] 2 take left fork
+[24018ms] 2 take right fork
+[24018ms] 2 is eating
+[24018ms] 4 take right fork
+[24018ms] 4 take left fork
+[24018ms] 4 is eating
+[24219ms] 4 is sleeping
+[24219ms] 2 is sleeping
+[24219ms] 3 take left fork
+[24219ms] 3 take right fork
+[24219ms] 3 is eating
+[24219ms] 1 take left fork
+[24219ms] 1 take right fork
+[24219ms] 1 is eating
+[24421ms] 3 is sleeping
+[24421ms] 1 is sleeping
+[24421ms] 2 take left fork
+[24421ms] 4 take right fork
+[24421ms] 4 take left fork
+[24421ms] 4 is eating
+[24421ms] 2 take right fork
+[24421ms] 2 is eating
+[24621ms] 1 take left fork
+[24621ms] 2 is sleeping
+[24621ms] 4 is sleeping
+[24621ms] 3 take left fork
+[24621ms] 3 take right fork
+[24621ms] 1 take right fork
+[24621ms] 1 is eating
+[24621ms] 3 is eating
+[24824ms] 3 is sleeping
+[24824ms] 1 is sleeping
+[24824ms] 4 take right fork
+[24824ms] 4 take left fork
+[24824ms] 4 is eating
+[24824ms] 2 take left fork
+[24824ms] 2 take right fork
+[24824ms] 2 is eating
+[25029ms] 4 is sleeping
+[25029ms] 2 is sleeping
+[25029ms] 3 take left fork
+[25029ms] 3 take right fork
+[25029ms] 3 is eating
+[25029ms] 1 take left fork
+[25029ms] 1 take right fork
+[25029ms] 1 is eating
+[25234ms] 4 take right fork
+[25235ms] 4 take left fork
+[25235ms] 4 is eating
+[25234ms] 2 take left fork
+[25235ms] 2 take right fork
+[25235ms] 2 is eating
+[25234ms] 1 is sleeping
+[25234ms] 3 is sleeping
+[25440ms] 2 is sleeping
+[25440ms] 4 is sleeping
+[25440ms] 1 take left fork
+[25440ms] 1 take right fork
+[25440ms] 1 is eating
+[25440ms] 3 take left fork
+[25440ms] 3 take right fork
+[25440ms] 3 is eating
+[25645ms] 3 is sleeping
+[25645ms] 2 take left fork
+[25645ms] 1 is sleeping
+[25645ms] 4 take right fork
+[25645ms] 2 take right fork
+[25645ms] 2 is eating
+[25645ms] 4 take left fork
+[25645ms] 4 is eating
+[25846ms] 4 is sleeping
+[25846ms] 2 is sleeping
+[25846ms] 1 take left fork
+[25846ms] 1 take right fork
+[25846ms] 1 is eating
+[25846ms] 3 take left fork
+[25846ms] 3 take right fork
+[25846ms] 3 is eating
+[26051ms] 3 is sleeping
+[26051ms] 1 is sleeping
+[26051ms] 4 take right fork
+[26051ms] 4 take left fork
+[26051ms] 4 is eating
+[26051ms] 2 take left fork
+[26051ms] 2 take right fork
+[26051ms] 2 is eating
+[26254ms] 4 is sleeping
+[26254ms] 2 is sleeping
+[26254ms] 3 take left fork
+[26254ms] 3 take right fork
+[26254ms] 3 is eating
+[26254ms] 1 take left fork
+[26254ms] 1 take right fork
+[26254ms] 1 is eating
+[26454ms] 3 is sleeping
+[26454ms] 1 is sleeping
+[26454ms] 2 take left fork
+[26454ms] 2 take right fork
+[26454ms] 2 is eating
+[26454ms] 4 take right fork
+[26454ms] 4 take left fork
+[26454ms] 4 is eating
+[26655ms] 4 is sleeping
+[26655ms] 3 take left fork
+[26655ms] 2 is sleeping
+[26656ms] 3 take right fork
+[26656ms] 3 is eating
+[26656ms] 1 take left fork
+[26656ms] 1 take right fork
+[26656ms] 1 is eating
+[26861ms] 3 is sleeping
+[26861ms] 1 is sleeping
+[26861ms] 2 take left fork
+[26861ms] 2 take right fork
+[26861ms] 2 is eating
+[26861ms] 4 take right fork
+[26861ms] 4 take left fork
+[26861ms] 4 is eating
+[27066ms] 2 is sleeping
+[27066ms] 4 is sleeping
+[27066ms] 3 take left fork
+[27066ms] 3 take right fork
+[27066ms] 3 is eating
+[27066ms] 1 take left fork
+[27067ms] 1 take right fork
+[27067ms] 1 is eating
+[27271ms] 3 is sleeping
+[27272ms] 2 take left fork
+[27272ms] 2 take right fork
+[27272ms] 2 is eating
+[27272ms] 4 take right fork
+[27272ms] 4 take left fork
+[27272ms] 4 is eating
+[27272ms] 1 is sleeping
+[27477ms] 4 is sleeping
+[27477ms] 2 is sleeping
+[27477ms] 3 take left fork
+[27477ms] 3 take right fork
+[27477ms] 3 is eating
+[27477ms] 1 take left fork
+[27477ms] 1 take right fork
+[27477ms] 1 is eating
+[27682ms] 3 is sleeping
+[27682ms] 1 is sleeping
+[27682ms] 2 take left fork
+[27682ms] 2 take right fork
+[27682ms] 2 is eating
+[27682ms] 4 take right fork
+[27682ms] 4 take left fork
+[27682ms] 4 is eating
+[27883ms] 2 is sleeping
+[27883ms] 4 is sleeping
+[27883ms] 3 take left fork
+[27883ms] 3 take right fork
+[27883ms] 3 is eating
+[27883ms] 1 take left fork
+[27883ms] 1 take right fork
+[27883ms] 1 is eating
+[28087ms] 3 is sleeping
+[28087ms] 1 is sleeping
+[28087ms] 2 take left fork
+[28088ms] 2 take right fork
+[28088ms] 2 is eating
+[28087ms] 4 take right fork
+[28088ms] 4 take left fork
+[28088ms] 4 is eating
+[28288ms] 2 is sleeping
+[28288ms] 3 take left fork
+[28288ms] 3 take right fork
+[28288ms] 3 is eating
+[28288ms] 4 is sleeping
+[28288ms] 1 take left fork
+[28288ms] 1 take right fork
+[28288ms] 1 is eating
+[28491ms] 3 is sleeping
+[28492ms] 2 take left fork
+[28492ms] 2 take right fork
+[28492ms] 2 is eating
+[28492ms] 1 is sleeping
+[28492ms] 4 take right fork
+[28492ms] 4 take left fork
+[28492ms] 4 is eating
+[28697ms] 2 is sleeping
+[28697ms] 4 is sleeping
+[28697ms] 3 take left fork
+[28697ms] 3 take right fork
+[28697ms] 3 is eating
+[28697ms] 1 take left fork
+[28697ms] 1 take right fork
+[28697ms] 1 is eating
+[28902ms] 3 is sleeping
+[28902ms] 2 take left fork
+[28902ms] 1 is sleeping
+[28902ms] 4 take right fork
+[28902ms] 4 take left fork
+[28902ms] 4 is eating
+[28902ms] 2 take right fork
+[28902ms] 2 is eating
+[29107ms] 4 is sleeping
+[29107ms] 2 is sleeping
+[29108ms] 1 take left fork
+[29108ms] 1 take right fork
+[29108ms] 1 is eating
+[29108ms] 3 take left fork
+[29108ms] 3 take right fork
+[29108ms] 3 is eating
+[29313ms] 3 is sleeping
+[29313ms] 2 take left fork
+[29313ms] 2 take right fork
+[29313ms] 4 take right fork
+[29313ms] 4 take left fork
+[29313ms] 4 is eating
+[29313ms] 2 is eating
+[29313ms] 1 is sleeping
+[29517ms] 2 is sleeping
+[29517ms] 4 is sleeping
+[29517ms] 3 take left fork
+[29517ms] 3 take right fork
+[29517ms] 3 is eating
+[29517ms] 1 take left fork
+[29517ms] 1 take right fork
+[29517ms] 1 is eating
+[29718ms] 3 is sleeping
+[29718ms] 1 is sleeping
+[29718ms] 2 take left fork
+[29718ms] 4 take right fork
+[29718ms] 4 take left fork
+[29718ms] 4 is eating
+[29718ms] 2 take right fork
+[29719ms] 2 is eating
+[29925ms] 2 is sleeping
+[29925ms] 4 is sleeping
+[29925ms] 3 take left fork
+[29925ms] 3 take right fork
+[29925ms] 3 is eating
+[29925ms] 1 take left fork
+[29925ms] 1 take right fork
+[29925ms] 1 is eating
+[30129ms] 3 is sleeping
+[30129ms] 1 is sleeping
+[30129ms] 4 take right fork
+[30129ms] 4 take left fork
+[30129ms] 4 is eating
+[30129ms] 2 take left fork
+[30129ms] 2 take right fork
+[30129ms] 2 is eating
+[30335ms] 4 is sleeping
+[30335ms] 2 is sleeping
+[30335ms] 3 take left fork
+[30335ms] 3 take right fork
+[30335ms] 3 is eating
+[30335ms] 1 take left fork
+[30335ms] 1 take right fork
+[30335ms] 1 is eating
+[30540ms] 1 is sleeping
+[30540ms] 4 take right fork
+[30540ms] 2 take left fork
+[30540ms] 4 take left fork
+[30540ms] 4 is eating
+[30540ms] 3 is sleeping
+[30540ms] 2 take right fork
+[30540ms] 2 is eating
+[30745ms] 2 is sleeping
+[30745ms] 4 is sleeping
+[30746ms] 1 take left fork
+[30746ms] 1 take right fork
+[30746ms] 1 is eating
+[30746ms] 3 take left fork
+[30746ms] 3 take right fork
+[30746ms] 3 is eating
+[30952ms] 1 is sleeping
+[30952ms] 2 take left fork
+[30952ms] 2 take right fork
+[30952ms] 2 is eating
+[30952ms] 3 is sleeping
+[30952ms] 4 take right fork
+[30952ms] 4 take left fork
+[30952ms] 4 is eating
+[31153ms] 2 is sleeping
+[31153ms] 4 is sleeping
+[31153ms] 1 take left fork
+[31153ms] 1 take right fork
+[31153ms] 1 is eating
+[31153ms] 3 take left fork
+[31153ms] 3 take right fork
+[31153ms] 3 is eating
+[31354ms] 3 is sleeping
+[31354ms] 1 is sleeping
+[31354ms] 4 take right fork
+[31354ms] 2 take left fork
+[31355ms] 2 take right fork
+[31355ms] 2 is eating
+[31354ms] 4 take left fork
+[31355ms] 4 is eating
+[31556ms] 2 is sleeping
+[31556ms] 4 is sleeping
+[31556ms] 1 take left fork
+[31556ms] 1 take right fork
+[31556ms] 1 is eating
+[31556ms] 3 take left fork
+[31556ms] 3 take right fork
+[31556ms] 3 is eating
+[31761ms] 3 is sleeping
+[31761ms] 1 is sleeping
+[31761ms] 4 take right fork
+[31761ms] 4 take left fork
+[31761ms] 4 is eating
+[31761ms] 2 take left fork
+[31761ms] 2 take right fork
+[31761ms] 2 is eating
+[31967ms] 2 is sleeping
+[31967ms] 4 is sleeping
+[31967ms] 3 take left fork
+[31967ms] 3 take right fork
+[31967ms] 3 is eating
+[31967ms] 1 take left fork
+[31967ms] 1 take right fork
+[31967ms] 1 is eating
+[32171ms] 3 is sleeping
+[32171ms] 1 is sleeping
+[32171ms] 4 take right fork
+[32171ms] 4 take left fork
+[32171ms] 4 is eating
+[32171ms] 2 take left fork
+[32171ms] 2 take right fork
+[32171ms] 2 is eating
+[32377ms] 4 is sleeping
+[32377ms] 2 is sleeping
+[32377ms] 3 take left fork
+[32377ms] 3 take right fork
+[32377ms] 3 is eating
+[32377ms] 1 take left fork
+[32377ms] 1 take right fork
+[32377ms] 1 is eating
+[32582ms] 3 is sleeping
+[32582ms] 1 is sleeping
+[32582ms] 2 take left fork
+[32582ms] 2 take right fork
+[32582ms] 2 is eating
+[32582ms] 4 take right fork
+[32582ms] 4 take left fork
+[32582ms] 4 is eating
+[32784ms] 4 is sleeping
+[32784ms] 2 is sleeping
+[32784ms] 3 take left fork
+[32784ms] 3 take right fork
+[32784ms] 3 is eating
+[32784ms] 1 take left fork
+[32784ms] 1 take right fork
+[32784ms] 1 is eating
+[32989ms] 3 is sleeping
+[32989ms] 4 take right fork
+[32989ms] 4 take left fork
+[32989ms] 4 is eating
+[32989ms] 1 is sleeping
+[32989ms] 2 take left fork
+[32989ms] 2 take right fork
+[32989ms] 2 is eating
+[33194ms] 2 is sleeping
+[33194ms] 4 is sleeping
+[33194ms] 3 take left fork
+[33194ms] 3 take right fork
+[33194ms] 3 is eating
+[33194ms] 1 take left fork
+[33194ms] 1 take right fork
+[33194ms] 1 is eating
+[33399ms] 3 is sleeping
+[33399ms] 1 is sleeping
+[33399ms] 2 take left fork
+[33399ms] 2 take right fork
+[33399ms] 2 is eating
+[33399ms] 4 take right fork
+[33399ms] 4 take left fork
+[33399ms] 4 is eating
+[33604ms] 2 is sleeping
+[33604ms] 4 is sleeping
+[33604ms] 3 take left fork
+[33604ms] 3 take right fork
+[33604ms] 3 is eating
+[33604ms] 1 take left fork
+[33604ms] 1 take right fork
+[33604ms] 1 is eating
+[33810ms] 3 is sleeping
+[33810ms] 2 take left fork
+[33810ms] 2 take right fork
+[33810ms] 2 is eating
+[33810ms] 4 take right fork
+[33810ms] 1 is sleeping
+[33810ms] 4 take left fork
+[33810ms] 4 is eating
+[34013ms] 4 is sleeping
+[34013ms] 2 is sleeping
+[34013ms] 3 take left fork
+[34013ms] 3 take right fork
+[34013ms] 3 is eating
+[34013ms] 1 take left fork
+[34013ms] 1 take right fork
+[34013ms] 1 is eating
+[34218ms] 3 is sleeping
+[34218ms] 4 take right fork
+[34218ms] 2 take left fork
+[34218ms] 2 take right fork
+[34218ms] 4 take left fork
+[34218ms] 1 is sleeping
+[34218ms] 4 is eating
+[34218ms] 2 is eating
+[34423ms] 4 is sleeping
+[34423ms] 2 is sleeping
+[34424ms] 1 take left fork
+[34424ms] 1 take right fork
+[34424ms] 1 is eating
+[34424ms] 3 take left fork
+[34424ms] 3 take right fork
+[34424ms] 3 is eating
+[34629ms] 2 take left fork
+[34629ms] 2 take right fork
+[34629ms] 2 is eating
+[34629ms] 3 is sleeping
+[34629ms] 4 take right fork
+[34629ms] 4 take left fork
+[34629ms] 4 is eating
+[34629ms] 1 is sleeping
+[34834ms] 2 is sleeping
+[34834ms] 4 is sleeping
+[34834ms] 1 take left fork
+[34834ms] 1 take right fork
+[34834ms] 1 is eating
+[34834ms] 3 take left fork
+[34834ms] 3 take right fork
+[34834ms] 3 is eating
+[35039ms] 3 is sleeping
+[35039ms] 1 is sleeping
+[35039ms] 4 take right fork
+[35039ms] 4 take left fork
+[35039ms] 4 is eating
+[35039ms] 2 take left fork
+[35040ms] 2 take right fork
+[35040ms] 2 is eating
+[35242ms] 4 is sleeping
+[35242ms] 2 is sleeping
+[35243ms] 1 take left fork
+[35243ms] 1 take right fork
+[35243ms] 1 is eating
+[35243ms] 3 take left fork
+[35243ms] 3 take right fork
+[35243ms] 3 is eating
+[35444ms] 3 is sleeping
+[35444ms] 2 take left fork
+[35444ms] 4 take right fork
+[35444ms] 2 take right fork
+[35444ms] 2 is eating
+[35444ms] 1 is sleeping
+[35444ms] 4 take left fork
+[35444ms] 4 is eating
+[35647ms] 4 is sleeping
+[35647ms] 2 is sleeping
+[35647ms] 1 take left fork
+[35647ms] 1 take right fork
+[35647ms] 1 is eating
+[35647ms] 3 take left fork
+[35647ms] 3 take right fork
+[35647ms] 3 is eating
+[35850ms] 3 is sleeping
+[35850ms] 1 is sleeping
+[35850ms] 2 take left fork
+[35850ms] 2 take right fork
+[35850ms] 2 is eating
+[35850ms] 4 take right fork
+[35850ms] 4 take left fork
+[35850ms] 4 is eating
+[36053ms] 2 is sleeping
+[36053ms] 4 is sleeping
+[36053ms] 3 take left fork
+[36053ms] 3 take right fork
+[36053ms] 3 is eating
+[36053ms] 1 take left fork
+[36053ms] 1 take right fork
+[36053ms] 1 is eating
+[36255ms] 3 is sleeping
+[36255ms] 4 take right fork
+[36255ms] 4 take left fork
+[36255ms] 4 is eating
+[36255ms] 2 take left fork
+[36255ms] 2 take right fork
+[36255ms] 2 is eating
+[36255ms] 1 is sleeping
+[36458ms] 4 is sleeping
+[36458ms] 2 is sleeping
+[36458ms] 3 take left fork
+[36458ms] 3 take right fork
+[36458ms] 1 take left fork
+[36458ms] 1 take right fork
+[36458ms] 1 is eating
+[36458ms] 3 is eating
+[36661ms] 3 is sleeping
+[36661ms] 2 take left fork
+[36661ms] 2 take right fork
+[36661ms] 2 is eating
+[36661ms] 1 is sleeping
+[36661ms] 4 take right fork
+[36661ms] 4 take left fork
+[36661ms] 4 is eating
+[36863ms] 2 is sleeping
+[36863ms] 4 is sleeping
+[36864ms] 3 take left fork
+[36864ms] 3 take right fork
+[36864ms] 3 is eating
+[36864ms] 1 take left fork
+[36864ms] 1 take right fork
+[36864ms] 1 is eating
+[37066ms] 3 is sleeping
+[37066ms] 2 take left fork
+[37066ms] 4 take right fork
+[37066ms] 4 take left fork
+[37066ms] 4 is eating
+[37066ms] 2 take right fork
+[37066ms] 2 is eating
+[37066ms] 1 is sleeping
+[37269ms] 4 is sleeping
+[37269ms] 2 is sleeping
+[37269ms] 3 take left fork
+[37269ms] 3 take right fork
+[37269ms] 3 is eating
+[37269ms] 1 take left fork
+[37269ms] 1 take right fork
+[37269ms] 1 is eating
+[37472ms] 2 take left fork
+[37472ms] 1 is sleeping
+[37472ms] 2 take right fork
+[37472ms] 3 is sleeping
+[37472ms] 2 is eating
+[37472ms] 4 take right fork
+[37472ms] 4 take left fork
+[37472ms] 4 is eating
+[37675ms] 4 is sleeping
+[37675ms] 2 is sleeping
+[37675ms] 3 take left fork
+[37675ms] 3 take right fork
+[37675ms] 3 is eating
+[37675ms] 1 take left fork
+[37675ms] 1 take right fork
+[37675ms] 1 is eating
+[37877ms] 1 is sleeping
+[37877ms] 4 take right fork
+[37877ms] 3 is sleeping
+[37877ms] 2 take left fork
+[37878ms] 2 take right fork
+[37878ms] 2 is eating
+[37878ms] 4 take left fork
+[37878ms] 4 is eating
+[38080ms] 4 is sleeping
+[38080ms] 2 is sleeping
+[38080ms] 1 take left fork
+[38080ms] 1 take right fork
+[38080ms] 3 take left fork
+[38080ms] 3 take right fork
+[38080ms] 3 is eating
+[38080ms] 1 is eating
+[38282ms] 3 is sleeping
+[38282ms] 1 is sleeping
+[38282ms] 2 take left fork
+[38282ms] 2 take right fork
+[38282ms] 2 is eating
+[38282ms] 4 take right fork
+[38282ms] 4 take left fork
+[38282ms] 4 is eating
+[38485ms] 2 is sleeping
+[38485ms] 4 is sleeping
+[38486ms] 1 take left fork
+[38486ms] 1 take right fork
+[38486ms] 1 is eating
+[38486ms] 3 take left fork
+[38486ms] 3 take right fork
+[38486ms] 3 is eating
+[38688ms] 3 is sleeping
+[38688ms] 2 take left fork
+[38688ms] 1 is sleeping
+[38688ms] 2 take right fork
+[38688ms] 4 take right fork
+[38688ms] 4 take left fork
+[38688ms] 4 is eating
+[38688ms] 2 is eating
+[38890ms] 2 is sleeping
+[38890ms] 4 is sleeping
+[38890ms] 1 take left fork
+[38890ms] 1 take right fork
+[38890ms] 1 is eating
+[38890ms] 3 take left fork
+[38890ms] 3 take right fork
+[38890ms] 3 is eating
+[39093ms] 3 is sleeping
+[39093ms] 2 take left fork
+[39093ms] 4 take right fork
+[39093ms] 2 take right fork
+[39093ms] 1 is sleeping
+[39093ms] 4 take left fork
+[39093ms] 4 is eating
+[39093ms] 2 is eating
+[39298ms] 2 is sleeping
+[39298ms] 4 is sleeping
+[39299ms] 3 take left fork
+[39299ms] 3 take right fork
+[39299ms] 3 is eating
+[39299ms] 1 take left fork
+[39299ms] 1 take right fork
+[39299ms] 1 is eating
+[39504ms] 3 is sleeping
+[39504ms] 2 take left fork
+[39504ms] 2 take right fork
+[39504ms] 1 is sleeping
+[39504ms] 4 take right fork
+[39504ms] 4 take left fork
+[39504ms] 4 is eating
+[39504ms] 2 is eating
+[39708ms] 4 is sleeping
+[39708ms] 2 is sleeping
+[39708ms] 1 take left fork
+[39708ms] 1 take right fork
+[39708ms] 3 take left fork
+[39708ms] 3 take right fork
+[39708ms] 3 is eating
+[39708ms] 1 is eating
+[39910ms] 3 is sleeping
+[39910ms] 1 is sleeping
+[39910ms] 2 take left fork
+[39911ms] 2 take right fork
+[39911ms] 2 is eating
+[39910ms] 4 take right fork
+[39911ms] 4 take left fork
+[39911ms] 4 is eating
+[40116ms] 4 is sleeping
+[40116ms] 2 is sleeping
+[40116ms] 3 take left fork
+[40116ms] 3 take right fork
+[40116ms] 3 is eating
+[40116ms] 1 take left fork
+[40116ms] 1 take right fork
+[40116ms] 1 is eating
+[40321ms] 3 is sleeping
+[40321ms] 1 is sleeping
+[40321ms] 4 take right fork
+[40321ms] 4 take left fork
+[40321ms] 4 is eating
+[40321ms] 2 take left fork
+[40321ms] 2 take right fork
+[40321ms] 2 is eating
+[40526ms] 4 is sleeping
+[40526ms] 2 is sleeping
+[40527ms] 3 take left fork
+[40527ms] 3 take right fork
+[40527ms] 3 is eating
+[40527ms] 1 take left fork
+[40527ms] 1 take right fork
+[40527ms] 1 is eating
+[40732ms] 3 is sleeping
+[40732ms] 1 is sleeping
+[40732ms] 4 take right fork
+[40732ms] 2 take left fork
+[40732ms] 2 take right fork
+[40732ms] 2 is eating
+[40732ms] 4 take left fork
+[40732ms] 4 is eating
+[40938ms] 4 is sleeping
+[40938ms] 2 is sleeping
+[40938ms] 1 take left fork
+[40938ms] 1 take right fork
+[40938ms] 1 is eating
+[40939ms] 3 take left fork
+[40939ms] 3 take right fork
+[40939ms] 3 is eating
+[41143ms] 1 is sleeping
+[41143ms] 2 take left fork
+[41143ms] 2 take right fork
+[41143ms] 2 is eating
+[41143ms] 3 is sleeping
+[41143ms] 4 take right fork
+[41143ms] 4 take left fork
+[41143ms] 4 is eating
+[41343ms] 4 is sleeping
+[41343ms] 2 is sleeping
+[41343ms] 3 take left fork
+[41343ms] 3 take right fork
+[41343ms] 3 is eating
+[41343ms] 1 take left fork
+[41343ms] 1 take right fork
+[41343ms] 1 is eating
+[41548ms] 2 take left fork
+[41548ms] 3 is sleeping
+[41548ms] 4 take right fork
+[41549ms] 4 take left fork
+[41549ms] 4 is eating
+[41548ms] 2 take right fork
+[41548ms] 1 is sleeping
+[41549ms] 2 is eating
+[41754ms] 4 is sleeping
+[41754ms] 2 is sleeping
+[41754ms] 1 take left fork
+[41754ms] 1 take right fork
+[41754ms] 1 is eating
+[41754ms] 3 take left fork
+[41754ms] 3 take right fork
+[41754ms] 3 is eating
+[41956ms] 1 is sleeping
+[41956ms] 4 take right fork
+[41956ms] 4 take left fork
+[41956ms] 4 is eating
+[41956ms] 2 take left fork
+[41956ms] 2 take right fork
+[41956ms] 2 is eating
+[41956ms] 3 is sleeping
+[42160ms] 2 is sleeping
+[42160ms] 4 is sleeping
+[42161ms] 1 take left fork
+[42161ms] 1 take right fork
+[42161ms] 1 is eating
+[42161ms] 3 take left fork
+[42161ms] 3 take right fork
+[42161ms] 3 is eating
+[42361ms] 1 is sleeping
+[42361ms] 2 take left fork
+[42361ms] 4 take right fork
+[42361ms] 4 take left fork
+[42361ms] 2 take right fork
+[42361ms] 4 is eating
+[42361ms] 3 is sleeping
+[42361ms] 2 is eating
+[42566ms] 2 is sleeping
+[42566ms] 4 is sleeping
+[42567ms] 1 take left fork
+[42567ms] 1 take right fork
+[42567ms] 1 is eating
+[42567ms] 3 take left fork
+[42567ms] 3 take right fork
+[42567ms] 3 is eating
+[42772ms] 1 is sleeping
+[42772ms] 2 take left fork
+[42772ms] 4 take right fork
+[42772ms] 4 take left fork
+[42772ms] 2 take right fork
+[42772ms] 2 is eating
+[42772ms] 4 is eating
+[42772ms] 3 is sleeping
+[42978ms] 4 is sleeping
+[42978ms] 2 is sleeping
+[42978ms] 1 take left fork
+[42978ms] 1 take right fork
+[42978ms] 1 is eating
+[42978ms] 3 take left fork
+[42978ms] 3 take right fork
+[42978ms] 3 is eating
+[43182ms] 2 take left fork
+[43182ms] 4 take right fork
+[43182ms] 2 take right fork
+[43182ms] 2 is eating
+[43182ms] 4 take left fork
+[43182ms] 4 is eating
+[43182ms] 1 is sleeping
+[43182ms] 3 is sleeping
+[43385ms] 2 is sleeping
+[43385ms] 4 is sleeping
+[43385ms] 1 take left fork
+[43385ms] 1 take right fork
+[43385ms] 1 is eating
+[43385ms] 3 take left fork
+[43385ms] 3 take right fork
+[43385ms] 3 is eating
+[43590ms] 3 is sleeping
+[43590ms] 1 is sleeping
+[43590ms] 2 take left fork
+[43590ms] 2 take right fork
+[43590ms] 2 is eating
+[43590ms] 4 take right fork
+[43590ms] 4 take left fork
+[43590ms] 4 is eating
+[43793ms] 4 is sleeping
+[43793ms] 2 is sleeping
+[43793ms] 1 take left fork
+[43793ms] 1 take right fork
+[43793ms] 1 is eating
+[43793ms] 3 take left fork
+[43793ms] 3 take right fork
+[43793ms] 3 is eating
+[43999ms] 2 take left fork
+[43999ms] 2 take right fork
+[43999ms] 2 is eating
+[43999ms] 1 is sleeping
+[43999ms] 4 take right fork
+[43999ms] 4 take left fork
+[43999ms] 4 is eating
+[43999ms] 3 is sleeping
+[44203ms] 2 is sleeping
+[44203ms] 4 is sleeping
+[44204ms] 1 take left fork
+[44204ms] 1 take right fork
+[44204ms] 1 is eating
+[44204ms] 3 take left fork
+[44204ms] 3 take right fork
+[44204ms] 3 is eating
+[44409ms] 3 is sleeping
+[44409ms] 1 is sleeping
+[44409ms] 4 take right fork
+[44409ms] 2 take left fork
+[44409ms] 2 take right fork
+[44409ms] 2 is eating
+[44409ms] 4 take left fork
+[44409ms] 4 is eating
+[44614ms] 2 is sleeping
+[44614ms] 4 is sleeping
+[44614ms] 3 take left fork
+[44614ms] 3 take right fork
+[44614ms] 3 is eating
+[44614ms] 1 take left fork
+[44614ms] 1 take right fork
+[44614ms] 1 is eating
+[44815ms] 3 is sleeping
+[44815ms] 2 take left fork
+[44815ms] 4 take right fork
+[44815ms] 4 take left fork
+[44815ms] 4 is eating
+[44815ms] 2 take right fork
+[44815ms] 1 is sleeping
+[44815ms] 2 is eating
+[45020ms] 2 is sleeping
+[45020ms] 4 is sleeping
+[45021ms] 3 take left fork
+[45021ms] 3 take right fork
+[45021ms] 3 is eating
+[45021ms] 1 take left fork
+[45021ms] 1 take right fork
+[45021ms] 1 is eating
+[45226ms] 3 is sleeping
+[45226ms] 1 is sleeping
+[45226ms] 4 take right fork
+[45226ms] 4 take left fork
+[45226ms] 4 is eating
+[45226ms] 2 take left fork
+[45226ms] 2 take right fork
+[45226ms] 2 is eating
+[45431ms] 4 is sleeping
+[45431ms] 2 is sleeping
+[45431ms] 3 take left fork
+[45431ms] 3 take right fork
+[45431ms] 3 is eating
+[45431ms] 1 take left fork
+[45431ms] 1 take right fork
+[45431ms] 1 is eating
+[45636ms] 3 is sleeping
+[45636ms] 4 take right fork
+[45636ms] 1 is sleeping
+[45636ms] 2 take left fork
+[45636ms] 2 take right fork
+[45636ms] 4 take left fork
+[45636ms] 4 is eating
+[45636ms] 2 is eating
+[45842ms] 2 is sleeping
+[45842ms] 4 is sleeping
+[45842ms] 1 take left fork
+[45842ms] 1 take right fork
+[45842ms] 1 is eating
+[45842ms] 3 take left fork
+[45842ms] 3 take right fork
+[45842ms] 3 is eating
+[46047ms] 3 is sleeping
+[46047ms] 4 take right fork
+[46047ms] 1 is sleeping
+[46047ms] 2 take left fork
+[46047ms] 2 take right fork
+[46047ms] 2 is eating
+[46047ms] 4 take left fork
+[46047ms] 4 is eating
+[46252ms] 4 is sleeping
+[46252ms] 2 is sleeping
+[46253ms] 3 take left fork
+[46253ms] 3 take right fork
+[46253ms] 3 is eating
+[46253ms] 1 take left fork
+[46253ms] 1 take right fork
+[46253ms] 1 is eating
+[46458ms] 1 is sleeping
+[46458ms] 4 take right fork
+[46458ms] 2 take left fork
+[46458ms] 4 take left fork
+[46458ms] 4 is eating
+[46458ms] 3 is sleeping
+[46458ms] 2 take right fork
+[46458ms] 2 is eating
+[46659ms] 4 is sleeping
+[46659ms] 2 is sleeping
+[46659ms] 1 take left fork
+[46659ms] 1 take right fork
+[46659ms] 1 is eating
+[46659ms] 3 take left fork
+[46659ms] 3 take right fork
+[46659ms] 3 is eating
+[46862ms] 1 is sleeping
+[46862ms] 2 take left fork
+[46862ms] 2 take right fork
+[46862ms] 2 is eating
+[46862ms] 3 is sleeping
+[46862ms] 4 take right fork
+[46862ms] 4 take left fork
+[46862ms] 4 is eating
+[47068ms] 2 is sleeping
+[47068ms] 4 is sleeping
+[47068ms] 1 take left fork
+[47068ms] 1 take right fork
+[47068ms] 3 take left fork
+[47068ms] 3 take right fork
+[47068ms] 3 is eating
+[47068ms] 1 is eating
+[47273ms] 3 is sleeping
+[47273ms] 1 is sleeping
+[47273ms] 4 take right fork
+[47273ms] 4 take left fork
+[47273ms] 2 take left fork
+[47273ms] 2 take right fork
+[47273ms] 2 is eating
+[47273ms] 4 is eating
+[47478ms] 2 is sleeping
+[47478ms] 4 is sleeping
+[47478ms] 1 take left fork
+[47479ms] 1 take right fork
+[47479ms] 1 is eating
+[47479ms] 3 take left fork
+[47479ms] 3 take right fork
+[47479ms] 3 is eating
+[47684ms] 3 is sleeping
+[47684ms] 1 is sleeping
+[47684ms] 2 take left fork
+[47684ms] 4 take right fork
+[47684ms] 4 take left fork
+[47684ms] 4 is eating
+[47684ms] 2 take right fork
+[47684ms] 2 is eating
+[47889ms] 2 is sleeping
+[47889ms] 4 is sleeping
+[47889ms] 3 take left fork
+[47889ms] 3 take right fork
+[47889ms] 3 is eating
+[47889ms] 1 take left fork
+[47889ms] 1 take right fork
+[47889ms] 1 is eating
+[48093ms] 3 is sleeping
+[48093ms] 1 is sleeping
+[48093ms] 2 take left fork
+[48093ms] 2 take right fork
+[48093ms] 2 is eating
+[48093ms] 4 take right fork
+[48093ms] 4 take left fork
+[48093ms] 4 is eating
+[48298ms] 2 is sleeping
+[48298ms] 4 is sleeping
+[48298ms] 3 take left fork
+[48298ms] 3 take right fork
+[48298ms] 3 is eating
+[48298ms] 1 take left fork
+[48298ms] 1 take right fork
+[48298ms] 1 is eating
+[48503ms] 3 is sleeping
+[48503ms] 2 take left fork
+[48503ms] 2 take right fork
+[48503ms] 2 is eating
+[48503ms] 4 take right fork
+[48503ms] 4 take left fork
+[48503ms] 4 is eating
+[48503ms] 1 is sleeping
+[48709ms] 2 is sleeping
+[48709ms] 4 is sleeping
+[48709ms] 3 take left fork
+[48709ms] 3 take right fork
+[48709ms] 3 is eating
+[48709ms] 1 take left fork
+[48709ms] 1 take right fork
+[48709ms] 1 is eating
+[48915ms] 3 is sleeping
+[48915ms] 2 take left fork
+[48915ms] 2 take right fork
+[48915ms] 1 is sleeping
+[48915ms] 2 is eating
+[48915ms] 4 take right fork
+[48915ms] 4 take left fork
+[48915ms] 4 is eating
+[49119ms] 2 is sleeping
+[49119ms] 4 is sleeping
+[49120ms] 3 take left fork
+[49120ms] 3 take right fork
+[49120ms] 3 is eating
+[49120ms] 1 take left fork
+[49120ms] 1 take right fork
+[49120ms] 1 is eating
+[49322ms] 3 is sleeping
+[49323ms] 4 take right fork
+[49322ms] 1 is sleeping
+[49323ms] 2 take left fork
+[49323ms] 4 take left fork
+[49323ms] 4 is eating
+[49323ms] 2 take right fork
+[49323ms] 2 is eating
+[49528ms] 4 is sleeping
+[49528ms] 2 is sleeping
+[49528ms] 3 take left fork
+[49528ms] 3 take right fork
+[49528ms] 3 is eating
+[49528ms] 1 take left fork
+[49528ms] 1 take right fork
+[49528ms] 1 is eating
+[49731ms] 3 is sleeping
+[49731ms] 1 is sleeping
+[49731ms] 4 take right fork
+[49731ms] 4 take left fork
+[49731ms] 4 is eating
+[49731ms] 2 take left fork
+[49731ms] 2 take right fork
+[49731ms] 2 is eating
+[49934ms] 2 is sleeping
+[49934ms] 4 is sleeping
+[49934ms] 3 take left fork
+[49934ms] 3 take right fork
+[49934ms] 3 is eating
+[49934ms] 1 take left fork
+[49934ms] 1 take right fork
+[49934ms] 1 is eating
+[50134ms] 3 is sleeping
+[50134ms] 2 take left fork
+[50134ms] 2 take right fork
+[50134ms] 2 is eating
+[50134ms] 1 is sleeping
+[50134ms] 4 take right fork
+[50134ms] 4 take left fork
+[50134ms] 4 is eating
+[50337ms] 4 is sleeping
+[50337ms] 2 is sleeping
+[50337ms] 3 take left fork
+[50337ms] 3 take right fork
+[50337ms] 1 take left fork
+[50337ms] 1 take right fork
+[50337ms] 1 is eating
+[50337ms] 3 is eating
+[50540ms] 3 is sleeping
+[50540ms] 1 is sleeping
+[50540ms] 4 take right fork
+[50540ms] 4 take left fork
+[50540ms] 2 take left fork
+[50540ms] 2 take right fork
+[50540ms] 2 is eating
+[50540ms] 4 is eating
+[50743ms] 2 is sleeping
+[50743ms] 4 is sleeping
+[50743ms] 3 take left fork
+[50743ms] 3 take right fork
+[50743ms] 3 is eating
+[50743ms] 1 take left fork
+[50743ms] 1 take right fork
+[50743ms] 1 is eating
+[50946ms] 3 is sleeping
+[50946ms] 2 take left fork
+[50946ms] 2 take right fork
+[50946ms] 2 is eating
+[50946ms] 4 take right fork
+[50946ms] 4 take left fork
+[50946ms] 4 is eating
+[50946ms] 1 is sleeping
+[51148ms] 4 is sleeping
+[51148ms] 2 is sleeping
+[51148ms] 3 take left fork
+[51148ms] 3 take right fork
+[51148ms] 3 is eating
+[51148ms] 1 take left fork
+[51148ms] 1 take right fork
+[51148ms] 1 is eating
+[51351ms] 3 is sleeping
+[51351ms] 2 take left fork
+[51351ms] 2 take right fork
+[51351ms] 2 is eating
+[51351ms] 1 is sleeping
+[51351ms] 4 take right fork
+[51351ms] 4 take left fork
+[51351ms] 4 is eating
+[51554ms] 4 is sleeping
+[51554ms] 2 is sleeping
+[51554ms] 3 take left fork
+[51554ms] 3 take right fork
+[51554ms] 3 is eating
+[51554ms] 1 take left fork
+[51554ms] 1 take right fork
+[51554ms] 1 is eating
+[51757ms] 3 is sleeping
+[51757ms] 2 take left fork
+[51757ms] 2 take right fork
+[51757ms] 2 is eating
+[51757ms] 1 is sleeping
+[51757ms] 4 take right fork
+[51757ms] 4 take left fork
+[51757ms] 4 is eating
+[51960ms] 2 is sleeping
+[51960ms] 4 is sleeping
+[51961ms] 3 take left fork
+[51961ms] 3 take right fork
+[51961ms] 3 is eating
+[51961ms] 1 take left fork
+[51961ms] 1 take right fork
+[51961ms] 1 is eating
+[52162ms] 3 is sleeping
+[52162ms] 1 is sleeping
+[52162ms] 4 take right fork
+[52162ms] 2 take left fork
+[52162ms] 2 take right fork
+[52162ms] 2 is eating
+[52162ms] 4 take left fork
+[52162ms] 4 is eating
+[52365ms] 4 is sleeping
+[52365ms] 2 is sleeping
+[52365ms] 3 take left fork
+[52365ms] 3 take right fork
+[52365ms] 3 is eating
+[52365ms] 1 take left fork
+[52365ms] 1 take right fork
+[52365ms] 1 is eating
+[52568ms] 1 is sleeping
+[52568ms] 4 take right fork
+[52568ms] 2 take left fork
+[52568ms] 2 take right fork
+[52568ms] 2 is eating
+[52568ms] 3 is sleeping
+[52568ms] 4 take left fork
+[52568ms] 4 is eating
+[52771ms] 2 is sleeping
+[52771ms] 4 is sleeping
+[52771ms] 1 take left fork
+[52771ms] 1 take right fork
+[52771ms] 1 is eating
+[52771ms] 3 take left fork
+[52771ms] 3 take right fork
+[52771ms] 3 is eating
+[52975ms] 3 is sleeping
+[52975ms] 1 is sleeping
+[52975ms] 2 take left fork
+[52975ms] 2 take right fork
+[52975ms] 2 is eating
+[52975ms] 4 take right fork
+[52975ms] 4 take left fork
+[52975ms] 4 is eating
+[53176ms] 2 is sleeping
+[53176ms] 4 is sleeping
+[53177ms] 1 take left fork
+[53177ms] 1 take right fork
+[53177ms] 1 is eating
+[53177ms] 3 take left fork
+[53177ms] 3 take right fork
+[53177ms] 3 is eating
+[53379ms] 3 is sleeping
+[53379ms] 1 is sleeping
+[53379ms] 2 take left fork
+[53379ms] 2 take right fork
+[53379ms] 2 is eating
+[53379ms] 4 take right fork
+[53379ms] 4 take left fork
+[53379ms] 4 is eating
+[53581ms] 4 is sleeping
+[53581ms] 2 is sleeping
+[53582ms] 3 take left fork
+[53582ms] 3 take right fork
+[53582ms] 3 is eating
+[53582ms] 1 take left fork
+[53582ms] 1 take right fork
+[53582ms] 1 is eating
+[53784ms] 3 is sleeping
+[53784ms] 1 is sleeping
+[53784ms] 4 take right fork
+[53784ms] 4 take left fork
+[53784ms] 4 is eating
+[53784ms] 2 take left fork
+[53784ms] 2 take right fork
+[53784ms] 2 is eating
+[53990ms] 4 is sleeping
+[53990ms] 2 is sleeping
+[53990ms] 3 take left fork
+[53990ms] 3 take right fork
+[53990ms] 3 is eating
+[53990ms] 1 take left fork
+[53990ms] 1 take right fork
+[53990ms] 1 is eating
+[54190ms] 2 take left fork
+[54190ms] 2 take right fork
+[54190ms] 3 is sleeping
+[54190ms] 1 is sleeping
+[54190ms] 4 take right fork
+[54190ms] 2 is eating
+[54190ms] 4 take left fork
+[54190ms] 4 is eating
+[54393ms] 4 is sleeping
+[54393ms] 2 is sleeping
+[54393ms] 3 take left fork
+[54393ms] 3 take right fork
+[54393ms] 3 is eating
+[54393ms] 1 take left fork
+[54393ms] 1 take right fork
+[54393ms] 1 is eating
+[54593ms] 3 is sleeping
+[54593ms] 1 is sleeping
+[54593ms] 2 take left fork
+[54593ms] 2 take right fork
+[54593ms] 2 is eating
+[54593ms] 4 take right fork
+[54593ms] 4 take left fork
+[54593ms] 4 is eating
+[54798ms] 2 is sleeping
+[54798ms] 4 is sleeping
+[54798ms] 3 take left fork
+[54798ms] 3 take right fork
+[54798ms] 3 is eating
+[54798ms] 1 take left fork
+[54798ms] 1 take right fork
+[54798ms] 1 is eating
+[55001ms] 1 is sleeping
+[55001ms] 4 take right fork
+[55001ms] 4 take left fork
+[55001ms] 4 is eating
+[55001ms] 3 is sleeping
+[55001ms] 2 take left fork
+[55001ms] 2 take right fork
+[55001ms] 2 is eating
+[55204ms] 4 is sleeping
+[55204ms] 2 is sleeping
+[55204ms] 1 take left fork
+[55204ms] 1 take right fork
+[55204ms] 1 is eating
+[55204ms] 3 take left fork
+[55204ms] 3 take right fork
+[55204ms] 3 is eating
+[55406ms] 3 is sleeping
+[55406ms] 1 is sleeping
+[55406ms] 4 take right fork
+[55406ms] 4 take left fork
+[55406ms] 2 take left fork
+[55406ms] 2 take right fork
+[55406ms] 2 is eating
+[55406ms] 4 is eating
+[55609ms] 4 is sleeping
+[55609ms] 2 is sleeping
+[55609ms] 3 take left fork
+[55609ms] 3 take right fork
+[55609ms] 3 is eating
+[55609ms] 1 take left fork
+[55609ms] 1 take right fork
+[55609ms] 1 is eating
+[55810ms] 3 is sleeping
+[55814ms] 1 is sleeping
+[55814ms] 2 take left fork
+[55814ms] 4 take right fork
+[55814ms] 4 take left fork
+[55814ms] 4 is eating
+[55814ms] 2 take right fork
+[55814ms] 2 is eating
+[56019ms] 4 is sleeping
+[56019ms] 3 take left fork
+[56019ms] 3 take right fork
+[56019ms] 2 is sleeping
+[56019ms] 3 is eating
+[56019ms] 1 take left fork
+[56019ms] 1 take right fork
+[56019ms] 1 is eating
+[56224ms] 3 is sleeping
+[56224ms] 1 is sleeping
+[56224ms] 2 take left fork
+[56224ms] 2 take right fork
+[56224ms] 2 is eating
+[56224ms] 4 take right fork
+[56224ms] 4 take left fork
+[56224ms] 4 is eating
+[56429ms] 2 is sleeping
+[56429ms] 4 is sleeping
+[56430ms] 3 take left fork
+[56430ms] 3 take right fork
+[56430ms] 3 is eating
+[56430ms] 1 take left fork
+[56430ms] 1 take right fork
+[56430ms] 1 is eating
+[56635ms] 3 is sleeping
+[56635ms] 2 take left fork
+[56635ms] 2 take right fork
+[56635ms] 1 is sleeping
+[56635ms] 2 is eating
+[56635ms] 4 take right fork
+[56635ms] 4 take left fork
+[56635ms] 4 is eating
+[56840ms] 4 is sleeping
+[56840ms] 2 is sleeping
+[56840ms] 1 take left fork
+[56840ms] 1 take right fork
+[56840ms] 1 is eating
+[56840ms] 3 take left fork
+[56840ms] 3 take right fork
+[56840ms] 3 is eating
+[57045ms] 3 is sleeping
+[57045ms] 1 is sleeping
+[57045ms] 2 take left fork
+[57045ms] 4 take right fork
+[57045ms] 4 take left fork
+[57045ms] 4 is eating
+[57045ms] 2 take right fork
+[57045ms] 2 is eating
+[57251ms] 4 is sleeping
+[57251ms] 2 is sleeping
+[57251ms] 3 take left fork
+[57251ms] 3 take right fork
+[57251ms] 3 is eating
+[57251ms] 1 take left fork
+[57251ms] 1 take right fork
+[57251ms] 1 is eating
+[57456ms] 3 is sleeping
+[57456ms] 1 is sleeping
+[57456ms] 2 take left fork
+[57456ms] 2 take right fork
+[57456ms] 2 is eating
+[57456ms] 4 take right fork
+[57456ms] 4 take left fork
+[57456ms] 4 is eating
+[57657ms] 4 is sleeping
+[57657ms] 2 is sleeping
+[57657ms] 3 take left fork
+[57657ms] 3 take right fork
+[57657ms] 3 is eating
+[57657ms] 1 take left fork
+[57657ms] 1 take right fork
+[57657ms] 1 is eating
+[57862ms] 3 is sleeping
+[57862ms] 2 take left fork
+[57862ms] 4 take right fork
+[57862ms] 1 is sleeping
+[57862ms] 4 take left fork
+[57862ms] 4 is eating
+[57862ms] 2 take right fork
+[57862ms] 2 is eating
+[58065ms] 2 is sleeping
+[58065ms] 4 is sleeping
+[58065ms] 1 take left fork
+[58065ms] 1 take right fork
+[58065ms] 1 is eating
+[58065ms] 3 take left fork
+[58065ms] 3 take right fork
+[58065ms] 3 is eating
+[58270ms] 3 is sleeping
+[58270ms] 4 take right fork
+[58270ms] 2 take left fork
+[58270ms] 2 take right fork
+[58270ms] 2 is eating
+[58270ms] 4 take left fork
+[58270ms] 4 is eating
+[58270ms] 1 is sleeping
+[58475ms] 4 is sleeping
+[58475ms] 2 is sleeping
+[58476ms] 3 take left fork
+[58476ms] 3 take right fork
+[58476ms] 3 is eating
+[58476ms] 1 take left fork
+[58476ms] 1 take right fork
+[58476ms] 1 is eating
+[58680ms] 3 is sleeping
+[58680ms] 1 is sleeping
+[58680ms] 4 take right fork
+[58680ms] 4 take left fork
+[58680ms] 4 is eating
+[58680ms] 2 take left fork
+[58680ms] 2 take right fork
+[58680ms] 2 is eating
+[58885ms] 4 is sleeping
+[58885ms] 2 is sleeping
+[58885ms] 3 take left fork
+[58885ms] 3 take right fork
+[58885ms] 3 is eating
+[58885ms] 1 take left fork
+[58885ms] 1 take right fork
+[58885ms] 1 is eating
+[59088ms] 2 take left fork
+[59088ms] 4 take right fork
+[59088ms] 3 is sleeping
+[59088ms] 1 is sleeping
+[59088ms] 2 take right fork
+[59088ms] 2 is eating
+[59088ms] 4 take left fork
+[59088ms] 4 is eating
+[59289ms] 2 is sleeping
+[59289ms] 4 is sleeping
+[59289ms] 3 take left fork
+[59289ms] 3 take right fork
+[59289ms] 3 is eating
+[59289ms] 1 take left fork
+[59289ms] 1 take right fork
+[59289ms] 1 is eating
+[59494ms] 3 is sleeping
+[59494ms] 1 is sleeping
+[59494ms] 2 take left fork
+[59494ms] 2 take right fork
+[59494ms] 2 is eating
+[59494ms] 4 take right fork
+[59494ms] 4 take left fork
+[59494ms] 4 is eating
+[59699ms] 2 is sleeping
+[59699ms] 4 is sleeping
+[59700ms] 1 take left fork
+[59700ms] 1 take right fork
+[59700ms] 1 is eating
+[59700ms] 3 take left fork
+[59700ms] 3 take right fork
+[59700ms] 3 is eating
+[59905ms] 1 is sleeping
+[59905ms] 2 take left fork
+[59905ms] 3 is sleeping
+[59905ms] 4 take right fork
+[59905ms] 4 take left fork
+[59905ms] 4 is eating
+[59905ms] 2 take right fork
+[59905ms] 2 is eating
+[60110ms] 4 is sleeping
+[60110ms] 2 is sleeping
+[60110ms] 1 take left fork
+[60111ms] 1 take right fork
+[60111ms] 1 is eating
+[60111ms] 3 take left fork
+[60111ms] 3 take right fork
+[60111ms] 3 is eating
+[60314ms] 2 take left fork
+[60314ms] 1 is sleeping
+[60314ms] 2 take right fork
+[60314ms] 2 is eating
+[60314ms] 3 is sleeping
+[60314ms] 4 take right fork
+[60314ms] 4 take left fork
+[60314ms] 4 is eating
+[60519ms] 2 is sleeping
+[60519ms] 4 is sleeping
+[60520ms] 1 take left fork
+[60520ms] 1 take right fork
+[60520ms] 1 is eating
+[60520ms] 3 take left fork
+[60520ms] 3 take right fork
+[60520ms] 3 is eating
+[60725ms] 1 is sleeping
+[60725ms] 3 is sleeping
+[60725ms] 4 take right fork
+[60725ms] 4 take left fork
+[60725ms] 4 is eating
+[60725ms] 2 take left fork
+[60725ms] 2 take right fork
+[60725ms] 2 is eating
+[60931ms] 2 is sleeping
+[60931ms] 4 is sleeping
+[60931ms] 1 take left fork
+[60931ms] 1 take right fork
+[60931ms] 1 is eating
+[60931ms] 3 take left fork
+[60932ms] 3 take right fork
+[60932ms] 3 is eating
+[61136ms] 1 is sleeping
+[61136ms] 2 take left fork
+[61136ms] 4 take right fork
+[61136ms] 4 take left fork
+[61136ms] 4 is eating
+[61136ms] 3 is sleeping
+[61136ms] 2 take right fork
+[61136ms] 2 is eating
+[61341ms] 4 is sleeping
+[61341ms] 2 is sleeping
+[61341ms] 1 take left fork
+[61341ms] 1 take right fork
+[61341ms] 1 is eating
+[61341ms] 3 take left fork
+[61341ms] 3 take right fork
+[61341ms] 3 is eating
+[61544ms] 3 is sleeping
+[61544ms] 1 is sleeping
+[61544ms] 4 take right fork
+[61544ms] 4 take left fork
+[61544ms] 4 is eating
+[61544ms] 2 take left fork
+[61544ms] 2 take right fork
+[61544ms] 2 is eating
+[61744ms] 4 is sleeping
+[61744ms] 2 is sleeping
+[61745ms] 1 take left fork
+[61745ms] 1 take right fork
+[61745ms] 1 is eating
+[61745ms] 3 take left fork
+[61745ms] 3 take right fork
+[61745ms] 3 is eating
+[61951ms] 3 is sleeping
+[61951ms] 1 is sleeping
+[61951ms] 2 take left fork
+[61951ms] 2 take right fork
+[61951ms] 2 is eating
+[61951ms] 4 take right fork
+[61951ms] 4 take left fork
+[61951ms] 4 is eating
+[62155ms] 2 is sleeping
+[62155ms] 4 is sleeping
+[62155ms] 3 take left fork
+[62156ms] 3 take right fork
+[62156ms] 3 is eating
+[62155ms] 1 take left fork
+[62156ms] 1 take right fork
+[62156ms] 1 is eating
+[62356ms] 1 is sleeping
+[62356ms] 4 take right fork
+[62356ms] 2 take left fork
+[62356ms] 2 take right fork
+[62356ms] 2 is eating
+[62356ms] 4 take left fork
+[62356ms] 4 is eating
+[62356ms] 3 is sleeping
+[62561ms] 2 is sleeping
+[62561ms] 4 is sleeping
+[62561ms] 1 take left fork
+[62562ms] 1 take right fork
+[62562ms] 1 is eating
+[62562ms] 3 take left fork
+[62562ms] 3 take right fork
+[62562ms] 3 is eating
+[62762ms] 3 is sleeping
+[62762ms] 1 is sleeping
+[62762ms] 4 take right fork
+[62762ms] 2 take left fork
+[62762ms] 2 take right fork
+[62762ms] 2 is eating
+[62762ms] 4 take left fork
+[62762ms] 4 is eating
+[62968ms] 2 is sleeping
+[62968ms] 4 is sleeping
+[62969ms] 3 take left fork
+[62969ms] 3 take right fork
+[62969ms] 3 is eating
+[62969ms] 1 take left fork
+[62969ms] 1 take right fork
+[62969ms] 1 is eating
+[63172ms] 3 is sleeping
+[63172ms] 1 is sleeping
+[63173ms] 4 take right fork
+[63173ms] 4 take left fork
+[63173ms] 4 is eating
+[63172ms] 2 take left fork
+[63173ms] 2 take right fork
+[63173ms] 2 is eating
+[63378ms] 4 is sleeping
+[63378ms] 2 is sleeping
+[63378ms] 3 take left fork
+[63378ms] 3 take right fork
+[63378ms] 1 take left fork
+[63378ms] 1 take right fork
+[63378ms] 1 is eating
+[63378ms] 3 is eating
+[63583ms] 3 is sleeping
+[63583ms] 1 is sleeping
+[63583ms] 2 take left fork
+[63583ms] 2 take right fork
+[63583ms] 2 is eating
+[63583ms] 4 take right fork
+[63583ms] 4 take left fork
+[63583ms] 4 is eating
+[63784ms] 4 is sleeping
+[63784ms] 2 is sleeping
+[63784ms] 1 take left fork
+[63784ms] 1 take right fork
+[63784ms] 1 is eating
+[63784ms] 3 take left fork
+[63784ms] 3 take right fork
+[63784ms] 3 is eating
+[63990ms] 3 is sleeping
+[63990ms] 1 is sleeping
+[63990ms] 2 take left fork
+[63990ms] 2 take right fork
+[63990ms] 2 is eating
+[63990ms] 4 take right fork
+[63990ms] 4 take left fork
+[63990ms] 4 is eating
+[64194ms] 4 is sleeping
+[64194ms] 2 is sleeping
+[64195ms] 3 take left fork
+[64195ms] 3 take right fork
+[64195ms] 3 is eating
+[64195ms] 1 take left fork
+[64195ms] 1 take right fork
+[64195ms] 1 is eating
+[64400ms] 3 is sleeping
+[64400ms] 2 take left fork
+[64400ms] 4 take right fork
+[64400ms] 1 is sleeping
+[64400ms] 4 take left fork
+[64400ms] 4 is eating
+[64400ms] 2 take right fork
+[64400ms] 2 is eating
+[64605ms] 4 is sleeping
+[64605ms] 2 is sleeping
+[64605ms] 3 take left fork
+[64605ms] 3 take right fork
+[64605ms] 3 is eating
+[64605ms] 1 take left fork
+[64605ms] 1 take right fork
+[64605ms] 1 is eating
+[64808ms] 3 is sleeping
+[64808ms] 1 is sleeping
+[64808ms] 2 take left fork
+[64808ms] 2 take right fork
+[64808ms] 2 is eating
+[64808ms] 4 take right fork
+[64809ms] 4 take left fork
+[64809ms] 4 is eating
+[65014ms] 4 is sleeping
+[65014ms] 2 is sleeping
+[65014ms] 3 take left fork
+[65014ms] 3 take right fork
+[65014ms] 3 is eating
+[65014ms] 1 take left fork
+[65014ms] 1 take right fork
+[65014ms] 1 is eating
+[65218ms] 1 is sleeping
+[65218ms] 2 take left fork
+[65218ms] 2 take right fork
+[65218ms] 2 is eating
+[65218ms] 3 is sleeping
+[65218ms] 4 take right fork
+[65218ms] 4 take left fork
+[65218ms] 4 is eating
+[65423ms] 2 is sleeping
+[65423ms] 4 is sleeping
+[65424ms] 1 take left fork
+[65424ms] 1 take right fork
+[65424ms] 1 is eating
+[65424ms] 3 take left fork
+[65424ms] 3 take right fork
+[65424ms] 3 is eating
+[65629ms] 3 is sleeping
+[65629ms] 4 take right fork
+[65629ms] 2 take left fork
+[65629ms] 1 is sleeping
+[65629ms] 4 take left fork
+[65629ms] 4 is eating
+[65629ms] 2 take right fork
+[65629ms] 2 is eating
+[65834ms] 4 is sleeping
+[65834ms] 2 is sleeping
+[65834ms] 3 take left fork
+[65834ms] 3 take right fork
+[65834ms] 3 is eating
+[65834ms] 1 take left fork
+[65834ms] 1 take right fork
+[65834ms] 1 is eating
+[66039ms] 3 is sleeping
+[66039ms] 1 is sleeping
+[66039ms] 2 take left fork
+[66039ms] 2 take right fork
+[66039ms] 2 is eating
+[66039ms] 4 take right fork
+[66039ms] 4 take left fork
+[66039ms] 4 is eating
+[66244ms] 2 is sleeping
+[66244ms] 4 is sleeping
+[66245ms] 3 take left fork
+[66245ms] 3 take right fork
+[66245ms] 3 is eating
+[66245ms] 1 take left fork
+[66245ms] 1 take right fork
+[66245ms] 1 is eating
+[66450ms] 3 is sleeping
+[66450ms] 2 take left fork
+[66450ms] 2 take right fork
+[66450ms] 1 is sleeping
+[66450ms] 4 take right fork
+[66450ms] 4 take left fork
+[66450ms] 4 is eating
+[66450ms] 2 is eating
+[66655ms] 2 is sleeping
+[66655ms] 4 is sleeping
+[66655ms] 1 take left fork
+[66655ms] 1 take right fork
+[66655ms] 1 is eating
+[66655ms] 3 take left fork
+[66655ms] 3 take right fork
+[66655ms] 3 is eating
+[66858ms] 3 is sleeping
+[66858ms] 1 is sleeping
+[66858ms] 2 take left fork
+[66858ms] 2 take right fork
+[66858ms] 2 is eating
+[66858ms] 4 take right fork
+[66858ms] 4 take left fork
+[66858ms] 4 is eating
+[67061ms] 4 is sleeping
+[67061ms] 2 is sleeping
+[67061ms] 1 take left fork
+[67061ms] 1 take right fork
+[67061ms] 1 is eating
+[67061ms] 3 take left fork
+[67061ms] 3 take right fork
+[67061ms] 3 is eating
+[67265ms] 3 is sleeping
+[67265ms] 1 is sleeping
+[67265ms] 4 take right fork
+[67265ms] 4 take left fork
+[67265ms] 4 is eating
+[67265ms] 2 take left fork
+[67265ms] 2 take right fork
+[67265ms] 2 is eating
+[67468ms] 2 is sleeping
+[67468ms] 4 is sleeping
+[67468ms] 3 take left fork
+[67468ms] 3 take right fork
+[67468ms] 3 is eating
+[67468ms] 1 take left fork
+[67468ms] 1 take right fork
+[67468ms] 1 is eating
+[67673ms] 3 is sleeping
+[67673ms] 2 take left fork
+[67673ms] 2 take right fork
+[67673ms] 2 is eating
+[67673ms] 1 is sleeping
+[67673ms] 4 take right fork
+[67673ms] 4 take left fork
+[67673ms] 4 is eating
+[67878ms] 4 is sleeping
+[67878ms] 2 is sleeping
+[67879ms] 3 take left fork
+[67879ms] 3 take right fork
+[67879ms] 3 is eating
+[67879ms] 1 take left fork
+[67879ms] 1 take right fork
+[67879ms] 1 is eating
+[68083ms] 3 is sleeping
+[68084ms] 1 is sleeping
+[68084ms] 4 take right fork
+[68084ms] 4 take left fork
+[68084ms] 4 is eating
+[68084ms] 2 take left fork
+[68084ms] 2 take right fork
+[68084ms] 2 is eating
+[68284ms] 2 is sleeping
+[68284ms] 4 is sleeping
+[68285ms] 3 take left fork
+[68285ms] 3 take right fork
+[68285ms] 3 is eating
+[68285ms] 1 take left fork
+[68285ms] 1 take right fork
+[68285ms] 1 is eating
+[68490ms] 3 is sleeping
+[68490ms] 2 take left fork
+[68490ms] 2 take right fork
+[68490ms] 2 is eating
+[68490ms] 4 take right fork
+[68490ms] 4 take left fork
+[68490ms] 4 is eating
+[68490ms] 1 is sleeping
+[68690ms] 4 is sleeping
+[68690ms] 2 is sleeping
+[68690ms] 3 take left fork
+[68690ms] 3 take right fork
+[68690ms] 3 is eating
+[68690ms] 1 take left fork
+[68690ms] 1 take right fork
+[68690ms] 1 is eating
+[68895ms] 3 is sleeping
+[68895ms] 1 is sleeping
+[68895ms] 2 take left fork
+[68895ms] 2 take right fork
+[68895ms] 2 is eating
+[68895ms] 4 take right fork
+[68895ms] 4 take left fork
+[68895ms] 4 is eating
+[69101ms] 2 is sleeping
+[69101ms] 4 is sleeping
+[69101ms] 3 take left fork
+[69101ms] 3 take right fork
+[69101ms] 3 is eating
+[69101ms] 1 take left fork
+[69101ms] 1 take right fork
+[69101ms] 1 is eating
+[69304ms] 3 is sleeping
+[69304ms] 1 is sleeping
+[69304ms] 4 take right fork
+[69304ms] 4 take left fork
+[69304ms] 4 is eating
+[69304ms] 2 take left fork
+[69304ms] 2 take right fork
+[69304ms] 2 is eating
+[69506ms] 2 is sleeping
+[69506ms] 4 is sleeping
+[69506ms] 3 take left fork
+[69506ms] 3 take right fork
+[69506ms] 3 is eating
+[69506ms] 1 take left fork
+[69506ms] 1 take right fork
+[69506ms] 1 is eating
+[69708ms] 3 is sleeping
+[69708ms] 1 is sleeping
+[69708ms] 4 take right fork
+[69708ms] 4 take left fork
+[69708ms] 4 is eating
+[69708ms] 2 take left fork
+[69708ms] 2 take right fork
+[69708ms] 2 is eating
+[69911ms] 4 is sleeping
+[69911ms] 2 is sleeping
+[69911ms] 3 take left fork
+[69911ms] 3 take right fork
+[69911ms] 3 is eating
+[69911ms] 1 take left fork
+[69911ms] 1 take right fork
+[69911ms] 1 is eating
+[70116ms] 3 is sleeping
+[70116ms] 2 take left fork
+[70116ms] 2 take right fork
+[70116ms] 2 is eating
+[70116ms] 1 is sleeping
+[70116ms] 4 take right fork
+[70116ms] 4 take left fork
+[70116ms] 4 is eating
+[70321ms] 2 is sleeping
+[70321ms] 4 is sleeping
+[70321ms] 3 take left fork
+[70321ms] 3 take right fork
+[70321ms] 3 is eating
+[70321ms] 1 take left fork
+[70321ms] 1 take right fork
+[70321ms] 1 is eating
+[70526ms] 3 is sleeping
+[70526ms] 2 take left fork
+[70526ms] 1 is sleeping
+[70526ms] 4 take right fork
+[70526ms] 4 take left fork
+[70526ms] 4 is eating
+[70526ms] 2 take right fork
+[70526ms] 2 is eating
+[70732ms] 2 is sleeping
+[70732ms] 4 is sleeping
+[70732ms] 1 take left fork
+[70732ms] 1 take right fork
+[70732ms] 1 is eating
+[70732ms] 3 take left fork
+[70732ms] 3 take right fork
+[70732ms] 3 is eating
+[70938ms] 1 is sleeping
+[70938ms] 2 take left fork
+[70938ms] 2 take right fork
+[70938ms] 2 is eating
+[70938ms] 3 is sleeping
+[70938ms] 4 take right fork
+[70938ms] 4 take left fork
+[70938ms] 4 is eating
+[71142ms] 2 is sleeping
+[71142ms] 4 is sleeping
+[71143ms] 1 take left fork
+[71143ms] 1 take right fork
+[71143ms] 1 is eating
+[71143ms] 3 take left fork
+[71143ms] 3 take right fork
+[71143ms] 3 is eating
+[71343ms] 3 is sleeping
+[71343ms] 1 is sleeping
+[71343ms] 2 take left fork
+[71343ms] 4 take right fork
+[71343ms] 4 take left fork
+[71343ms] 4 is eating
+[71343ms] 2 take right fork
+[71343ms] 2 is eating
+[71548ms] 4 is sleeping
+[71548ms] 2 is sleeping
+[71549ms] 3 take left fork
+[71549ms] 3 take right fork
+[71549ms] 3 is eating
+[71549ms] 1 take left fork
+[71549ms] 1 take right fork
+[71549ms] 1 is eating
+[71754ms] 3 is sleeping
+[71754ms] 2 take left fork
+[71754ms] 1 is sleeping
+[71754ms] 4 take right fork
+[71754ms] 4 take left fork
+[71754ms] 4 is eating
+[71754ms] 2 take right fork
+[71754ms] 2 is eating
+[71960ms] 2 is sleeping
+[71960ms] 4 is sleeping
+[71960ms] 3 take left fork
+[71960ms] 3 take right fork
+[71960ms] 3 is eating
+[71960ms] 1 take left fork
+[71960ms] 1 take right fork
+[71960ms] 1 is eating
+[72164ms] 3 is sleeping
+[72164ms] 2 take left fork
+[72164ms] 1 is sleeping
+[72164ms] 2 take right fork
+[72164ms] 2 is eating
+[72164ms] 4 take right fork
+[72164ms] 4 take left fork
+[72164ms] 4 is eating
+[72365ms] 4 is sleeping
+[72365ms] 2 is sleeping
+[72365ms] 3 take left fork
+[72365ms] 3 take right fork
+[72365ms] 3 is eating
+[72365ms] 1 take left fork
+[72365ms] 1 take right fork
+[72365ms] 1 is eating
+[72568ms] 3 is sleeping
+[72568ms] 1 is sleeping
+[72568ms] 2 take left fork
+[72568ms] 2 take right fork
+[72568ms] 2 is eating
+[72568ms] 4 take right fork
+[72568ms] 4 take left fork
+[72568ms] 4 is eating
+[72773ms] 2 is sleeping
+[72773ms] 4 is sleeping
+[72773ms] 3 take left fork
+[72774ms] 3 take right fork
+[72774ms] 3 is eating
+[72774ms] 1 take left fork
+[72774ms] 1 take right fork
+[72774ms] 1 is eating
+[72979ms] 3 is sleeping
+[72979ms] 1 is sleeping
+[72979ms] 4 take right fork
+[72979ms] 2 take left fork
+[72980ms] 2 take right fork
+[72980ms] 2 is eating
+[72980ms] 4 take left fork
+[72980ms] 4 is eating
+[73181ms] 2 is sleeping
+[73181ms] 4 is sleeping
+[73181ms] 3 take left fork
+[73181ms] 3 take right fork
+[73181ms] 3 is eating
+[73181ms] 1 take left fork
+[73181ms] 1 take right fork
+[73181ms] 1 is eating
+[73386ms] 3 is sleeping
+[73386ms] 1 is sleeping
+[73386ms] 4 take right fork
+[73386ms] 4 take left fork
+[73386ms] 4 is eating
+[73386ms] 2 take left fork
+[73386ms] 2 take right fork
+[73386ms] 2 is eating
+[73591ms] 2 is sleeping
+[73591ms] 4 is sleeping
+[73592ms] 1 take left fork
+[73592ms] 1 take right fork
+[73592ms] 3 take left fork
+[73592ms] 3 take right fork
+[73592ms] 3 is eating
+[73592ms] 1 is eating
+[73797ms] 3 is sleeping
+[73797ms] 1 is sleeping
+[73797ms] 2 take left fork
+[73797ms] 2 take right fork
+[73797ms] 2 is eating
+[73797ms] 4 take right fork
+[73797ms] 4 take left fork
+[73797ms] 4 is eating
+[74002ms] 2 is sleeping
+[74002ms] 4 is sleeping
+[74002ms] 3 take left fork
+[74002ms] 3 take right fork
+[74002ms] 3 is eating
+[74002ms] 1 take left fork
+[74002ms] 1 take right fork
+[74002ms] 1 is eating
+[74208ms] 3 is sleeping
+[74208ms] 1 is sleeping
+[74208ms] 4 take right fork
+[74208ms] 4 take left fork
+[74208ms] 2 take left fork
+[74208ms] 2 take right fork
+[74208ms] 2 is eating
+[74208ms] 4 is eating
+[74413ms] 2 is sleeping
+[74413ms] 4 is sleeping
+[74413ms] 3 take left fork
+[74413ms] 3 take right fork
+[74413ms] 3 is eating
+[74413ms] 1 take left fork
+[74413ms] 1 take right fork
+[74413ms] 1 is eating
+[74617ms] 3 is sleeping
+[74617ms] 2 take left fork
+[74617ms] 4 take right fork
+[74617ms] 1 is sleeping
+[74617ms] 4 take left fork
+[74617ms] 4 is eating
+[74617ms] 2 take right fork
+[74617ms] 2 is eating
+[74822ms] 2 is sleeping
+[74822ms] 4 is sleeping
+[74822ms] 1 take left fork
+[74822ms] 1 take right fork
+[74823ms] 1 is eating
+[74822ms] 3 take left fork
+[74823ms] 3 take right fork
+[74823ms] 3 is eating
+[75028ms] 1 is sleeping
+[75028ms] 2 take left fork
+[75028ms] 4 take right fork
+[75028ms] 4 take left fork
+[75028ms] 4 is eating
+[75028ms] 2 take right fork
+[75028ms] 2 is eating
+[75028ms] 3 is sleeping
+[75233ms] 2 is sleeping
+[75233ms] 4 is sleeping
+[75233ms] 1 take left fork
+[75233ms] 1 take right fork
+[75233ms] 1 is eating
+[75233ms] 3 take left fork
+[75233ms] 3 take right fork
+[75233ms] 3 is eating
+[75438ms] 1 is sleeping
+[75438ms] 2 take left fork
+[75438ms] 4 take right fork
+[75438ms] 3 is sleeping
+[75438ms] 2 take right fork
+[75438ms] 2 is eating
+[75438ms] 4 take left fork
+[75438ms] 4 is eating
+[75643ms] 2 is sleeping
+[75643ms] 4 is sleeping
+[75643ms] 1 take left fork
+[75643ms] 1 take right fork
+[75643ms] 1 is eating
+[75643ms] 3 take left fork
+[75643ms] 3 take right fork
+[75643ms] 3 is eating
+[75843ms] 1 is sleeping
+[75843ms] 4 take right fork
+[75843ms] 2 take left fork
+[75843ms] 3 is sleeping
+[75843ms] 4 take left fork
+[75843ms] 4 is eating
+[75843ms] 2 take right fork
+[75843ms] 2 is eating
+[76048ms] 4 is sleeping
+[76048ms] 2 is sleeping
+[76049ms] 1 take left fork
+[76049ms] 1 take right fork
+[76049ms] 1 is eating
+[76049ms] 3 take left fork
+[76049ms] 3 take right fork
+[76049ms] 3 is eating
+[76254ms] 1 is sleeping
+[76254ms] 4 take right fork
+[76254ms] 4 take left fork
+[76254ms] 2 take left fork
+[76254ms] 2 take right fork
+[76254ms] 2 is eating
+[76254ms] 4 is eating
+[76254ms] 3 is sleeping
+[76459ms] 4 is sleeping
+[76459ms] 2 is sleeping
+[76460ms] 1 take left fork
+[76460ms] 1 take right fork
+[76460ms] 1 is eating
+[76460ms] 3 take left fork
+[76460ms] 3 take right fork
+[76460ms] 3 is eating
+[76664ms] 2 take left fork
+[76665ms] 2 take right fork
+[76665ms] 2 is eating
+[76665ms] 1 is sleeping
+[76665ms] 4 take right fork
+[76665ms] 3 is sleeping
+[76665ms] 4 take left fork
+[76665ms] 4 is eating
+[76865ms] 2 is sleeping
+[76865ms] 4 is sleeping
+[76866ms] 1 take left fork
+[76866ms] 1 take right fork
+[76866ms] 1 is eating
+[76866ms] 3 take left fork
+[76866ms] 3 take right fork
+[76866ms] 3 is eating
+[77069ms] 3 is sleeping
+[77069ms] 2 take left fork
+[77069ms] 2 take right fork
+[77069ms] 1 is sleeping
+[77069ms] 2 is eating
+[77069ms] 4 take right fork
+[77069ms] 4 take left fork
+[77069ms] 4 is eating
+[77274ms] 2 is sleeping
+[77274ms] 4 is sleeping
+[77275ms] 3 take left fork
+[77275ms] 3 take right fork
+[77275ms] 3 is eating
+[77275ms] 1 take left fork
+[77275ms] 1 take right fork
+[77275ms] 1 is eating
+[77480ms] 3 is sleeping
+[77480ms] 2 take left fork
+[77480ms] 1 is sleeping
+[77480ms] 4 take right fork
+[77480ms] 4 take left fork
+[77480ms] 4 is eating
+[77480ms] 2 take right fork
+[77480ms] 2 is eating
+[77685ms] 2 is sleeping
+[77685ms] 4 is sleeping
+[77685ms] 3 take left fork
+[77685ms] 3 take right fork
+[77685ms] 3 is eating
+[77685ms] 1 take left fork
+[77685ms] 1 take right fork
+[77685ms] 1 is eating
+[77887ms] 3 is sleeping
+[77887ms] 1 is sleeping
+[77887ms] 2 take left fork
+[77887ms] 2 take right fork
+[77887ms] 2 is eating
+[77887ms] 4 take right fork
+[77887ms] 4 take left fork
+[77887ms] 4 is eating
+[78092ms] 2 is sleeping
+[78092ms] 4 is sleeping
+[78092ms] 1 take left fork
+[78092ms] 1 take right fork
+[78092ms] 1 is eating
+[78092ms] 3 take left fork
+[78092ms] 3 take right fork
+[78092ms] 3 is eating
+[78296ms] 3 is sleeping
+[78296ms] 1 is sleeping
+[78296ms] 2 take left fork
+[78297ms] 2 take right fork
+[78297ms] 2 is eating
+[78296ms] 4 take right fork
+[78297ms] 4 take left fork
+[78297ms] 4 is eating
+[78502ms] 2 is sleeping
+[78502ms] 4 is sleeping
+[78502ms] 3 take left fork
+[78502ms] 3 take right fork
+[78502ms] 3 is eating
+[78502ms] 1 take left fork
+[78502ms] 1 take right fork
+[78502ms] 1 is eating
+[78707ms] 3 is sleeping
+[78707ms] 1 is sleeping
+[78707ms] 2 take left fork
+[78707ms] 2 take right fork
+[78707ms] 2 is eating
+[78707ms] 4 take right fork
+[78707ms] 4 take left fork
+[78707ms] 4 is eating
+[78912ms] 2 is sleeping
+[78912ms] 4 is sleeping
+[78913ms] 3 take left fork
+[78913ms] 3 take right fork
+[78913ms] 3 is eating
+[78913ms] 1 take left fork
+[78913ms] 1 take right fork
+[78913ms] 1 is eating
+[79116ms] 4 take right fork
+[79116ms] 2 take left fork
+[79116ms] 2 take right fork
+[79116ms] 3 is sleeping
+[79116ms] 4 take left fork
+[79116ms] 4 is eating
+[79116ms] 2 is eating
+[79116ms] 1 is sleeping
+[79318ms] 4 is sleeping
+[79318ms] 2 is sleeping
+[79319ms] 3 take left fork
+[79319ms] 3 take right fork
+[79319ms] 3 is eating
+[79319ms] 1 take left fork
+[79319ms] 1 take right fork
+[79319ms] 1 is eating
+[79521ms] 1 is sleeping
+[79521ms] 4 take right fork
+[79521ms] 2 take left fork
+[79523ms] 3 is sleeping
+[79523ms] 4 take left fork
+[79523ms] 4 is eating
+[79523ms] 2 take right fork
+[79523ms] 2 is eating
+[79724ms] 4 is sleeping
+[79724ms] 2 is sleeping
+[79724ms] 1 take left fork
+[79724ms] 1 take right fork
+[79724ms] 1 is eating
+[79724ms] 3 take left fork
+[79724ms] 3 take right fork
+[79724ms] 3 is eating
+[79928ms] 2 take left fork
+[79928ms] 2 take right fork
+[79928ms] 2 is eating
+[79928ms] 1 is sleeping
+[79928ms] 3 is sleeping
+[79928ms] 4 take right fork
+[79928ms] 4 take left fork
+[79928ms] 4 is eating
+[80129ms] 2 is sleeping
+[80129ms] 4 is sleeping
+[80130ms] 1 take left fork
+[80130ms] 3 take left fork
+[80130ms] 3 take right fork
+[80130ms] 3 is eating
+[80130ms] 1 take right fork
+[80130ms] 1 is eating
+[80332ms] 3 is sleeping
+[80332ms] 1 is sleeping
+[80332ms] 2 take left fork
+[80332ms] 4 take right fork
+[80332ms] 4 take left fork
+[80332ms] 2 take right fork
+[80332ms] 2 is eating
+[80332ms] 4 is eating
+[80535ms] 4 is sleeping
+[80535ms] 2 is sleeping
+[80535ms] 3 take left fork
+[80535ms] 3 take right fork
+[80535ms] 3 is eating
+[80535ms] 1 take left fork
+[80535ms] 1 take right fork
+[80535ms] 1 is eating
+[80738ms] 2 take left fork
+[80738ms] 4 take right fork
+[80738ms] 2 take right fork
+[80738ms] 2 is eating
+[80738ms] 4 take left fork
+[80738ms] 4 is eating
+[80738ms] 1 is sleeping
+[80738ms] 3 is sleeping
+[80942ms] 4 is sleeping
+[80942ms] 2 is sleeping
+[80942ms] 3 take left fork
+[80942ms] 3 take right fork
+[80942ms] 3 is eating
+[80942ms] 1 take left fork
+[80942ms] 1 take right fork
+[80942ms] 1 is eating
+[81143ms] 3 is sleeping
+[81143ms] 1 is sleeping
+[81143ms] 2 take left fork
+[81144ms] 2 take right fork
+[81144ms] 2 is eating
+[81143ms] 4 take right fork
+[81144ms] 4 take left fork
+[81144ms] 4 is eating
+[81346ms] 4 is sleeping
+[81346ms] 2 is sleeping
+[81347ms] 3 take left fork
+[81347ms] 3 take right fork
+[81347ms] 3 is eating
+[81347ms] 1 take left fork
+[81347ms] 1 take right fork
+[81347ms] 1 is eating
+[81547ms] 3 is sleeping
+[81547ms] 2 take left fork
+[81547ms] 2 take right fork
+[81547ms] 2 is eating
+[81547ms] 4 take right fork
+[81547ms] 4 take left fork
+[81547ms] 4 is eating
+[81547ms] 1 is sleeping
+[81750ms] 2 is sleeping
+[81750ms] 4 is sleeping
+[81750ms] 3 take left fork
+[81750ms] 1 take left fork
+[81750ms] 1 take right fork
+[81750ms] 1 is eating
+[81750ms] 3 take right fork
+[81750ms] 3 is eating
+[81953ms] 3 is sleeping
+[81953ms] 1 is sleeping
+[81953ms] 2 take left fork
+[81953ms] 2 take right fork
+[81953ms] 2 is eating
+[81953ms] 4 take right fork
+[81954ms] 4 take left fork
+[81954ms] 4 is eating
+[82155ms] 2 is sleeping
+[82155ms] 4 is sleeping
+[82156ms] 3 take left fork
+[82156ms] 3 take right fork
+[82156ms] 3 is eating
+[82156ms] 1 take left fork
+[82156ms] 1 take right fork
+[82156ms] 1 is eating
+[82358ms] 3 is sleeping
+[82358ms] 1 is sleeping
+[82358ms] 4 take right fork
+[82358ms] 2 take left fork
+[82358ms] 2 take right fork
+[82358ms] 2 is eating
+[82358ms] 4 take left fork
+[82358ms] 4 is eating
+[82561ms] 2 is sleeping
+[82561ms] 4 is sleeping
+[82561ms] 3 take left fork
+[82561ms] 3 take right fork
+[82561ms] 3 is eating
+[82561ms] 1 take left fork
+[82561ms] 1 take right fork
+[82561ms] 1 is eating
+[82764ms] 3 is sleeping
+[82764ms] 1 is sleeping
+[82764ms] 4 take right fork
+[82764ms] 4 take left fork
+[82764ms] 4 is eating
+[82764ms] 2 take left fork
+[82764ms] 2 take right fork
+[82764ms] 2 is eating
+[82967ms] 2 is sleeping
+[82969ms] 4 is sleeping
+[82969ms] 1 take left fork
+[82969ms] 1 take right fork
+[82969ms] 1 is eating
+[82969ms] 3 take left fork
+[82969ms] 3 take right fork
+[82969ms] 3 is eating
+[83169ms] 3 is sleeping
+[83169ms] 2 take left fork
+[83169ms] 2 take right fork
+[83169ms] 4 take right fork
+[83169ms] 4 take left fork
+[83169ms] 4 is eating
+[83169ms] 2 is eating
+[83169ms] 1 is sleeping
+[83372ms] 4 is sleeping
+[83372ms] 2 is sleeping
+[83372ms] 3 take left fork
+[83372ms] 3 take right fork
+[83372ms] 3 is eating
+[83372ms] 1 take left fork
+[83372ms] 1 take right fork
+[83372ms] 1 is eating
+[83574ms] 3 is sleeping
+[83574ms] 1 is sleeping
+[83574ms] 4 take right fork
+[83574ms] 4 take left fork
+[83574ms] 4 is eating
+[83574ms] 2 take left fork
+[83574ms] 2 take right fork
+[83574ms] 2 is eating
+[83777ms] 4 is sleeping
+[83777ms] 2 is sleeping
+[83778ms] 3 take left fork
+[83778ms] 3 take right fork
+[83778ms] 1 take left fork
+[83778ms] 1 take right fork
+[83778ms] 1 is eating
+[83778ms] 3 is eating
+[83981ms] 2 take left fork
+[83981ms] 4 take right fork
+[83981ms] 3 is sleeping
+[83981ms] 2 take right fork
+[83981ms] 2 is eating
+[83981ms] 4 take left fork
+[83981ms] 4 is eating
+[83981ms] 1 is sleeping
+[84183ms] 4 is sleeping
+[84183ms] 2 is sleeping
+[84183ms] 1 take left fork
+[84183ms] 1 take right fork
+[84183ms] 1 is eating
+[84183ms] 3 take left fork
+[84183ms] 3 take right fork
+[84183ms] 3 is eating
+[84386ms] 2 take left fork
+[84386ms] 2 take right fork
+[84386ms] 2 is eating
+[84386ms] 1 is sleeping
+[84386ms] 4 take right fork
+[84386ms] 4 take left fork
+[84386ms] 4 is eating
+[84386ms] 3 is sleeping
+[84587ms] 2 is sleeping
+[84587ms] 4 is sleeping
+[84588ms] 1 take left fork
+[84588ms] 1 take right fork
+[84588ms] 1 is eating
+[84588ms] 3 take left fork
+[84588ms] 3 take right fork
+[84588ms] 3 is eating
+[84790ms] 3 is sleeping
+[84790ms] 1 is sleeping
+[84790ms] 4 take right fork
+[84790ms] 4 take left fork
+[84790ms] 4 is eating
+[84790ms] 2 take left fork
+[84790ms] 2 take right fork
+[84790ms] 2 is eating
+[84994ms] 2 is sleeping
+[84994ms] 4 is sleeping
+[84994ms] 1 take left fork
+[84994ms] 1 take right fork
+[84994ms] 1 is eating
+[84994ms] 3 take left fork
+[84994ms] 3 take right fork
+[84994ms] 3 is eating
+[85196ms] 3 is sleeping
+[85196ms] 4 take right fork
+[85196ms] 4 take left fork
+[85196ms] 4 is eating
+[85196ms] 2 take left fork
+[85196ms] 2 take right fork
+[85196ms] 2 is eating
+[85196ms] 1 is sleeping
+[85398ms] 4 is sleeping
+[85398ms] 2 is sleeping
+[85398ms] 3 take left fork
+[85398ms] 3 take right fork
+[85398ms] 3 is eating
+[85398ms] 1 take left fork
+[85398ms] 1 take right fork
+[85398ms] 1 is eating
+[85601ms] 3 is sleeping
+[85601ms] 1 is sleeping
+[85601ms] 2 take left fork
+[85601ms] 2 take right fork
+[85601ms] 2 is eating
+[85601ms] 4 take right fork
+[85601ms] 4 take left fork
+[85601ms] 4 is eating
+[85803ms] 4 is sleeping
+[85803ms] 2 is sleeping
+[85804ms] 1 take left fork
+[85804ms] 1 take right fork
+[85804ms] 1 is eating
+[85804ms] 3 take left fork
+[85804ms] 3 take right fork
+[85804ms] 3 is eating
+[86006ms] 3 is sleeping
+[86006ms] 1 is sleeping
+[86006ms] 4 take right fork
+[86006ms] 2 take left fork
+[86006ms] 4 take left fork
+[86006ms] 4 is eating
+[86006ms] 2 take right fork
+[86006ms] 2 is eating
+[86209ms] 4 is sleeping
+[86209ms] 2 is sleeping
+[86210ms] 1 take left fork
+[86210ms] 1 take right fork
+[86210ms] 1 is eating
+[86210ms] 3 take left fork
+[86210ms] 3 take right fork
+[86210ms] 3 is eating
+[86412ms] 3 is sleeping
+[86412ms] 1 is sleeping
+[86412ms] 4 take right fork
+[86412ms] 4 take left fork
+[86412ms] 4 is eating
+[86412ms] 2 take left fork
+[86412ms] 2 take right fork
+[86412ms] 2 is eating
+[86615ms] 2 is sleeping
+[86615ms] 4 is sleeping
+[86615ms] 1 take left fork
+[86615ms] 1 take right fork
+[86615ms] 1 is eating
+[86615ms] 3 take left fork
+[86615ms] 3 take right fork
+[86615ms] 3 is eating
+[86817ms] 3 is sleeping
+[86817ms] 1 is sleeping
+[86818ms] 4 take right fork
+[86818ms] 4 take left fork
+[86818ms] 4 is eating
+[86818ms] 2 take left fork
+[86818ms] 2 take right fork
+[86818ms] 2 is eating
+[87020ms] 4 is sleeping
+[87020ms] 2 is sleeping
+[87021ms] 1 take left fork
+[87021ms] 1 take right fork
+[87021ms] 1 is eating
+[87021ms] 3 take left fork
+[87021ms] 3 take right fork
+[87021ms] 3 is eating
+[87223ms] 2 take left fork
+[87223ms] 4 take right fork
+[87223ms] 4 take left fork
+[87223ms] 4 is eating
+[87223ms] 1 is sleeping
+[87223ms] 2 take right fork
+[87223ms] 2 is eating
+[87223ms] 3 is sleeping
+[87426ms] 4 is sleeping
+[87426ms] 2 is sleeping
+[87426ms] 3 take left fork
+[87426ms] 3 take right fork
+[87426ms] 3 is eating
+[87426ms] 1 take left fork
+[87426ms] 1 take right fork
+[87426ms] 1 is eating
+[87628ms] 3 is sleeping
+[87629ms] 1 is sleeping
+[87629ms] 4 take right fork
+[87629ms] 2 take left fork
+[87629ms] 2 take right fork
+[87629ms] 2 is eating
+[87629ms] 4 take left fork
+[87629ms] 4 is eating
+[87831ms] 4 is sleeping
+[87831ms] 2 is sleeping
+[87831ms] 3 take left fork
+[87832ms] 3 take right fork
+[87832ms] 3 is eating
+[87832ms] 1 take left fork
+[87832ms] 1 take right fork
+[87832ms] 1 is eating
+[88034ms] 3 is sleeping
+[88034ms] 1 is sleeping
+[88034ms] 4 take right fork
+[88034ms] 4 take left fork
+[88034ms] 4 is eating
+[88034ms] 2 take left fork
+[88034ms] 2 take right fork
+[88034ms] 2 is eating
+[88237ms] 4 is sleeping
+[88237ms] 2 is sleeping
+[88237ms] 3 take left fork
+[88237ms] 3 take right fork
+[88237ms] 3 is eating
+[88237ms] 1 take left fork
+[88237ms] 1 take right fork
+[88237ms] 1 is eating
+[88440ms] 3 is sleeping
+[88440ms] 2 take left fork
+[88440ms] 4 take right fork
+[88440ms] 1 is sleeping
+[88440ms] 2 take right fork
+[88440ms] 4 take left fork
+[88440ms] 4 is eating
+[88440ms] 2 is eating
+[88642ms] 4 is sleeping
+[88642ms] 2 is sleeping
+[88643ms] 3 take left fork
+[88643ms] 3 take right fork
+[88643ms] 3 is eating
+[88643ms] 1 take left fork
+[88643ms] 1 take right fork
+[88643ms] 1 is eating
+[88845ms] 3 is sleeping
+[88845ms] 2 take left fork
+[88845ms] 2 take right fork
+[88845ms] 2 is eating
+[88845ms] 1 is sleeping
+[88845ms] 4 take right fork
+[88845ms] 4 take left fork
+[88845ms] 4 is eating
+[89048ms] 4 is sleeping
+[89048ms] 2 is sleeping
+[89048ms] 3 take left fork
+[89048ms] 3 take right fork
+[89048ms] 1 take left fork
+[89048ms] 1 take right fork
+[89048ms] 1 is eating
+[89048ms] 3 is eating
+[89251ms] 2 take left fork
+[89251ms] 2 take right fork
+[89251ms] 2 is eating
+[89251ms] 3 is sleeping
+[89251ms] 1 is sleeping
+[89251ms] 4 take right fork
+[89251ms] 4 take left fork
+[89251ms] 4 is eating
+[89454ms] 4 is sleeping
+[89454ms] 2 is sleeping
+[89454ms] 3 take left fork
+[89454ms] 3 take right fork
+[89454ms] 3 is eating
+[89454ms] 1 take left fork
+[89454ms] 1 take right fork
+[89454ms] 1 is eating
+[89656ms] 3 is sleeping
+[89656ms] 2 take left fork
+[89656ms] 4 take right fork
+[89656ms] 4 take left fork
+[89656ms] 4 is eating
+[89656ms] 2 take right fork
+[89656ms] 2 is eating
+[89656ms] 1 is sleeping
+[89859ms] 4 is sleeping
+[89859ms] 2 is sleeping
+[89859ms] 3 take left fork
+[89859ms] 3 take right fork
+[89859ms] 3 is eating
+[89859ms] 1 take left fork
+[89859ms] 1 take right fork
+[89859ms] 1 is eating
+[90061ms] 3 is sleeping
+[90061ms] 2 take left fork
+[90061ms] 2 take right fork
+[90061ms] 2 is eating
+[90061ms] 4 take right fork
+[90061ms] 4 take left fork
+[90061ms] 4 is eating
+[90061ms] 1 is sleeping
+[90264ms] 2 is sleeping
+[90264ms] 4 is sleeping
+[90264ms] 3 take left fork
+[90264ms] 3 take right fork
+[90264ms] 3 is eating
+[90264ms] 1 take left fork
+[90264ms] 1 take right fork
+[90264ms] 1 is eating
+[90468ms] 3 is sleeping
+[90468ms] 1 is sleeping
+[90468ms] 2 take left fork
+[90468ms] 2 take right fork
+[90468ms] 2 is eating
+[90468ms] 4 take right fork
+[90468ms] 4 take left fork
+[90468ms] 4 is eating
+[90669ms] 4 is sleeping
+[90669ms] 2 is sleeping
+[90669ms] 3 take left fork
+[90669ms] 3 take right fork
+[90669ms] 3 is eating
+[90669ms] 1 take left fork
+[90669ms] 1 take right fork
+[90669ms] 1 is eating
+[90872ms] 3 is sleeping
+[90872ms] 1 is sleeping
+[90872ms] 4 take right fork
+[90872ms] 4 take left fork
+[90872ms] 4 is eating
+[90872ms] 2 take left fork
+[90872ms] 2 take right fork
+[90872ms] 2 is eating
+[91075ms] 2 is sleeping
+[91075ms] 4 is sleeping
+[91075ms] 1 take left fork
+[91075ms] 1 take right fork
+[91075ms] 1 is eating
+[91075ms] 3 take left fork
+[91075ms] 3 take right fork
+[91075ms] 3 is eating
+[91277ms] 3 is sleeping
+[91277ms] 2 take left fork
+[91277ms] 2 take right fork
+[91277ms] 2 is eating
+[91277ms] 1 is sleeping
+[91277ms] 4 take right fork
+[91278ms] 4 take left fork
+[91278ms] 4 is eating
+[91480ms] 4 is sleeping
+[91480ms] 2 is sleeping
+[91480ms] 1 take left fork
+[91480ms] 1 take right fork
+[91480ms] 3 take left fork
+[91480ms] 3 take right fork
+[91480ms] 3 is eating
+[91480ms] 1 is eating
+[91683ms] 3 is sleeping
+[91683ms] 2 take left fork
+[91683ms] 2 take right fork
+[91683ms] 2 is eating
+[91683ms] 4 take right fork
+[91683ms] 4 take left fork
+[91683ms] 4 is eating
+[91683ms] 1 is sleeping
+[91886ms] 4 is sleeping
+[91886ms] 2 is sleeping
+[91886ms] 3 take left fork
+[91886ms] 3 take right fork
+[91886ms] 3 is eating
+[91886ms] 1 take left fork
+[91886ms] 1 take right fork
+[91886ms] 1 is eating
+[92089ms] 3 is sleeping
+[92089ms] 2 take left fork
+[92089ms] 4 take right fork
+[92089ms] 4 take left fork
+[92089ms] 4 is eating
+[92089ms] 2 take right fork
+[92089ms] 2 is eating
+[92089ms] 1 is sleeping
+[92291ms] 2 is sleeping
+[92291ms] 4 is sleeping
+[92292ms] 3 take left fork
+[92292ms] 1 take left fork
+[92292ms] 1 take right fork
+[92292ms] 1 is eating
+[92292ms] 3 take right fork
+[92292ms] 3 is eating
+[92494ms] 3 is sleeping
+[92494ms] 1 is sleeping
+[92494ms] 4 take right fork
+[92494ms] 4 take left fork
+[92494ms] 4 is eating
+[92494ms] 2 take left fork
+[92494ms] 2 take right fork
+[92494ms] 2 is eating
+[92697ms] 2 is sleeping
+[92697ms] 4 is sleeping
+[92697ms] 1 take left fork
+[92697ms] 1 take right fork
+[92697ms] 1 is eating
+[92697ms] 3 take left fork
+[92697ms] 3 take right fork
+[92697ms] 3 is eating
+[92900ms] 1 is sleeping
+[92900ms] 2 take left fork
+[92900ms] 3 is sleeping
+[92900ms] 4 take right fork
+[92900ms] 4 take left fork
+[92900ms] 4 is eating
+[92900ms] 2 take right fork
+[92900ms] 2 is eating
+[93103ms] 4 is sleeping
+[93103ms] 2 is sleeping
+[93103ms] 1 take left fork
+[93103ms] 1 take right fork
+[93103ms] 1 is eating
+[93103ms] 3 take left fork
+[93103ms] 3 take right fork
+[93103ms] 3 is eating
+[93306ms] 1 is sleeping
+[93306ms] 4 take right fork
+[93306ms] 2 take left fork
+[93308ms] 3 is sleeping
+[93308ms] 2 take right fork
+[93308ms] 2 is eating
+[93308ms] 4 take left fork
+[93308ms] 4 is eating
+[93508ms] 2 is sleeping
+[93509ms] 4 is sleeping
+[93509ms] 1 take left fork
+[93509ms] 1 take right fork
+[93509ms] 1 is eating
+[93509ms] 3 take left fork
+[93509ms] 3 take right fork
+[93509ms] 3 is eating
+[93710ms] 3 is sleeping
+[93710ms] 2 take left fork
+[93710ms] 2 take right fork
+[93710ms] 2 is eating
+[93710ms] 1 is sleeping
+[93710ms] 4 take right fork
+[93710ms] 4 take left fork
+[93710ms] 4 is eating
+[93913ms] 4 is sleeping
+[93913ms] 2 is sleeping
+[93914ms] 3 take left fork
+[93914ms] 3 take right fork
+[93914ms] 3 is eating
+[93914ms] 1 take left fork
+[93914ms] 1 take right fork
+[93914ms] 1 is eating
+[94116ms] 3 is sleeping
+[94116ms] 1 is sleeping
+[94116ms] 4 take right fork
+[94116ms] 4 take left fork
+[94116ms] 4 is eating
+[94116ms] 2 take left fork
+[94116ms] 2 take right fork
+[94116ms] 2 is eating
+[94319ms] 2 is sleeping
+[94319ms] 4 is sleeping
+[94319ms] 3 take left fork
+[94319ms] 3 take right fork
+[94319ms] 3 is eating
+[94319ms] 1 take left fork
+[94319ms] 1 take right fork
+[94319ms] 1 is eating
+[94522ms] 3 is sleeping
+[94522ms] 1 is sleeping
+[94522ms] 2 take left fork
+[94522ms] 4 take right fork
+[94522ms] 2 take right fork
+[94522ms] 2 is eating
+[94522ms] 4 take left fork
+[94522ms] 4 is eating
+[94726ms] 2 is sleeping
+[94726ms] 4 is sleeping
+[94726ms] 1 take left fork
+[94726ms] 1 take right fork
+[94726ms] 1 is eating
+[94726ms] 3 take left fork
+[94726ms] 3 take right fork
+[94726ms] 3 is eating
+[94928ms] 3 is sleeping
+[94928ms] 2 take left fork
+[94928ms] 2 take right fork
+[94928ms] 2 is eating
+[94928ms] 1 is sleeping
+[94928ms] 4 take right fork
+[94928ms] 4 take left fork
+[94928ms] 4 is eating
+[95130ms] 2 is sleeping
+[95130ms] 4 is sleeping
+[95130ms] 3 take left fork
+[95130ms] 1 take left fork
+[95130ms] 1 take right fork
+[95130ms] 1 is eating
+[95130ms] 3 take right fork
+[95130ms] 3 is eating
+[95333ms] 1 is sleeping
+[95333ms] 2 take left fork
+[95333ms] 2 take right fork
+[95333ms] 2 is eating
+[95333ms] 4 take right fork
+[95333ms] 4 take left fork
+[95333ms] 4 is eating
+[95333ms] 3 is sleeping
+[95536ms] 2 is sleeping
+[95536ms] 4 is sleeping
+[95536ms] 1 take left fork
+[95536ms] 1 take right fork
+[95536ms] 1 is eating
+[95536ms] 3 take left fork
+[95536ms] 3 take right fork
+[95536ms] 3 is eating
+[95738ms] 3 is sleeping
+[95738ms] 1 is sleeping
+[95738ms] 4 take right fork
+[95738ms] 4 take left fork
+[95738ms] 4 is eating
+[95738ms] 2 take left fork
+[95738ms] 2 take right fork
+[95738ms] 2 is eating
+[95944ms] 2 is sleeping
+[95944ms] 4 is sleeping
+[95944ms] 1 take left fork
+[95944ms] 1 take right fork
+[95944ms] 1 is eating
+[95944ms] 3 take left fork
+[95944ms] 3 take right fork
+[95944ms] 3 is eating
+[96148ms] 3 is sleeping
+[96148ms] 1 is sleeping
+[96148ms] 2 take left fork
+[96148ms] 2 take right fork
+[96148ms] 2 is eating
+[96148ms] 4 take right fork
+[96148ms] 4 take left fork
+[96148ms] 4 is eating
+[96354ms] 2 is sleeping
+[96354ms] 4 is sleeping
+[96354ms] 3 take left fork
+[96354ms] 3 take right fork
+[96354ms] 3 is eating
+[96354ms] 1 take left fork
+[96354ms] 1 take right fork
+[96354ms] 1 is eating
+[96556ms] 3 is sleeping
+[96556ms] 1 is sleeping
+[96556ms] 2 take left fork
+[96556ms] 2 take right fork
+[96556ms] 2 is eating
+[96556ms] 4 take right fork
+[96556ms] 4 take left fork
+[96556ms] 4 is eating
+[96762ms] 2 is sleeping
+[96762ms] 4 is sleeping
+[96762ms] 1 take left fork
+[96762ms] 1 take right fork
+[96762ms] 1 is eating
+[96762ms] 3 take left fork
+[96762ms] 3 take right fork
+[96762ms] 3 is eating
+[96968ms] 3 is sleeping
+[96968ms] 2 take left fork
+[96968ms] 1 is sleeping
+[96968ms] 4 take right fork
+[96968ms] 4 take left fork
+[96968ms] 4 is eating
+[96968ms] 2 take right fork
+[96968ms] 2 is eating
+[97168ms] 2 is sleeping
+[97168ms] 4 is sleeping
+[97168ms] 3 take left fork
+[97168ms] 3 take right fork
+[97168ms] 3 is eating
+[97168ms] 1 take left fork
+[97168ms] 1 take right fork
+[97168ms] 1 is eating
+[97373ms] 3 is sleeping
+[97373ms] 2 take left fork
+[97373ms] 2 take right fork
+[97373ms] 2 is eating
+[97373ms] 4 take right fork
+[97373ms] 4 take left fork
+[97373ms] 4 is eating
+[97373ms] 1 is sleeping
+[97578ms] 4 is sleeping
+[97578ms] 2 is sleeping
+[97579ms] 3 take left fork
+[97579ms] 3 take right fork
+[97579ms] 3 is eating
+[97579ms] 1 take left fork
+[97579ms] 1 take right fork
+[97579ms] 1 is eating
+[97784ms] 3 is sleeping
+[97784ms] 2 take left fork
+[97784ms] 2 take right fork
+[97784ms] 2 is eating
+[97784ms] 1 is sleeping
+[97784ms] 4 take right fork
+[97784ms] 4 take left fork
+[97784ms] 4 is eating
+[97990ms] 2 is sleeping
+[97990ms] 4 is sleeping
+[97990ms] 3 take left fork
+[97990ms] 3 take right fork
+[97990ms] 3 is eating
+[97990ms] 1 take left fork
+[97990ms] 1 take right fork
+[97990ms] 1 is eating
+[98193ms] 3 is sleeping
+[98193ms] 1 is sleeping
+[98193ms] 4 take right fork
+[98193ms] 4 take left fork
+[98193ms] 4 is eating
+[98193ms] 2 take left fork
+[98193ms] 2 take right fork
+[98193ms] 2 is eating
+[98399ms] 2 is sleeping
+[98399ms] 4 is sleeping
+[98399ms] 3 take left fork
+[98399ms] 3 take right fork
+[98399ms] 3 is eating
+[98399ms] 1 take left fork
+[98399ms] 1 take right fork
+[98399ms] 1 is eating
+[98604ms] 3 is sleeping
+[98604ms] 2 take left fork
+[98604ms] 2 take right fork
+[98604ms] 2 is eating
+[98604ms] 4 take right fork
+[98604ms] 4 take left fork
+[98604ms] 4 is eating
+[98604ms] 1 is sleeping
+[98809ms] 2 is sleeping
+[98809ms] 4 is sleeping
+[98810ms] 1 take left fork
+[98810ms] 1 take right fork
+[98810ms] 1 is eating
+[98810ms] 3 take left fork
+[98810ms] 3 take right fork
+[98810ms] 3 is eating
+[99015ms] 1 is sleeping
+[99015ms] 2 take left fork
+[99015ms] 4 take right fork
+[99015ms] 4 take left fork
+[99015ms] 2 take right fork
+[99015ms] 2 is eating
+[99015ms] 3 is sleeping
+[99015ms] 4 is eating
+[99217ms] 2 is sleeping
+[99217ms] 4 is sleeping
+[99219ms] 3 take left fork
+[99219ms] 3 take right fork
+[99219ms] 3 is eating
+[99219ms] 1 take left fork
+[99219ms] 1 take right fork
+[99219ms] 1 is eating
+[99422ms] 3 is sleeping
+[99422ms] 1 is sleeping
+[99422ms] 2 take left fork
+[99422ms] 2 take right fork
+[99422ms] 2 is eating
+[99422ms] 4 take right fork
+[99422ms] 4 take left fork
+[99422ms] 4 is eating
+[99628ms] 2 is sleeping
+[99628ms] 4 is sleeping
+[99628ms] 3 take left fork
+[99628ms] 3 take right fork
+[99628ms] 3 is eating
+[99628ms] 1 take left fork
+[99628ms] 1 take right fork
+[99628ms] 1 is eating
+[99829ms] 3 is sleeping
+[99829ms] 1 is sleeping
+[99829ms] 4 take right fork
+[99829ms] 4 take left fork
+[99829ms] 4 is eating
+[99829ms] 2 take left fork
+[99829ms] 2 take right fork
+[99829ms] 2 is eating
+[100035ms] 4 is sleeping
+[100035ms] 2 is sleeping
+[100035ms] 3 take left fork
+[100035ms] 3 take right fork
+[100035ms] 3 is eating
+[100035ms] 1 take left fork
+[100035ms] 1 take right fork
+[100035ms] 1 is eating
+[100239ms] 2 take left fork
+[100239ms] 1 is sleeping
+[100239ms] 4 take right fork
+[100239ms] 3 is sleeping
+[100239ms] 2 take right fork
+[100239ms] 2 is eating
+[100239ms] 4 take left fork
+[100239ms] 4 is eating
+[100444ms] 2 is sleeping
+[100444ms] 4 is sleeping
+[100445ms] 1 take left fork
+[100445ms] 1 take right fork
+[100445ms] 1 is eating
+[100445ms] 3 take left fork
+[100445ms] 3 take right fork
+[100445ms] 3 is eating
+[100650ms] 3 is sleeping
+[100650ms] 2 take left fork
+[100650ms] 4 take right fork
+[100650ms] 4 take left fork
+[100650ms] 4 is eating
+[100650ms] 2 take right fork
+[100650ms] 1 is sleeping
+[100650ms] 2 is eating
+[100855ms] 4 is sleeping
+[100855ms] 2 is sleeping
+[100855ms] 3 take left fork
+[100855ms] 3 take right fork
+[100855ms] 1 take left fork
+[100855ms] 1 take right fork
+[100855ms] 1 is eating
+[100855ms] 3 is eating
+[101060ms] 2 take left fork
+[101060ms] 2 take right fork
+[101060ms] 2 is eating
+[101060ms] 1 is sleeping
+[101060ms] 4 take right fork
+[101060ms] 4 take left fork
+[101060ms] 4 is eating
+[101060ms] 3 is sleeping
+[101265ms] 2 is sleeping
+[101265ms] 4 is sleeping
+[101266ms] 1 take left fork
+[101266ms] 1 take right fork
+[101266ms] 1 is eating
+[101266ms] 3 take left fork
+[101266ms] 3 take right fork
+[101266ms] 3 is eating
+[101468ms] 3 is sleeping
+[101468ms] 1 is sleeping
+[101468ms] 2 take left fork
+[101468ms] 4 take right fork
+[101468ms] 4 take left fork
+[101468ms] 4 is eating
+[101468ms] 2 take right fork
+[101468ms] 2 is eating
+[101670ms] 2 is sleeping
+[101670ms] 4 is sleeping
+[101670ms] 3 take left fork
+[101670ms] 3 take right fork
+[101670ms] 1 take left fork
+[101670ms] 1 take right fork
+[101670ms] 1 is eating
+[101670ms] 3 is eating
+[101875ms] 1 is sleeping
+[101875ms] 2 take left fork
+[101875ms] 2 take right fork
+[101876ms] 2 is eating
+[101875ms] 3 is sleeping
+[101875ms] 4 take right fork
+[101876ms] 4 take left fork
+[101876ms] 4 is eating
+[102081ms] 4 is sleeping
+[102081ms] 2 is sleeping
+[102081ms] 1 take left fork
+[102081ms] 1 take right fork
+[102081ms] 1 is eating
+[102081ms] 3 take left fork
+[102081ms] 3 take right fork
+[102081ms] 3 is eating
+[102286ms] 3 is sleeping
+[102286ms] 1 is sleeping
+[102286ms] 2 take left fork
+[102286ms] 4 take right fork
+[102286ms] 4 take left fork
+[102286ms] 4 is eating
+[102286ms] 2 take right fork
+[102286ms] 2 is eating
+[102491ms] 4 is sleeping
+[102491ms] 2 is sleeping
+[102491ms] 3 take left fork
+[102492ms] 3 take right fork
+[102492ms] 3 is eating
+[102492ms] 1 take left fork
+[102492ms] 1 take right fork
+[102492ms] 1 is eating
+[102697ms] 4 take right fork
+[102697ms] 3 is sleeping
+[102697ms] 1 is sleeping
+[102697ms] 2 take left fork
+[102697ms] 4 take left fork
+[102697ms] 4 is eating
+[102697ms] 2 take right fork
+[102697ms] 2 is eating
+[102902ms] 4 is sleeping
+[102902ms] 2 is sleeping
+[102902ms] 3 take left fork
+[102902ms] 3 take right fork
+[102902ms] 3 is eating
+[102902ms] 1 take left fork
+[102902ms] 1 take right fork
+[102902ms] 1 is eating
+[103107ms] 3 is sleeping
+[103107ms] 2 take left fork
+[103107ms] 2 take right fork
+[103107ms] 2 is eating
+[103107ms] 4 take right fork
+[103107ms] 4 take left fork
+[103107ms] 4 is eating
+[103107ms] 1 is sleeping
+[103312ms] 2 is sleeping
+[103312ms] 4 is sleeping
+[103312ms] 3 take left fork
+[103312ms] 3 take right fork
+[103312ms] 3 is eating
+[103312ms] 1 take left fork
+[103312ms] 1 take right fork
+[103312ms] 1 is eating
+[103517ms] 3 is sleeping
+[103517ms] 2 take left fork
+[103517ms] 1 is sleeping
+[103517ms] 4 take right fork
+[103517ms] 4 take left fork
+[103517ms] 4 is eating
+[103517ms] 2 take right fork
+[103517ms] 2 is eating
+[103718ms] 2 is sleeping
+[103718ms] 4 is sleeping
+[103718ms] 3 take left fork
+[103718ms] 3 take right fork
+[103718ms] 3 is eating
+[103718ms] 1 take left fork
+[103718ms] 1 take right fork
+[103718ms] 1 is eating
+[103924ms] 3 is sleeping
+[103924ms] 4 take right fork
+[103924ms] 1 is sleeping
+[103924ms] 4 take left fork
+[103924ms] 4 is eating
+[103924ms] 2 take left fork
+[103924ms] 2 take right fork
+[103924ms] 2 is eating
+[104124ms] 4 is sleeping
+[104124ms] 1 take left fork
+[104124ms] 1 take right fork
+[104124ms] 1 is eating
+[104124ms] 2 is sleeping
+[104124ms] 3 take left fork
+[104124ms] 3 take right fork
+[104124ms] 3 is eating
+[104329ms] 1 is sleeping
+[104329ms] 2 take left fork
+[104329ms] 2 take right fork
+[104329ms] 4 take right fork
+[104329ms] 4 take left fork
+[104329ms] 4 is eating
+[104329ms] 2 is eating
+[104329ms] 3 is sleeping
+[104534ms] 4 is sleeping
+[104534ms] 2 is sleeping
+[104535ms] 1 take left fork
+[104535ms] 1 take right fork
+[104535ms] 1 is eating
+[104535ms] 3 take left fork
+[104535ms] 3 take right fork
+[104535ms] 3 is eating
+[104739ms] 2 take left fork
+[104739ms] 2 take right fork
+[104739ms] 2 is eating
+[104739ms] 3 is sleeping
+[104739ms] 1 is sleeping
+[104739ms] 4 take right fork
+[104739ms] 4 take left fork
+[104739ms] 4 is eating
+[104945ms] 2 is sleeping
+[104945ms] 4 is sleeping
+[104945ms] 3 take left fork
+[104945ms] 3 take right fork
+[104945ms] 3 is eating
+[104945ms] 1 take left fork
+[104945ms] 1 take right fork
+[104945ms] 1 is eating
+[105149ms] 3 is sleeping
+[105149ms] 1 is sleeping
+[105149ms] 4 take right fork
+[105149ms] 4 take left fork
+[105149ms] 4 is eating
+[105149ms] 2 take left fork
+[105149ms] 2 take right fork
+[105149ms] 2 is eating
+[105353ms] 2 is sleeping
+[105353ms] 4 is sleeping
+[105354ms] 3 take left fork
+[105354ms] 3 take right fork
+[105354ms] 3 is eating
+[105354ms] 1 take left fork
+[105354ms] 1 take right fork
+[105354ms] 1 is eating
+[105558ms] 3 is sleeping
+[105558ms] 1 is sleeping
+[105558ms] 2 take left fork
+[105558ms] 2 take right fork
+[105558ms] 2 is eating
+[105558ms] 4 take right fork
+[105558ms] 4 take left fork
+[105558ms] 4 is eating
+[105763ms] 2 is sleeping
+[105763ms] 4 is sleeping
+[105764ms] 1 take left fork
+[105764ms] 1 take right fork
+[105764ms] 1 is eating
+[105764ms] 3 take left fork
+[105764ms] 3 take right fork
+[105764ms] 3 is eating
+[105969ms] 1 is sleeping
+[105969ms] 3 is sleeping
+[105969ms] 4 take right fork
+[105969ms] 4 take left fork
+[105969ms] 4 is eating
+[105969ms] 2 take left fork
+[105969ms] 2 take right fork
+[105969ms] 2 is eating
+[106173ms] 2 is sleeping
+[106173ms] 4 is sleeping
+[106173ms] 1 take left fork
+[106173ms] 1 take right fork
+[106173ms] 1 is eating
+[106173ms] 3 take left fork
+[106173ms] 3 take right fork
+[106173ms] 3 is eating
+[106376ms] 3 is sleeping
+[106376ms] 1 is sleeping
+[106376ms] 4 take right fork
+[106376ms] 4 take left fork
+[106376ms] 2 take left fork
+[106376ms] 2 take right fork
+[106376ms] 2 is eating
+[106376ms] 4 is eating
+[106579ms] 4 is sleeping
+[106579ms] 2 is sleeping
+[106579ms] 3 take left fork
+[106579ms] 3 take right fork
+[106579ms] 3 is eating
+[106579ms] 1 take left fork
+[106579ms] 1 take right fork
+[106579ms] 1 is eating
+[106782ms] 3 is sleeping
+[106782ms] 1 is sleeping
+[106782ms] 4 take right fork
+[106782ms] 4 take left fork
+[106782ms] 4 is eating
+[106782ms] 2 take left fork
+[106782ms] 2 take right fork
+[106782ms] 2 is eating
+[106986ms] 4 is sleeping
+[106986ms] 2 is sleeping
+[106986ms] 1 take left fork
+[106986ms] 1 take right fork
+[106986ms] 1 is eating
+[106986ms] 3 take left fork
+[106986ms] 3 take right fork
+[106986ms] 3 is eating
+[107188ms] 3 is sleeping
+[107188ms] 1 is sleeping
+[107188ms] 2 take left fork
+[107188ms] 4 take right fork
+[107188ms] 4 take left fork
+[107188ms] 4 is eating
+[107188ms] 2 take right fork
+[107188ms] 2 is eating
+[107390ms] 4 is sleeping
+[107390ms] 2 is sleeping
+[107390ms] 3 take left fork
+[107390ms] 3 take right fork
+[107390ms] 3 is eating
+[107390ms] 1 take left fork
+[107390ms] 1 take right fork
+[107390ms] 1 is eating
+[107593ms] 3 is sleeping
+[107593ms] 4 take right fork
+[107593ms] 4 take left fork
+[107593ms] 4 is eating
+[107593ms] 2 take left fork
+[107593ms] 2 take right fork
+[107593ms] 2 is eating
+[107593ms] 1 is sleeping
+[107795ms] 4 is sleeping
+[107795ms] 2 is sleeping
+[107795ms] 3 take left fork
+[107795ms] 3 take right fork
+[107795ms] 3 is eating
+[107795ms] 1 take left fork
+[107795ms] 1 take right fork
+[107795ms] 1 is eating
+[107999ms] 3 is sleeping
+[107999ms] 2 take left fork
+[107999ms] 2 take right fork
+[107999ms] 2 is eating
+[107999ms] 1 is sleeping
+[107999ms] 4 take right fork
+[107999ms] 4 take left fork
+[107999ms] 4 is eating
+[108201ms] 4 is sleeping
+[108201ms] 2 is sleeping
+[108201ms] 3 take left fork
+[108201ms] 3 take right fork
+[108201ms] 3 is eating
+[108201ms] 1 take left fork
+[108201ms] 1 take right fork
+[108201ms] 1 is eating
+[108402ms] 2 take left fork
+[108402ms] 4 take right fork
+[108402ms] 1 is sleeping
+[108403ms] 4 take left fork
+[108403ms] 4 is eating
+[108402ms] 3 is sleeping
+[108403ms] 2 take right fork
+[108403ms] 2 is eating
+[108605ms] 2 is sleeping
+[108605ms] 4 is sleeping
+[108606ms] 1 take left fork
+[108606ms] 1 take right fork
+[108606ms] 1 is eating
+[108606ms] 3 take left fork
+[108606ms] 3 take right fork
+[108606ms] 3 is eating
+[108808ms] 3 is sleeping
+[108808ms] 4 take right fork
+[108808ms] 4 take left fork
+[108808ms] 4 is eating
+[108808ms] 1 is sleeping
+[108808ms] 2 take left fork
+[108808ms] 2 take right fork
+[108808ms] 2 is eating
+[109010ms] 2 is sleeping
+[109010ms] 4 is sleeping
+[109011ms] 3 take left fork
+[109011ms] 3 take right fork
+[109011ms] 3 is eating
+[109011ms] 1 take left fork
+[109011ms] 1 take right fork
+[109011ms] 1 is eating
+[109212ms] 3 is sleeping
+[109212ms] 1 is sleeping
+[109212ms] 2 take left fork
+[109212ms] 2 take right fork
+[109212ms] 2 is eating
+[109212ms] 4 take right fork
+[109212ms] 4 take left fork
+[109212ms] 4 is eating
+[109414ms] 4 is sleeping
+[109414ms] 2 is sleeping
+[109414ms] 3 take left fork
+[109414ms] 3 take right fork
+[109414ms] 3 is eating
+[109414ms] 1 take left fork
+[109414ms] 1 take right fork
+[109414ms] 1 is eating
+[109617ms] 2 take left fork
+[109617ms] 1 is sleeping
+[109617ms] 2 take right fork
+[109617ms] 3 is sleeping
+[109617ms] 2 is eating
+[109617ms] 4 take right fork
+[109617ms] 4 take left fork
+[109617ms] 4 is eating
+[109819ms] 4 is sleeping
+[109819ms] 2 is sleeping
+[109819ms] 1 take left fork
+[109819ms] 1 take right fork
+[109819ms] 1 is eating
+[109819ms] 3 take left fork
+[109819ms] 3 take right fork
+[109819ms] 3 is eating
+[110021ms] 3 is sleeping
+[110021ms] 1 is sleeping
+[110021ms] 4 take right fork
+[110022ms] 4 take left fork
+[110022ms] 4 is eating
+[110021ms] 2 take left fork
+[110022ms] 2 take right fork
+[110022ms] 2 is eating
+[110224ms] 2 is sleeping
+[110224ms] 4 is sleeping
+[110224ms] 3 take left fork
+[110225ms] 3 take right fork
+[110225ms] 3 is eating
+[110225ms] 1 take left fork
+[110225ms] 1 take right fork
+[110225ms] 1 is eating
+[110427ms] 3 is sleeping
+[110427ms] 2 take left fork
+[110427ms] 2 take right fork
+[110427ms] 2 is eating
+[110427ms] 4 take right fork
+[110427ms] 1 is sleeping
+[110427ms] 4 take left fork
+[110427ms] 4 is eating
+[110629ms] 2 is sleeping
+[110629ms] 4 is sleeping
+[110629ms] 3 take left fork
+[110629ms] 3 take right fork
+[110629ms] 3 is eating
+[110629ms] 1 take left fork
+[110629ms] 1 take right fork
+[110629ms] 1 is eating
+[110831ms] 3 is sleeping
+[110831ms] 1 is sleeping
+[110831ms] 2 take left fork
+[110831ms] 2 take right fork
+[110831ms] 2 is eating
+[110831ms] 4 take right fork
+[110831ms] 4 take left fork
+[110831ms] 4 is eating
+[111034ms] 2 is sleeping
+[111034ms] 4 is sleeping
+[111034ms] 3 take left fork
+[111034ms] 3 take right fork
+[111034ms] 3 is eating
+[111034ms] 1 take left fork
+[111034ms] 1 take right fork
+[111034ms] 1 is eating
+[111237ms] 3 is sleeping
+[111237ms] 1 is sleeping
+[111237ms] 2 take left fork
+[111237ms] 2 take right fork
+[111237ms] 2 is eating
+[111237ms] 4 take right fork
+[111237ms] 4 take left fork
+[111237ms] 4 is eating
+[111440ms] 4 is sleeping
+[111440ms] 2 is sleeping
+[111440ms] 1 take left fork
+[111440ms] 1 take right fork
+[111440ms] 1 is eating
+[111440ms] 3 take left fork
+[111440ms] 3 take right fork
+[111440ms] 3 is eating
+[111642ms] 3 is sleeping
+[111642ms] 2 take left fork
+[111642ms] 2 take right fork
+[111642ms] 2 is eating
+[111642ms] 1 is sleeping
+[111642ms] 4 take right fork
+[111642ms] 4 take left fork
+[111642ms] 4 is eating
+[111845ms] 2 is sleeping
+[111845ms] 4 is sleeping
+[111845ms] 3 take left fork
+[111845ms] 3 take right fork
+[111845ms] 3 is eating
+[111845ms] 1 take left fork
+[111845ms] 1 take right fork
+[111845ms] 1 is eating
+[112048ms] 3 is sleeping
+[112048ms] 1 is sleeping
+[112048ms] 2 take left fork
+[112048ms] 2 take right fork
+[112048ms] 2 is eating
+[112048ms] 4 take right fork
+[112048ms] 4 take left fork
+[112048ms] 4 is eating
+[112251ms] 2 is sleeping
+[112251ms] 4 is sleeping
+[112251ms] 3 take left fork
+[112251ms] 3 take right fork
+[112251ms] 3 is eating
+[112251ms] 1 take left fork
+[112251ms] 1 take right fork
+[112251ms] 1 is eating
+[112453ms] 3 is sleeping
+[112454ms] 1 is sleeping
+[112454ms] 4 take right fork
+[112454ms] 2 take left fork
+[112454ms] 2 take right fork
+[112454ms] 2 is eating
+[112454ms] 4 take left fork
+[112454ms] 4 is eating
+[112656ms] 2 is sleeping
+[112656ms] 4 is sleeping
+[112657ms] 1 take left fork
+[112657ms] 1 take right fork
+[112657ms] 1 is eating
+[112657ms] 3 take left fork
+[112657ms] 3 take right fork
+[112657ms] 3 is eating
+[112859ms] 3 is sleeping
+[112859ms] 1 is sleeping
+[112859ms] 4 take right fork
+[112859ms] 4 take left fork
+[112859ms] 4 is eating
+[112859ms] 2 take left fork
+[112859ms] 2 take right fork
+[112859ms] 2 is eating
+[113062ms] 4 is sleeping
+[113062ms] 2 is sleeping
+[113062ms] 3 take left fork
+[113062ms] 3 take right fork
+[113062ms] 1 take left fork
+[113062ms] 1 take right fork
+[113062ms] 1 is eating
+[113062ms] 3 is eating
+[113265ms] 3 is sleeping
+[113265ms] 1 is sleeping
+[113265ms] 4 take right fork
+[113265ms] 2 take left fork
+[113265ms] 2 take right fork
+[113265ms] 2 is eating
+[113265ms] 4 take left fork
+[113265ms] 4 is eating
+[113468ms] 4 is sleeping
+[113468ms] 2 is sleeping
+[113468ms] 3 take left fork
+[113468ms] 3 take right fork
+[113468ms] 3 is eating
+[113468ms] 1 take left fork
+[113468ms] 1 take right fork
+[113468ms] 1 is eating
+[113669ms] 2 take left fork
+[113669ms] 4 take right fork
+[113669ms] 3 is sleeping
+[113669ms] 1 is sleeping
+[113669ms] 4 take left fork
+[113670ms] 4 is eating
+[113669ms] 2 take right fork
+[113670ms] 2 is eating
+[113872ms] 2 is sleeping
+[113872ms] 4 is sleeping
+[113872ms] 3 take left fork
+[113872ms] 3 take right fork
+[113872ms] 3 is eating
+[113872ms] 1 take left fork
+[113872ms] 1 take right fork
+[113872ms] 1 is eating
+[114075ms] 3 is sleeping
+[114075ms] 1 is sleeping
+[114075ms] 4 take right fork
+[114075ms] 4 take left fork
+[114075ms] 4 is eating
+[114075ms] 2 take left fork
+[114075ms] 2 take right fork
+[114075ms] 2 is eating
+[114278ms] 2 is sleeping
+[114278ms] 4 is sleeping
+[114278ms] 3 take left fork
+[114278ms] 3 take right fork
+[114278ms] 3 is eating
+[114278ms] 1 take left fork
+[114278ms] 1 take right fork
+[114278ms] 1 is eating
+[114481ms] 3 is sleeping
+[114481ms] 1 is sleeping
+[114481ms] 2 take left fork
+[114481ms] 2 take right fork
+[114481ms] 2 is eating
+[114481ms] 4 take right fork
+[114481ms] 4 take left fork
+[114481ms] 4 is eating
+[114683ms] 2 is sleeping
+[114683ms] 4 is sleeping
+[114684ms] 3 take left fork
+[114684ms] 3 take right fork
+[114684ms] 3 is eating
+[114684ms] 1 take left fork
+[114684ms] 1 take right fork
+[114684ms] 1 is eating
+[114886ms] 3 is sleeping
+[114886ms] 1 is sleeping
+[114886ms] 4 take right fork
+[114886ms] 4 take left fork
+[114886ms] 4 is eating
+[114886ms] 2 take left fork
+[114886ms] 2 take right fork
+[114886ms] 2 is eating
+[115089ms] 4 is sleeping
+[115089ms] 2 is sleeping
+[115089ms] 3 take left fork
+[115089ms] 3 take right fork
+[115089ms] 1 take left fork
+[115089ms] 1 take right fork
+[115089ms] 1 is eating
+[115089ms] 3 is eating
+[115294ms] 3 is sleeping
+[115294ms] 1 is sleeping
+[115294ms] 4 take right fork
+[115294ms] 4 take left fork
+[115294ms] 4 is eating
+[115294ms] 2 take left fork
+[115294ms] 2 take right fork
+[115294ms] 2 is eating
+[115495ms] 4 is sleeping
+[115495ms] 2 is sleeping
+[115495ms] 3 take left fork
+[115495ms] 3 take right fork
+[115495ms] 3 is eating
+[115495ms] 1 take left fork
+[115495ms] 1 take right fork
+[115495ms] 1 is eating
+[115697ms] 1 is sleeping
+[115697ms] 4 take right fork
+[115697ms] 3 is sleeping
+[115697ms] 4 take left fork
+[115698ms] 4 is eating
+[115698ms] 2 take left fork
+[115698ms] 2 take right fork
+[115698ms] 2 is eating
+[115900ms] 2 is sleeping
+[115900ms] 4 is sleeping
+[115900ms] 1 take left fork
+[115900ms] 1 take right fork
+[115900ms] 1 is eating
+[115900ms] 3 take left fork
+[115900ms] 3 take right fork
+[115900ms] 3 is eating
+[116103ms] 3 is sleeping
+[116103ms] 1 is sleeping
+[116103ms] 4 take right fork
+[116103ms] 4 take left fork
+[116103ms] 4 is eating
+[116103ms] 2 take left fork
+[116103ms] 2 take right fork
+[116103ms] 2 is eating
+[116305ms] 4 is sleeping
+[116306ms] 2 is sleeping
+[116306ms] 3 take left fork
+[116306ms] 3 take right fork
+[116306ms] 3 is eating
+[116306ms] 1 take left fork
+[116306ms] 1 take right fork
+[116306ms] 1 is eating
+[116508ms] 3 is sleeping
+[116508ms] 2 take left fork
+[116508ms] 2 take right fork
+[116509ms] 2 is eating
+[116508ms] 1 is sleeping
+[116508ms] 4 take right fork
+[116509ms] 4 take left fork
+[116509ms] 4 is eating
+[116711ms] 2 is sleeping
+[116711ms] 4 is sleeping
+[116712ms] 3 take left fork
+[116712ms] 3 take right fork
+[116712ms] 3 is eating
+[116712ms] 1 take left fork
+[116712ms] 1 take right fork
+[116712ms] 1 is eating
+[116912ms] 3 is sleeping
+[116912ms] 1 is sleeping
+[116912ms] 2 take left fork
+[116912ms] 2 take right fork
+[116912ms] 2 is eating
+[116912ms] 4 take right fork
+[116912ms] 4 take left fork
+[116912ms] 4 is eating
+[117115ms] 2 is sleeping
+[117115ms] 4 is sleeping
+[117115ms] 1 take left fork
+[117115ms] 1 take right fork
+[117115ms] 1 is eating
+[117115ms] 3 take left fork
+[117115ms] 3 take right fork
+[117115ms] 3 is eating
+[117318ms] 3 is sleeping
+[117318ms] 1 is sleeping
+[117318ms] 2 take left fork
+[117318ms] 2 take right fork
+[117318ms] 2 is eating
+[117318ms] 4 take right fork
+[117318ms] 4 take left fork
+[117318ms] 4 is eating
+[117521ms] 2 is sleeping
+[117521ms] 4 is sleeping
+[117521ms] 3 take left fork
+[117521ms] 3 take right fork
+[117521ms] 3 is eating
+[117521ms] 1 take left fork
+[117521ms] 1 take right fork
+[117521ms] 1 is eating
+[117724ms] 3 is sleeping
+[117724ms] 1 is sleeping
+[117724ms] 2 take left fork
+[117724ms] 2 take right fork
+[117724ms] 2 is eating
+[117724ms] 4 take right fork
+[117724ms] 4 take left fork
+[117724ms] 4 is eating
+[117927ms] 4 is sleeping
+[117927ms] 2 is sleeping
+[117928ms] 1 take left fork
+[117928ms] 1 take right fork
+[117928ms] 1 is eating
+[117928ms] 3 take left fork
+[117928ms] 3 take right fork
+[117928ms] 3 is eating
+[118129ms] 3 is sleeping
+[118129ms] 1 is sleeping
+[118129ms] 4 take right fork
+[118129ms] 4 take left fork
+[118129ms] 4 is eating
+[118129ms] 2 take left fork
+[118129ms] 2 take right fork
+[118129ms] 2 is eating
+[118332ms] 2 is sleeping
+[118332ms] 4 is sleeping
+[118332ms] 3 take left fork
+[118332ms] 3 take right fork
+[118332ms] 3 is eating
+[118332ms] 1 take left fork
+[118332ms] 1 take right fork
+[118332ms] 1 is eating
+[118535ms] 3 is sleeping
+[118535ms] 1 is sleeping
+[118535ms] 4 take right fork
+[118535ms] 4 take left fork
+[118535ms] 4 is eating
+[118535ms] 2 take left fork
+[118535ms] 2 take right fork
+[118535ms] 2 is eating
+[118738ms] 2 is sleeping
+[118738ms] 4 is sleeping
+[118738ms] 3 take left fork
+[118738ms] 3 take right fork
+[118738ms] 3 is eating
+[118738ms] 1 take left fork
+[118738ms] 1 take right fork
+[118738ms] 1 is eating
+[118941ms] 3 is sleeping
+[118941ms] 1 is sleeping
+[118941ms] 4 take right fork
+[118942ms] 4 take left fork
+[118942ms] 4 is eating
+[118941ms] 2 take left fork
+[118942ms] 2 take right fork
+[118942ms] 2 is eating
+[119142ms] 2 is sleeping
+[119142ms] 4 is sleeping
+[119142ms] 1 take left fork
+[119142ms] 1 take right fork
+[119142ms] 1 is eating
+[119142ms] 3 take left fork
+[119142ms] 3 take right fork
+[119142ms] 3 is eating
+[119345ms] 3 is sleeping
+[119345ms] 2 take left fork
+[119345ms] 4 take right fork
+[119345ms] 1 is sleeping
+[119345ms] 4 take left fork
+[119345ms] 4 is eating
+[119345ms] 2 take right fork
+[119345ms] 2 is eating
+[119547ms] 2 is sleeping
+[119547ms] 4 is sleeping
+[119548ms] 1 take left fork
+[119548ms] 1 take right fork
+[119548ms] 1 is eating
+[119548ms] 3 take left fork
+[119548ms] 3 take right fork
+[119548ms] 3 is eating
+[119750ms] 3 is sleeping
+[119750ms] 2 take left fork
+[119750ms] 2 take right fork
+[119750ms] 2 is eating
+[119750ms] 1 is sleeping
+[119750ms] 4 take right fork
+[119750ms] 4 take left fork
+[119750ms] 4 is eating
+[119954ms] 2 is sleeping
+[119954ms] 4 is sleeping
+[119954ms] 1 take left fork
+[119954ms] 1 take right fork
+[119954ms] 1 is eating
+[119954ms] 3 take left fork
+[119954ms] 3 take right fork
+[119954ms] 3 is eating
+[120156ms] 3 is sleeping
+[120156ms] 2 take left fork
+[120156ms] 2 take right fork
+[120156ms] 2 is eating
+[120156ms] 1 is sleeping
+[120156ms] 4 take right fork
+[120156ms] 4 take left fork
+[120156ms] 4 is eating
+[120358ms] 2 is sleeping
+[120358ms] 4 is sleeping
+[120359ms] 3 take left fork
+[120359ms] 3 take right fork
+[120359ms] 3 is eating
+[120359ms] 1 take left fork
+[120359ms] 1 take right fork
+[120359ms] 1 is eating
+[120561ms] 3 is sleeping
+[120561ms] 1 is sleeping
+[120561ms] 2 take left fork
+[120561ms] 4 take right fork
+[120561ms] 4 take left fork
+[120561ms] 4 is eating
+[120561ms] 2 take right fork
+[120561ms] 2 is eating
+[120763ms] 2 is sleeping
+[120763ms] 4 is sleeping
+[120763ms] 3 take left fork
+[120763ms] 3 take right fork
+[120763ms] 3 is eating
+[120763ms] 1 take left fork
+[120763ms] 1 take right fork
+[120763ms] 1 is eating
+[120969ms] 2 take left fork
+[120969ms] 2 take right fork
+[120969ms] 3 is sleeping
+[120969ms] 1 is sleeping
+[120969ms] 2 is eating
+[120969ms] 4 take right fork
+[120969ms] 4 take left fork
+[120969ms] 4 is eating
+[121171ms] 2 is sleeping
+[121171ms] 4 is sleeping
+[121172ms] 3 take left fork
+[121172ms] 3 take right fork
+[121172ms] 3 is eating
+[121172ms] 1 take left fork
+[121172ms] 1 take right fork
+[121172ms] 1 is eating
+[121377ms] 3 is sleeping
+[121377ms] 2 take left fork
+[121377ms] 2 take right fork
+[121377ms] 1 is sleeping
+[121377ms] 4 take right fork
+[121377ms] 4 take left fork
+[121377ms] 4 is eating
+[121377ms] 2 is eating
+[121581ms] 4 is sleeping
+[121581ms] 2 is sleeping
+[121581ms] 3 take left fork
+[121581ms] 1 take left fork
+[121581ms] 1 take right fork
+[121581ms] 1 is eating
+[121581ms] 3 take right fork
+[121581ms] 3 is eating
+[121786ms] 3 is sleeping
+[121786ms] 4 take right fork
+[121786ms] 4 take left fork
+[121786ms] 4 is eating
+[121786ms] 2 take left fork
+[121786ms] 2 take right fork
+[121786ms] 2 is eating
+[121786ms] 1 is sleeping
+[121993ms] 4 is sleeping
+[121993ms] 2 is sleeping
+[121993ms] 3 take left fork
+[121993ms] 1 take left fork
+[121993ms] 1 take right fork
+[121993ms] 1 is eating
+[121993ms] 3 take right fork
+[121993ms] 3 is eating
+[122197ms] 2 take left fork
+[122197ms] 4 take right fork
+[122197ms] 1 is sleeping
+[122197ms] 3 is sleeping
+[122197ms] 2 take right fork
+[122197ms] 2 is eating
+[122197ms] 4 take left fork
+[122197ms] 4 is eating
+[122402ms] 2 is sleeping
+[122402ms] 4 is sleeping
+[122403ms] 1 take left fork
+[122403ms] 1 take right fork
+[122403ms] 1 is eating
+[122403ms] 3 take left fork
+[122403ms] 3 take right fork
+[122403ms] 3 is eating
+[122608ms] 3 is sleeping
+[122608ms] 4 take right fork
+[122608ms] 2 take left fork
+[122608ms] 2 take right fork
+[122608ms] 2 is eating
+[122608ms] 4 take left fork
+[122608ms] 4 is eating
+[122608ms] 1 is sleeping
+[122811ms] 2 is sleeping
+[122811ms] 4 is sleeping
+[122811ms] 3 take left fork
+[122811ms] 3 take right fork
+[122811ms] 3 is eating
+[122811ms] 1 take left fork
+[122811ms] 1 take right fork
+[122811ms] 1 is eating
+[123016ms] 3 is sleeping
+[123016ms] 2 take left fork
+[123016ms] 2 take right fork
+[123016ms] 1 is sleeping
+[123016ms] 4 take right fork
+[123016ms] 4 take left fork
+[123016ms] 2 is eating
+[123017ms] 4 is eating
+[123218ms] 4 is sleeping
+[123218ms] 2 is sleeping
+[123218ms] 1 take left fork
+[123218ms] 1 take right fork
+[123218ms] 1 is eating
+[123218ms] 3 take left fork
+[123218ms] 3 take right fork
+[123218ms] 3 is eating
+[123423ms] 3 is sleeping
+[123423ms] 1 is sleeping
+[123423ms] 2 take left fork
+[123423ms] 2 take right fork
+[123423ms] 2 is eating
+[123423ms] 4 take right fork
+[123423ms] 4 take left fork
+[123423ms] 4 is eating
+[123628ms] 4 is sleeping
+[123628ms] 2 is sleeping
+[123629ms] 3 take left fork
+[123629ms] 3 take right fork
+[123629ms] 3 is eating
+[123629ms] 1 take left fork
+[123629ms] 1 take right fork
+[123629ms] 1 is eating
+[123834ms] 3 is sleeping
+[123834ms] 2 take left fork
+[123834ms] 2 take right fork
+[123834ms] 2 is eating
+[123834ms] 1 is sleeping
+[123834ms] 4 take right fork
+[123834ms] 4 take left fork
+[123834ms] 4 is eating
+[124039ms] 4 is sleeping
+[124039ms] 2 is sleeping
+[124039ms] 3 take left fork
+[124039ms] 3 take right fork
+[124039ms] 3 is eating
+[124039ms] 1 take left fork
+[124039ms] 1 take right fork
+[124039ms] 1 is eating
+[124244ms] 3 is sleeping
+[124244ms] 1 is sleeping
+[124244ms] 2 take left fork
+[124244ms] 4 take right fork
+[124244ms] 4 take left fork
+[124244ms] 4 is eating
+[124244ms] 2 take right fork
+[124244ms] 2 is eating
+[124450ms] 4 is sleeping
+[124450ms] 2 is sleeping
+[124450ms] 3 take left fork
+[124450ms] 3 take right fork
+[124450ms] 3 is eating
+[124450ms] 1 take left fork
+[124450ms] 1 take right fork
+[124450ms] 1 is eating
+[124655ms] 3 is sleeping
+[124655ms] 2 take left fork
+[124655ms] 1 is sleeping
+[124655ms] 2 take right fork
+[124655ms] 2 is eating
+[124655ms] 4 take right fork
+[124655ms] 4 take left fork
+[124655ms] 4 is eating
+[124860ms] 4 is sleeping
+[124860ms] 2 is sleeping
+[124860ms] 3 take left fork
+[124860ms] 3 take right fork
+[124860ms] 3 is eating
+[124860ms] 1 take left fork
+[124861ms] 1 take right fork
+[124861ms] 1 is eating
+[125065ms] 3 is sleeping
+[125065ms] 2 take left fork
+[125065ms] 2 take right fork
+[125065ms] 1 is sleeping
+[125066ms] 2 is eating
+[125065ms] 4 take right fork
+[125066ms] 4 take left fork
+[125066ms] 4 is eating
+[125271ms] 2 is sleeping
+[125271ms] 4 is sleeping
+[125271ms] 3 take left fork
+[125271ms] 3 take right fork
+[125271ms] 3 is eating
+[125271ms] 1 take left fork
+[125271ms] 1 take right fork
+[125271ms] 1 is eating
+[125476ms] 3 is sleeping
+[125476ms] 2 take left fork
+[125476ms] 1 is sleeping
+[125476ms] 2 take right fork
+[125476ms] 2 is eating
+[125476ms] 4 take right fork
+[125476ms] 4 take left fork
+[125476ms] 4 is eating
+[125681ms] 2 is sleeping
+[125681ms] 4 is sleeping
+[125682ms] 3 take left fork
+[125682ms] 3 take right fork
+[125682ms] 3 is eating
+[125682ms] 1 take left fork
+[125682ms] 1 take right fork
+[125682ms] 1 is eating
+[125886ms] 3 is sleeping
+[125886ms] 2 take left fork
+[125887ms] 2 take right fork
+[125886ms] 1 is sleeping
+[125887ms] 4 take right fork
+[125887ms] 4 take left fork
+[125887ms] 4 is eating
+[125887ms] 2 is eating
+[126088ms] 2 is sleeping
+[126088ms] 4 is sleeping
+[126088ms] 3 take left fork
+[126088ms] 3 take right fork
+[126088ms] 3 is eating
+[126088ms] 1 take left fork
+[126088ms] 1 take right fork
+[126088ms] 1 is eating
+[126290ms] 3 is sleeping
+[126290ms] 1 is sleeping
+[126290ms] 2 take left fork
+[126290ms] 2 take right fork
+[126290ms] 2 is eating
+[126290ms] 4 take right fork
+[126290ms] 4 take left fork
+[126290ms] 4 is eating
+[126492ms] 4 is sleeping
+[126492ms] 2 is sleeping
+[126492ms] 3 take left fork
+[126492ms] 3 take right fork
+[126492ms] 1 take left fork
+[126492ms] 1 take right fork
+[126492ms] 1 is eating
+[126492ms] 3 is eating
+[126694ms] 3 is sleeping
+[126694ms] 1 is sleeping
+[126694ms] 4 take right fork
+[126694ms] 4 take left fork
+[126694ms] 4 is eating
+[126694ms] 2 take left fork
+[126694ms] 2 take right fork
+[126694ms] 2 is eating
+[126899ms] 4 is sleeping
+[126899ms] 2 is sleeping
+[126899ms] 3 take left fork
+[126899ms] 3 take right fork
+[126899ms] 3 is eating
+[126899ms] 1 take left fork
+[126899ms] 1 take right fork
+[126899ms] 1 is eating
+[127099ms] 3 is sleeping
+[127099ms] 1 is sleeping
+[127100ms] 4 take right fork
+[127100ms] 4 take left fork
+[127100ms] 4 is eating
+[127100ms] 2 take left fork
+[127100ms] 2 take right fork
+[127100ms] 2 is eating
+[127304ms] 2 is sleeping
+[127304ms] 4 is sleeping
+[127305ms] 3 take left fork
+[127305ms] 3 take right fork
+[127305ms] 3 is eating
+[127305ms] 1 take left fork
+[127305ms] 1 take right fork
+[127305ms] 1 is eating
+[127506ms] 3 is sleeping
+[127506ms] 2 take left fork
+[127506ms] 2 take right fork
+[127506ms] 2 is eating
+[127506ms] 4 take right fork
+[127506ms] 4 take left fork
+[127506ms] 4 is eating
+[127506ms] 1 is sleeping
+[127709ms] 2 is sleeping
+[127709ms] 4 is sleeping
+[127710ms] 3 take left fork
+[127710ms] 3 take right fork
+[127710ms] 1 take left fork
+[127710ms] 1 take right fork
+[127710ms] 1 is eating
+[127710ms] 3 is eating
+[127916ms] 3 is sleeping
+[127916ms] 2 take left fork
+[127916ms] 2 take right fork
+[127916ms] 2 is eating
+[127916ms] 4 take right fork
+[127916ms] 1 is sleeping
+[127916ms] 4 take left fork
+[127916ms] 4 is eating
+[128119ms] 2 is sleeping
+[128119ms] 4 is sleeping
+[128120ms] 3 take left fork
+[128120ms] 3 take right fork
+[128120ms] 3 is eating
+[128120ms] 1 take left fork
+[128120ms] 1 take right fork
+[128120ms] 1 is eating
+[128324ms] 3 is sleeping
+[128324ms] 1 is sleeping
+[128324ms] 4 take right fork
+[128324ms] 4 take left fork
+[128324ms] 4 is eating
+[128324ms] 2 take left fork
+[128324ms] 2 take right fork
+[128324ms] 2 is eating
+[128529ms] 4 is sleeping
+[128530ms] 2 is sleeping
+[128530ms] 1 take left fork
+[128530ms] 1 take right fork
+[128530ms] 1 is eating
+[128530ms] 3 take left fork
+[128530ms] 3 take right fork
+[128530ms] 3 is eating
+[128730ms] 3 is sleeping
+[128730ms] 1 is sleeping
+[128730ms] 2 take left fork
+[128730ms] 2 take right fork
+[128730ms] 2 is eating
+[128730ms] 4 take right fork
+[128730ms] 4 take left fork
+[128730ms] 4 is eating
+[128936ms] 2 is sleeping
+[128937ms] 4 is sleeping
+[128937ms] 1 take left fork
+[128937ms] 1 take right fork
+[128937ms] 1 is eating
+[128937ms] 3 take left fork
+[128937ms] 3 take right fork
+[128937ms] 3 is eating
+[129140ms] 3 is sleeping
+[129140ms] 1 is sleeping
+[129140ms] 2 take left fork
+[129140ms] 2 take right fork
+[129140ms] 2 is eating
+[129140ms] 4 take right fork
+[129140ms] 4 take left fork
+[129140ms] 4 is eating
+[129343ms] 2 is sleeping
+[129343ms] 4 is sleeping
+[129343ms] 3 take left fork
+[129343ms] 1 take left fork
+[129343ms] 1 take right fork
+[129343ms] 1 is eating
+[129343ms] 3 take right fork
+[129343ms] 3 is eating
+[129547ms] 3 is sleeping
+[129547ms] 1 is sleeping
+[129547ms] 2 take left fork
+[129547ms] 2 take right fork
+[129547ms] 2 is eating
+[129547ms] 4 take right fork
+[129547ms] 4 take left fork
+[129547ms] 4 is eating
+[129752ms] 2 is sleeping
+[129752ms] 4 is sleeping
+[129752ms] 1 take left fork
+[129752ms] 1 take right fork
+[129752ms] 1 is eating
+[129752ms] 3 take left fork
+[129752ms] 3 take right fork
+[129752ms] 3 is eating
+[129958ms] 3 is sleeping
+[129958ms] 1 is sleeping
+[129958ms] 2 take left fork
+[129959ms] 2 take right fork
+[129959ms] 4 take right fork
+[129959ms] 4 take left fork
+[129959ms] 2 is eating
+[129959ms] 4 is eating
+[130162ms] 2 is sleeping
+[130162ms] 4 is sleeping
+[130162ms] 3 take left fork
+[130162ms] 3 take right fork
+[130162ms] 3 is eating
+[130162ms] 1 take left fork
+[130162ms] 1 take right fork
+[130163ms] 1 is eating
+[130367ms] 3 is sleeping
+[130367ms] 1 is sleeping
+[130367ms] 4 take right fork
+[130367ms] 4 take left fork
+[130367ms] 4 is eating
+[130367ms] 2 take left fork
+[130368ms] 2 take right fork
+[130368ms] 2 is eating
+[130572ms] 4 is sleeping
+[130572ms] 2 is sleeping
+[130572ms] 3 take left fork
+[130572ms] 3 take right fork
+[130572ms] 3 is eating
+[130572ms] 1 take left fork
+[130572ms] 1 take right fork
+[130572ms] 1 is eating
+[130777ms] 3 is sleeping
+[130778ms] 1 is sleeping
+[130778ms] 2 take left fork
+[130778ms] 2 take right fork
+[130778ms] 2 is eating
+[130778ms] 4 take right fork
+[130778ms] 4 take left fork
+[130778ms] 4 is eating
+[130983ms] 2 is sleeping
+[130983ms] 4 is sleeping
+[130983ms] 3 take left fork
+[130984ms] 3 take right fork
+[130984ms] 1 take left fork
+[130984ms] 1 take right fork
+[130984ms] 1 is eating
+[130984ms] 3 is eating
+[131188ms] 1 is sleeping
+[131188ms] 2 take left fork
+[131188ms] 3 is sleeping
+[131188ms] 2 take right fork
+[131188ms] 2 is eating
+[131188ms] 4 take right fork
+[131188ms] 4 take left fork
+[131188ms] 4 is eating
+[131391ms] 2 is sleeping
+[131391ms] 4 is sleeping
+[131391ms] 1 take left fork
+[131391ms] 1 take right fork
+[131391ms] 3 take left fork
+[131391ms] 3 take right fork
+[131391ms] 3 is eating
+[131391ms] 1 is eating
+[131593ms] 3 is sleeping
+[131593ms] 1 is sleeping
+[131593ms] 4 take right fork
+[131593ms] 4 take left fork
+[131593ms] 4 is eating
+[131593ms] 2 take left fork
+[131593ms] 2 take right fork
+[131593ms] 2 is eating
+[131794ms] 2 is sleeping
+[131794ms] 4 is sleeping
+[131794ms] 3 take left fork
+[131794ms] 3 take right fork
+[131794ms] 3 is eating
+[131794ms] 1 take left fork
+[131794ms] 1 take right fork
+[131794ms] 1 is eating
+[132000ms] 2 take left fork
+[132000ms] 1 is sleeping
+[132000ms] 4 take right fork
+[132000ms] 4 take left fork
+[132000ms] 4 is eating
+[132000ms] 3 is sleeping
+[132000ms] 2 take right fork
+[132000ms] 2 is eating
+[132204ms] 4 is sleeping
+[132204ms] 2 is sleeping
+[132204ms] 1 take left fork
+[132204ms] 1 take right fork
+[132204ms] 1 is eating
+[132204ms] 3 take left fork
+[132204ms] 3 take right fork
+[132205ms] 3 is eating
+[132409ms] 3 is sleeping
+[132409ms] 1 is sleeping
+[132410ms] 2 take left fork
+[132410ms] 2 take right fork
+[132410ms] 2 is eating
+[132410ms] 4 take right fork
+[132410ms] 4 take left fork
+[132410ms] 4 is eating
+[132614ms] 2 is sleeping
+[132614ms] 4 is sleeping
+[132615ms] 1 take left fork
+[132615ms] 1 take right fork
+[132615ms] 1 is eating
+[132615ms] 3 take left fork
+[132615ms] 3 take right fork
+[132615ms] 3 is eating
+[132817ms] 3 is sleeping
+[132817ms] 1 is sleeping
+[132817ms] 4 take right fork
+[132817ms] 4 take left fork
+[132817ms] 4 is eating
+[132817ms] 2 take left fork
+[132817ms] 2 take right fork
+[132817ms] 2 is eating
+[133020ms] 4 is sleeping
+[133020ms] 2 is sleeping
+[133020ms] 1 take left fork
+[133020ms] 1 take right fork
+[133020ms] 1 is eating
+[133020ms] 3 take left fork
+[133020ms] 3 take right fork
+[133020ms] 3 is eating
+[133223ms] 3 is sleeping
+[133223ms] 4 take right fork
+[133223ms] 4 take left fork
+[133223ms] 4 is eating
+[133223ms] 1 is sleeping
+[133223ms] 2 take left fork
+[133223ms] 2 take right fork
+[133223ms] 2 is eating
+[133426ms] 4 is sleeping
+[133426ms] 2 is sleeping
+[133426ms] 3 take left fork
+[133426ms] 3 take right fork
+[133426ms] 3 is eating
+[133426ms] 1 take left fork
+[133426ms] 1 take right fork
+[133426ms] 1 is eating
+[133628ms] 3 is sleeping
+[133629ms] 2 take left fork
+[133629ms] 4 take right fork
+[133628ms] 1 is sleeping
+[133629ms] 4 take left fork
+[133629ms] 4 is eating
+[133629ms] 2 take right fork
+[133629ms] 2 is eating
+[133831ms] 2 is sleeping
+[133831ms] 4 is sleeping
+[133832ms] 3 take left fork
+[133832ms] 3 take right fork
+[133832ms] 3 is eating
+[133832ms] 1 take left fork
+[133832ms] 1 take right fork
+[133832ms] 1 is eating
+[134034ms] 3 is sleeping
+[134034ms] 1 is sleeping
+[134034ms] 2 take left fork
+[134034ms] 2 take right fork
+[134034ms] 2 is eating
+[134034ms] 4 take right fork
+[134034ms] 4 take left fork
+[134034ms] 4 is eating
+[134237ms] 2 is sleeping
+[134237ms] 4 is sleeping
+[134237ms] 3 take left fork
+[134237ms] 3 take right fork
+[134237ms] 3 is eating
+[134237ms] 1 take left fork
+[134237ms] 1 take right fork
+[134237ms] 1 is eating
+[134440ms] 3 is sleeping
+[134440ms] 2 take left fork
+[134440ms] 2 take right fork
+[134440ms] 2 is eating
+[134440ms] 1 is sleeping
+[134440ms] 4 take right fork
+[134440ms] 4 take left fork
+[134440ms] 4 is eating
+[134642ms] 4 is sleeping
+[134643ms] 1 take left fork
+[134643ms] 2 is sleeping
+[134643ms] 3 take left fork
+[134643ms] 3 take right fork
+[134643ms] 3 is eating
+[134643ms] 1 take right fork
+[134643ms] 1 is eating
+[134848ms] 3 is sleeping
+[134848ms] 1 is sleeping
+[134848ms] 2 take left fork
+[134848ms] 2 take right fork
+[134848ms] 2 is eating
+[134848ms] 4 take right fork
+[134848ms] 4 take left fork
+[134848ms] 4 is eating
+[135048ms] 2 is sleeping
+[135048ms] 4 is sleeping
+[135049ms] 3 take left fork
+[135049ms] 3 take right fork
+[135049ms] 3 is eating
+[135049ms] 1 take left fork
+[135049ms] 1 take right fork
+[135049ms] 1 is eating
+[135250ms] 3 is sleeping
+[135250ms] 1 is sleeping
+[135250ms] 2 take left fork
+[135250ms] 2 take right fork
+[135250ms] 2 is eating
+[135250ms] 4 take right fork
+[135250ms] 4 take left fork
+[135250ms] 4 is eating
+[135454ms] 4 is sleeping
+[135454ms] 2 is sleeping
+[135454ms] 1 take left fork
+[135454ms] 1 take right fork
+[135454ms] 1 is eating
+[135454ms] 3 take left fork
+[135454ms] 3 take right fork
+[135454ms] 3 is eating
+[135654ms] 1 is sleeping
+[135654ms] 4 take right fork
+[135654ms] 2 take left fork
+[135664ms] 3 is sleeping
+[135664ms] 2 take right fork
+[135664ms] 2 is eating
+[135664ms] 4 take left fork
+[135664ms] 4 is eating
+[135864ms] 2 is sleeping
+[135865ms] 3 take left fork
+[135865ms] 3 take right fork
+[135865ms] 3 is eating
+[135865ms] 4 is sleeping
+[135865ms] 1 take left fork
+[135865ms] 1 take right fork
+[135865ms] 1 is eating
+[136074ms] 3 is sleeping
+[136074ms] 1 is sleeping
+[136074ms] 2 take left fork
+[136074ms] 2 take right fork
+[136074ms] 2 is eating
+[136074ms] 4 take right fork
+[136074ms] 4 take left fork
+[136074ms] 4 is eating
+[136282ms] 2 is sleeping
+[136282ms] 4 is sleeping
+[136282ms] 1 take left fork
+[136282ms] 1 take right fork
+[136282ms] 1 is eating
+[136282ms] 3 take left fork
+[136282ms] 3 take right fork
+[136282ms] 3 is eating
+[136483ms] 1 is sleeping
+[136483ms] 3 is sleeping
+[136483ms] 4 take right fork
+[136483ms] 2 take left fork
+[136483ms] 2 take right fork
+[136483ms] 2 is eating
+[136483ms] 4 take left fork
+[136483ms] 4 is eating
+[136691ms] 4 is sleeping
+[136691ms] 2 is sleeping
+[136692ms] 1 take left fork
+[136692ms] 1 take right fork
+[136692ms] 1 is eating
+[136692ms] 3 take left fork
+[136692ms] 3 take right fork
+[136692ms] 3 is eating
+[136902ms] 1 is sleeping
+[136902ms] 2 take left fork
+[136902ms] 2 take right fork
+[136902ms] 2 is eating
+[136902ms] 4 take right fork
+[136902ms] 3 is sleeping
+[136902ms] 4 take left fork
+[136902ms] 4 is eating
+[137112ms] 2 is sleeping
+[137112ms] 4 is sleeping
+[137112ms] 1 take left fork
+[137112ms] 1 take right fork
+[137112ms] 1 is eating
+[137112ms] 3 take left fork
+[137112ms] 3 take right fork
+[137112ms] 3 is eating
+[137323ms] 3 is sleeping
+[137323ms] 2 take left fork
+[137323ms] 2 take right fork
+[137323ms] 2 is eating
+[137323ms] 4 take right fork
+[137323ms] 4 take left fork
+[137323ms] 4 is eating
+[137323ms] 1 is sleeping
+[137532ms] 2 is sleeping
+[137532ms] 4 is sleeping
+[137533ms] 3 take left fork
+[137533ms] 3 take right fork
+[137533ms] 3 is eating
+[137533ms] 1 take left fork
+[137533ms] 1 take right fork
+[137533ms] 1 is eating
+[137737ms] 3 is sleeping
+[137737ms] 1 is sleeping
+[137737ms] 2 take left fork
+[137737ms] 2 take right fork
+[137737ms] 2 is eating
+[137737ms] 4 take right fork
+[137737ms] 4 take left fork
+[137737ms] 4 is eating
+[137947ms] 2 is sleeping
+[137947ms] 4 is sleeping
+[137947ms] 3 take left fork
+[137947ms] 3 take right fork
+[137947ms] 3 is eating
+[137947ms] 1 take left fork
+[137947ms] 1 take right fork
+[137947ms] 1 is eating
+[138156ms] 1 is sleeping
+[138156ms] 3 is sleeping
+[138156ms] 2 take left fork
+[138156ms] 2 take right fork
+[138156ms] 2 is eating
+[138156ms] 4 take right fork
+[138156ms] 4 take left fork
+[138156ms] 4 is eating
+[138364ms] 4 is sleeping
+[138364ms] 2 is sleeping
+[138365ms] 1 take left fork
+[138365ms] 1 take right fork
+[138365ms] 1 is eating
+[138365ms] 3 take left fork
+[138365ms] 3 take right fork
+[138365ms] 3 is eating
+[138575ms] 3 is sleeping
+[138575ms] 2 take left fork
+[138575ms] 2 take right fork
+[138575ms] 2 is eating
+[138575ms] 1 is sleeping
+[138575ms] 4 take right fork
+[138575ms] 4 take left fork
+[138575ms] 4 is eating
+[138786ms] 2 is sleeping
+[138786ms] 4 is sleeping
+[138787ms] 3 take left fork
+[138787ms] 3 take right fork
+[138787ms] 3 is eating
+[138787ms] 1 take left fork
+[138787ms] 1 take right fork
+[138787ms] 1 is eating
+[138997ms] 3 is sleeping
+[138997ms] 1 is sleeping
+[138998ms] 2 take left fork
+[138998ms] 2 take right fork
+[138998ms] 2 is eating
+[138998ms] 4 take right fork
+[138998ms] 4 take left fork
+[138998ms] 4 is eating
+[139203ms] 2 is sleeping
+[139203ms] 4 is sleeping
+[139204ms] 3 take left fork
+[139204ms] 3 take right fork
+[139204ms] 3 is eating
+[139204ms] 1 take left fork
+[139204ms] 1 take right fork
+[139204ms] 1 is eating
+[139407ms] 3 is sleeping
+[139407ms] 1 is sleeping
+[139407ms] 4 take right fork
+[139407ms] 4 take left fork
+[139407ms] 4 is eating
+[139407ms] 2 take left fork
+[139407ms] 2 take right fork
+[139407ms] 2 is eating
+[139617ms] 4 is sleeping
+[139617ms] 2 is sleeping
+[139617ms] 3 take left fork
+[139618ms] 1 take left fork
+[139618ms] 1 take right fork
+[139618ms] 1 is eating
+[139618ms] 3 take right fork
+[139618ms] 3 is eating
+[139828ms] 2 take left fork
+[139828ms] 4 take right fork
+[139828ms] 1 is sleeping
+[139828ms] 3 is sleeping
+[139828ms] 2 take right fork
+[139828ms] 2 is eating
+[139828ms] 4 take left fork
+[139828ms] 4 is eating
+[140038ms] 4 is sleeping
+[140038ms] 2 is sleeping
+[140039ms] 1 take left fork
+[140039ms] 1 take right fork
+[140039ms] 1 is eating
+[140039ms] 3 take left fork
+[140039ms] 3 take right fork
+[140039ms] 3 is eating
+[140249ms] 2 take left fork
+[140249ms] 2 take right fork
+[140249ms] 2 is eating
+[140249ms] 1 is sleeping
+[140249ms] 3 is sleeping
+[140249ms] 4 take right fork
+[140249ms] 4 take left fork
+[140249ms] 4 is eating
+[140460ms] 2 is sleeping
+[140460ms] 4 is sleeping
+[140460ms] 1 take left fork
+[140461ms] 1 take right fork
+[140461ms] 1 is eating
+[140460ms] 3 take left fork
+[140461ms] 3 take right fork
+[140461ms] 3 is eating
+[140671ms] 3 is sleeping
+[140671ms] 1 is sleeping
+[140671ms] 4 take right fork
+[140671ms] 4 take left fork
+[140671ms] 4 is eating
+[140671ms] 2 take left fork
+[140671ms] 2 take right fork
+[140671ms] 2 is eating
+[140882ms] 4 is sleeping
+[140882ms] 2 is sleeping
+[140882ms] 3 take left fork
+[140882ms] 3 take right fork
+[140882ms] 3 is eating
+[140882ms] 1 take left fork
+[140882ms] 1 take right fork
+[140882ms] 1 is eating
+[141093ms] 3 is sleeping
+[141093ms] 1 is sleeping
+[141093ms] 2 take left fork
+[141093ms] 2 take right fork
+[141093ms] 2 is eating
+[141093ms] 4 take right fork
+[141093ms] 4 take left fork
+[141093ms] 4 is eating
+[141304ms] 4 is sleeping
+[141304ms] 2 is sleeping
+[141304ms] 3 take left fork
+[141304ms] 3 take right fork
+[141304ms] 3 is eating
+[141304ms] 1 take left fork
+[141304ms] 1 take right fork
+[141304ms] 1 is eating
+[141514ms] 3 is sleeping
+[141515ms] 4 take right fork
+[141515ms] 4 take left fork
+[141515ms] 4 is eating
+[141515ms] 2 take left fork
+[141515ms] 2 take right fork
+[141515ms] 2 is eating
+[141515ms] 1 is sleeping
+[141725ms] 4 is sleeping
+[141725ms] 2 is sleeping
+[141726ms] 3 take left fork
+[141726ms] 1 take left fork
+[141726ms] 1 take right fork
+[141726ms] 1 is eating
+[141726ms] 3 take right fork
+[141726ms] 3 is eating
+[141937ms] 3 is sleeping
+[141937ms] 1 is sleeping
+[141937ms] 2 take left fork
+[141937ms] 2 take right fork
+[141937ms] 2 is eating
+[141937ms] 4 take right fork
+[141937ms] 4 take left fork
+[141937ms] 4 is eating
+[142142ms] 2 is sleeping
+[142142ms] 4 is sleeping
+[142142ms] 1 take left fork
+[142143ms] 1 take right fork
+[142143ms] 1 is eating
+[142142ms] 3 take left fork
+[142143ms] 3 take right fork
+[142143ms] 3 is eating
+[142347ms] 3 is sleeping
+[142347ms] 1 is sleeping
+[142347ms] 4 take right fork
+[142347ms] 4 take left fork
+[142347ms] 4 is eating
+[142347ms] 2 take left fork
+[142347ms] 2 take right fork
+[142347ms] 2 is eating
+[142558ms] 4 is sleeping
+[142558ms] 2 is sleeping
+[142558ms] 3 take left fork
+[142558ms] 3 take right fork
+[142558ms] 3 is eating
+[142558ms] 1 take left fork
+[142558ms] 1 take right fork
+[142558ms] 1 is eating
+[142761ms] 3 is sleeping
+[142761ms] 1 is sleeping
+[142761ms] 4 take right fork
+[142761ms] 2 take left fork
+[142761ms] 2 take right fork
+[142761ms] 2 is eating
+[142761ms] 4 take left fork
+[142761ms] 4 is eating
+[142969ms] 4 is sleeping
+[142969ms] 2 is sleeping
+[142969ms] 3 take left fork
+[142969ms] 3 take right fork
+[142969ms] 1 take left fork
+[142970ms] 1 take right fork
+[142970ms] 1 is eating
+[142969ms] 3 is eating
+[143179ms] 3 is sleeping
+[143179ms] 1 is sleeping
+[143179ms] 4 take right fork
+[143179ms] 4 take left fork
+[143179ms] 4 is eating
+[143179ms] 2 take left fork
+[143179ms] 2 take right fork
+[143179ms] 2 is eating
+[143383ms] 4 is sleeping
+[143383ms] 2 is sleeping
+[143383ms] 3 take left fork
+[143383ms] 3 take right fork
+[143383ms] 3 is eating
+[143383ms] 1 take left fork
+[143383ms] 1 take right fork
+[143383ms] 1 is eating
+[143588ms] 3 is sleeping
+[143588ms] 1 is sleeping
+[143588ms] 4 take right fork
+[143588ms] 4 take left fork
+[143588ms] 4 is eating
+[143588ms] 2 take left fork
+[143588ms] 2 take right fork
+[143588ms] 2 is eating
+[143793ms] 4 is sleeping
+[143793ms] 2 is sleeping
+[143794ms] 3 take left fork
+[143794ms] 3 take right fork
+[143794ms] 3 is eating
+[143794ms] 1 take left fork
+[143794ms] 1 take right fork
+[143794ms] 1 is eating
+[144000ms] 3 is sleeping
+[144000ms] 1 is sleeping
+[144000ms] 2 take left fork
+[144000ms] 2 take right fork
+[144000ms] 2 is eating
+[144000ms] 4 take right fork
+[144000ms] 4 take left fork
+[144000ms] 4 is eating
+[144204ms] 4 is sleeping
+[144204ms] 2 is sleeping
+[144204ms] 1 take left fork
+[144204ms] 1 take right fork
+[144204ms] 1 is eating
+[144204ms] 3 take left fork
+[144204ms] 3 take right fork
+[144204ms] 3 is eating
+[144409ms] 3 is sleeping
+[144409ms] 1 is sleeping
+[144409ms] 4 take right fork
+[144409ms] 2 take left fork
+[144409ms] 2 take right fork
+[144409ms] 2 is eating
+[144409ms] 4 take left fork
+[144409ms] 4 is eating
+[144620ms] 2 is sleeping
+[144620ms] 4 is sleeping
+[144620ms] 1 take left fork
+[144620ms] 1 take right fork
+[144620ms] 1 is eating
+[144620ms] 3 take left fork
+[144620ms] 3 take right fork
+[144620ms] 3 is eating
+[144831ms] 1 is sleeping
+[144831ms] 2 take left fork
+[144831ms] 4 take right fork
+[144831ms] 4 take left fork
+[144831ms] 4 is eating
+[144831ms] 2 take right fork
+[144831ms] 2 is eating
+[144831ms] 3 is sleeping
+[145041ms] 4 is sleeping
+[145041ms] 2 is sleeping
+[145042ms] 1 take left fork
+[145042ms] 1 take right fork
+[145042ms] 1 is eating
+[145042ms] 3 take left fork
+[145042ms] 3 take right fork
+[145042ms] 3 is eating
+[145242ms] 1 is sleeping
+[145242ms] 4 take right fork
+[145242ms] 3 is sleeping
+[145242ms] 2 take left fork
+[145242ms] 4 take left fork
+[145242ms] 2 take right fork
+[145242ms] 4 is eating
+[145242ms] 2 is eating
+[145446ms] 4 is sleeping
+[145446ms] 2 is sleeping
+[145446ms] 3 take left fork
+[145446ms] 3 take right fork
+[145446ms] 3 is eating
+[145446ms] 1 take left fork
+[145446ms] 1 take right fork
+[145446ms] 1 is eating
+[145647ms] 3 is sleeping
+[145647ms] 1 is sleeping
+[145647ms] 4 take right fork
+[145647ms] 4 take left fork
+[145647ms] 4 is eating
+[145647ms] 2 take left fork
+[145647ms] 2 take right fork
+[145647ms] 2 is eating
+[145847ms] 4 is sleeping
+[145847ms] 2 is sleeping
+[145848ms] 3 take left fork
+[145848ms] 3 take right fork
+[145848ms] 3 is eating
+[145848ms] 1 take left fork
+[145848ms] 1 take right fork
+[145848ms] 1 is eating
+[146051ms] 3 is sleeping
+[146051ms] 1 is sleeping
+[146051ms] 4 take right fork
+[146051ms] 4 take left fork
+[146051ms] 4 is eating
+[146051ms] 2 take left fork
+[146051ms] 2 take right fork
+[146051ms] 2 is eating
+[146256ms] 2 is sleeping
+[146256ms] 4 is sleeping
+[146256ms] 1 take left fork
+[146256ms] 1 take right fork
+[146256ms] 1 is eating
+[146256ms] 3 take left fork
+[146256ms] 3 take right fork
+[146256ms] 3 is eating
+[146459ms] 3 is sleeping
+[146459ms] 2 take left fork
+[146459ms] 2 take right fork
+[146459ms] 2 is eating
+[146459ms] 4 take right fork
+[146459ms] 4 take left fork
+[146459ms] 4 is eating
+[146459ms] 1 is sleeping
+[146660ms] 2 is sleeping
+[146660ms] 4 is sleeping
+[146660ms] 3 take left fork
+[146660ms] 3 take right fork
+[146660ms] 3 is eating
+[146660ms] 1 take left fork
+[146660ms] 1 take right fork
+[146660ms] 1 is eating
+[146861ms] 2 take left fork
+[146861ms] 1 is sleeping
+[146862ms] 2 take right fork
+[146861ms] 3 is sleeping
+[146861ms] 4 take right fork
+[146862ms] 2 is eating
+[146862ms] 4 take left fork
+[146862ms] 4 is eating
+[147065ms] 2 is sleeping
+[147065ms] 4 is sleeping
+[147066ms] 1 take left fork
+[147066ms] 1 take right fork
+[147066ms] 1 is eating
+[147066ms] 3 take left fork
+[147066ms] 3 take right fork
+[147066ms] 3 is eating
+[147268ms] 4 take right fork
+[147268ms] 4 take left fork
+[147268ms] 4 is eating
+[147268ms] 3 is sleeping
+[147268ms] 2 take left fork
+[147268ms] 2 take right fork
+[147268ms] 2 is eating
+[147268ms] 1 is sleeping
+[147470ms] 2 is sleeping
+[147470ms] 4 is sleeping

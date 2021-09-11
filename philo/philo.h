@@ -6,7 +6,7 @@
 /*   By: mishin <mishin@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/07 16:42:25 by mishin            #+#    #+#             */
-/*   Updated: 2021/09/10 18:02:06 by mishin           ###   ########.fr       */
+/*   Updated: 2021/09/11 15:15:04 by mishin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,15 +46,18 @@ int				input_to_ll(t_ll_meta *ll, char *arg);
 void			ll_to_ph(t_ll_meta ll, t_philo_meta *ph);
 
 pthread_mutex_t	*make_forks(int num_philos);
+pthread_mutex_t	*make_eating(int num_philos);
 int				get_fork(t_philo *philo, int direction);
 
 
 t_philo			*make_philos(t_philo_meta *ph);
-struct timeval	timestamp(t_philo *philo, char *msg);
-
+double			timestamp(t_philo *philo, char *msg);
+pthread_t		*make_monitor(t_philo *philos);
+void			*monitoring(void *data);
 
 int				left(t_philo *philo);
 int				right(t_philo *philo);
 void			eat(t_philo *philo);
 int				last(t_philo *philo);
+void			msleep(t_philo *philo);
 #endif
