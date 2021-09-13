@@ -6,7 +6,7 @@
 /*   By: mishin <mishin@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/07 18:51:42 by mishin            #+#    #+#             */
-/*   Updated: 2021/09/11 15:33:42 by mishin           ###   ########.fr       */
+/*   Updated: 2021/09/14 00:06:58 by mishin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,8 +27,8 @@ double	timestamp(t_philo *philo, char *msg)
 	else
 	{
 		gettimeofday(&now, NULL);
-		time_in_mill = (now.tv_sec - philo->last_meal.tv_sec) * 1000 + \
-					(now.tv_usec - philo->last_meal.tv_usec) / 1000;
+		time_in_mill = (now.tv_sec - philo->last_meal.time.tv_sec) * 1000 + \
+					(now.tv_usec - philo->last_meal.time.tv_usec) / 1000;
 	}
 	return (time_in_mill);
 }
@@ -41,13 +41,6 @@ int	left(t_philo *philo)
 int	right(t_philo *philo)
 {
 	return (philo->id % *(philo->info->num_philos));
-}
-
-void eat(t_philo *philo)
-{
-	gettimeofday(&(philo->last_meal), NULL);
-	timestamp(philo, "is eating");
-	usleep(*(philo->info->time_to_eat) * 1000);
 }
 
 int	last(t_philo *philo)

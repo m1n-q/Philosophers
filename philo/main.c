@@ -6,14 +6,9 @@
 /*   By: mishin <mishin@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/07 17:05:56 by mishin            #+#    #+#             */
-/*   Updated: 2021/09/11 15:29:21 by mishin           ###   ########.fr       */
+/*   Updated: 2021/09/14 00:20:36 by mishin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-/*
-	* number_of_philosophers / time_to_die time_to_eat /
-	 * time_to_sleep / [number_of_times_each_philosopher_must_eat]
-	 */
 
 #include "philo.h"
 
