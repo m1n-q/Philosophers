@@ -6,7 +6,7 @@
 /*   By: mishin <mishin@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/07 19:30:59 by mishin            #+#    #+#             */
-/*   Updated: 2021/09/14 00:26:46 by mishin           ###   ########.fr       */
+/*   Updated: 2021/09/15 01:10:19 by mishin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,13 +61,10 @@ t_philo	*make_philos(t_philo_meta *ph)
 
 static inline void	eat(t_philo *philo)
 {
-	// double tm;
-
-	// tm = timestamp(philo, NULL);
 	gettimeofday(&(philo->last_meal.time), NULL);
 	timestamp(philo, "is eating");
-	// printf("%.0f\n", tm);
-	usleep(*(philo->info->time_to_eat) * 1000);
+	// usleep(*(philo->info->time_to_eat) * 1000);
+	slp(*(philo->info->time_to_eat));
 }
 
 static inline void	leftright(t_philo *philo)
