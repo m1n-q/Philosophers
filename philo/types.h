@@ -6,7 +6,7 @@
 /*   By: mishin <mishin@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/07 19:09:14 by mishin            #+#    #+#             */
-/*   Updated: 2021/09/13 21:40:09 by mishin           ###   ########.fr       */
+/*   Updated: 2021/09/15 16:08:59 by mishin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,12 @@ typedef struct s_ll_meta
 	int			size;
 }				t_ll_meta;
 
+typedef struct s_time
+{
+	struct timeval	time;
+	pthread_mutex_t	lock;
+}				t_time;
+
 typedef struct s_philo_meta
 {
 	int				*num_philos;
@@ -32,13 +38,9 @@ typedef struct s_philo_meta
 	int				*time_to_eat;
 	int				*time_to_sleep;
 	int				*must_eat;
+	t_time			*last_meals;
 }				t_philo_meta;
 
-typedef struct s_time
-{
-	struct timeval	time;
-	pthread_mutex_t	lock;
-}				t_time;
 
 typedef struct s_philo
 {

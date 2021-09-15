@@ -6,7 +6,7 @@
 /*   By: mishin <mishin@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/07 18:51:42 by mishin            #+#    #+#             */
-/*   Updated: 2021/09/15 01:14:07 by mishin           ###   ########.fr       */
+/*   Updated: 2021/09/15 14:29:40 by mishin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ double	timestamp(t_philo *philo, char *msg)
 		gettimeofday(&now, NULL);
 		time_in_mill = (now.tv_sec - philo->start->tv_sec) * 1000 + \
 					(now.tv_usec - philo->start->tv_usec) / 1000;
-		printf("%p | [%.0fms] %d %s\n", pthread_self(), time_in_mill, philo->id, msg);
+		printf("[%.0fms] %d %s\n", time_in_mill, philo->id, msg);
 	}
 	else
 	{
@@ -51,11 +51,10 @@ int	last(t_philo *philo)
 void	msleep(t_philo *philo)
 {
 	timestamp(philo, "is sleeping");
-	// usleep(*(philo->info->time_to_sleep) * 1000);
-	slp(*(philo->info->time_to_sleep));				//WARN: dyeing at 600ms
+	slp(*(philo->info->time_to_sleep));
 	timestamp(philo, "is thinking");
+	usleep(100);
 }
-
 
 //NOTE: cannot switching thread during "while" ? or monitoring thread fault ?
 //NOTE: it does works w/o mutex(lastmeal)

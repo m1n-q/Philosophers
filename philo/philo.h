@@ -6,7 +6,7 @@
 /*   By: mishin <mishin@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/07 16:42:25 by mishin            #+#    #+#             */
-/*   Updated: 2021/09/14 22:04:37 by mishin           ###   ########.fr       */
+/*   Updated: 2021/09/15 15:58:54 by mishin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,6 @@
 
 //TODO: release all resources at exit
 //NOTE: printf mutex ?
-//NOTE: make monitors for each thread?
 //FIXIT: clustering when num of philo is large
 /* linked list and input */
 t_ll			*ll_new(long long data);
@@ -47,6 +46,10 @@ void			*dining(void *data);
 /* monitoring thread */
 pthread_t		*make_monitor(t_philo *philos);
 void			*monitoring(void *data);
+
+/* atexit */
+void			release_philos(t_philo *philos);
+void			release_ph(t_philo_meta ph);
 
 /* etc. */
 int				left(t_philo *philo);

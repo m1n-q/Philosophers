@@ -6,12 +6,12 @@
 /*   By: mishin <mishin@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/07 19:30:59 by mishin            #+#    #+#             */
-/*   Updated: 2021/09/15 01:10:19 by mishin           ###   ########.fr       */
+/*   Updated: 2021/09/15 16:27:54 by mishin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "philo.h"
-
+//TODO: last meal
 t_philo	*make_philos(t_philo_meta *ph)
 {
 	t_philo			*philos;
@@ -33,6 +33,7 @@ t_philo	*make_philos(t_philo_meta *ph)
 	last_meals = (t_time *)malloc(sizeof(t_time) * *(ph->num_philos));
 	if (!last_meals)
 		return (NULL);
+	ph->last_meals = last_meals;
 	gettimeofday(start, NULL);
 	i = -1;
 	while (++i < *(ph->num_philos))
@@ -44,10 +45,12 @@ t_philo	*make_philos(t_philo_meta *ph)
 	while (++i < *(ph->num_philos))
 	{
 		philos[i].start = start;
-		philos[i].last_meal = last_meals[i];
 		philos[i].forks = forks;
+		philos[i].last_meal = ph->last_meals[i];
 		philos[i].info = ph;
 		philos[i].id = i + 1;
+		printf("forks[%d] => %p | %p\n", i, philos[i].forks, forks);
+
 	}
 	i = -1;
 	while (++i < *(ph->num_philos))
@@ -61,9 +64,10 @@ t_philo	*make_philos(t_philo_meta *ph)
 
 static inline void	eat(t_philo *philo)
 {
+	pthread_mutex_lock(&philo->last_meal.lock);
 	gettimeofday(&(philo->last_meal.time), NULL);
+	pthread_mutex_unlock(&philo->last_meal.lock);
 	timestamp(philo, "is eating");
-	// usleep(*(philo->info->time_to_eat) * 1000);
 	slp(*(philo->info->time_to_eat));
 }
 
@@ -73,9 +77,7 @@ static inline void	leftright(t_philo *philo)
 	get_fork(philo, LEFT);
 	pthread_mutex_lock(&philo->forks[right(philo)]);
 	get_fork(philo, RIGHT);
-	pthread_mutex_lock(&philo->last_meal.lock);
 	eat(philo);
-	pthread_mutex_unlock(&philo->last_meal.lock);
 	pthread_mutex_unlock(&philo->forks[right(philo)]);
 	pthread_mutex_unlock(&philo->forks[left(philo)]);
 	msleep(philo);
@@ -87,9 +89,7 @@ static inline void	rightleft(t_philo *philo)
 	get_fork(philo, RIGHT);
 	pthread_mutex_lock(&philo->forks[left(philo)]);
 	get_fork(philo, LEFT);
-	pthread_mutex_lock(&philo->last_meal.lock);
 	eat(philo);
-	pthread_mutex_unlock(&philo->last_meal.lock);
 	pthread_mutex_unlock(&philo->forks[left(philo)]);
 	pthread_mutex_unlock(&philo->forks[right(philo)]);
 	msleep(philo);
@@ -111,5 +111,6 @@ void	*dining(void *data)
 		else
 			rightleft(philo);
 	}
+	printf("thread [%d] end\n", philo->id);
 	return (NULL);
 }
