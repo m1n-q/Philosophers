@@ -6,59 +6,61 @@
 /*   By: mishin <mishin@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/07 19:30:59 by mishin            #+#    #+#             */
-/*   Updated: 2021/09/17 17:14:17 by mishin           ###   ########.fr       */
+/*   Updated: 2021/09/17 23:14:53 by mishin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "philo.h"
 
-t_philo	*make_philos(t_philo_meta *ph)
+t_init_val	init_philos(t_philo_meta *ph)
 {
-	t_philo			*philos;
 	struct timeval	*start;
 	t_time			*last_meals;
 	pthread_mutex_t	*forks;
-	int				error;
 	int				i;
 
-	philos = (t_philo *)malloc(sizeof(t_philo) * *(ph->num_philos));
-	if (!philos)
-		return (NULL);
-	forks = make_forks(*(ph->num_philos));
-	if (!forks)
-		return (NULL);
+	forks = make_forks(ph->num_philos);
 	start = (struct timeval *)malloc(sizeof(struct timeval));
-	if (!start)
-		return (NULL);
-	last_meals = (t_time *)malloc(sizeof(t_time) * *(ph->num_philos));
-	if (!last_meals)
-		return (NULL);
-	ph->ptr_last_meals = last_meals;
-	gettimeofday(start, NULL);
+	last_meals = (t_time *)malloc(sizeof(t_time) * ph->num_philos);
+	if (!forks || !start || !last_meals)
+	{
+		release_rscs(forks, start, last_meals);
+		return ((t_init_val){NULL, NULL, NULL});
+	}
 	i = -1;
-	while (++i < *(ph->num_philos))
+	while (++i < ph->num_philos)
 	{
 		last_meals[i].time = *start;
 		pthread_mutex_init(&(last_meals[i].lock), NULL);
 	}
+	gettimeofday(start, NULL);
+	ph->ptr_last_meals = last_meals;
+	return ((t_init_val){forks, start, last_meals});
+}
+
+t_philo	*make_philos(t_philo_meta *ph)
+{
+	t_philo			*philos;
+	t_init_val		init_val;
+	int				error;
+	int				i;
+
+	init_val = init_philos(ph);
+	philos = (t_philo *)malloc(sizeof(t_philo) * ph->num_philos);
+	if (!init_val.forks || !philos)
+		return (release_rscs(init_val.forks, init_val.start, init_val.last_meals));
 	i = -1;
-	while (++i < *(ph->num_philos))
+	while (++i < ph->num_philos)
 	{
-		philos[i].start = start;
-		philos[i].forks = forks;
-		philos[i].last_meal = last_meals[i];
+		philos[i].start = init_val.start;
+		philos[i].forks = init_val.forks;
+		philos[i].last_meal = init_val.last_meals[i];
 		philos[i].info = ph;
 		philos[i].id = i + 1;
-	}
-	i = -1;
-	while (++i < *(ph->num_philos))
-	{
 		error = pthread_create(&philos[i].tid, NULL, dining, &philos[i]);
 		if (error)
-			return (NULL);
-		timestamp(&philos[i], "CREATED");
-		// pthread_detach(philos[i].tid);		//NOTE: detach here? (right after being created)
-		// timestamp(&philos[i], "DETACHED");
+			return (release_rscs(init_val.forks, init_val.start, init_val.last_meals));
+		pthread_detach(philos[i].tid);
 	}
 	return (philos);
 }
@@ -69,30 +71,30 @@ static inline void	eat(t_philo *philo)
 	gettimeofday(&(philo->last_meal.time), NULL);
 	pthread_mutex_unlock(&philo->last_meal.lock);
 	timestamp(philo, "is eating");
-	slp(*(philo->info->time_to_eat));
+	slp(philo->info->time_to_eat);
 }
 
 static inline void	leftright(t_philo *philo)
 {
-	pthread_mutex_lock(&philo->forks[left(philo)]);
+	pthread_mutex_lock(&(philo->forks[left(philo)]));
 	get_fork(philo, LEFT);
-	pthread_mutex_lock(&philo->forks[right(philo)]);
+	pthread_mutex_lock(&(philo->forks[right(philo)]));
 	get_fork(philo, RIGHT);
 	eat(philo);
-	pthread_mutex_unlock(&philo->forks[right(philo)]);
-	pthread_mutex_unlock(&philo->forks[left(philo)]);
+	pthread_mutex_unlock(&(philo->forks[right(philo)]));
+	pthread_mutex_unlock(&(philo->forks[left(philo)]));
 	msleep(philo);
 }
 
 static inline void	rightleft(t_philo *philo)
 {
-	pthread_mutex_lock(&philo->forks[right(philo)]);
+	pthread_mutex_lock(&(philo->forks[right(philo)]));
 	get_fork(philo, RIGHT);
-	pthread_mutex_lock(&philo->forks[left(philo)]);
+	pthread_mutex_lock(&(philo->forks[left(philo)]));
 	get_fork(philo, LEFT);
 	eat(philo);
-	pthread_mutex_unlock(&philo->forks[left(philo)]);
-	pthread_mutex_unlock(&philo->forks[right(philo)]);
+	pthread_mutex_unlock(&(philo->forks[left(philo)]));
+	pthread_mutex_unlock(&(philo->forks[right(philo)]));
 	msleep(philo);
 }
 
@@ -102,16 +104,16 @@ void	*dining(void *data)
 	int		must_eat;
 
 	philo = ((t_philo *)data);
-	must_eat = *(philo->info->must_eat);
+	must_eat = philo->info->must_eat;
+
+	if (philo->id % 2 == 1)
+		usleep(2000);
 	while (must_eat--)
 	{
-		if (philo->id % 2 == 1)	//TODO: dicided by num_philos ( even / odd )?
-			usleep(800);
 		if (!last(philo))
 			leftright(philo);
 		else
 			rightleft(philo);
 	}
-	printf("thread [%d] end\n", philo->id);
 	return (NULL);
 }

@@ -6,7 +6,7 @@
 /*   By: mishin <mishin@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/07 16:42:25 by mishin            #+#    #+#             */
-/*   Updated: 2021/09/17 16:32:52 by mishin           ###   ########.fr       */
+/*   Updated: 2021/09/17 19:39:33 by mishin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,15 +25,12 @@
 # define LEFT 42
 # define RIGHT 24
 
-//TODO: release all resources at exit
-//NOTE: printf mutex ?
-//FIXIT: clustering when num of philo is large
 /* linked list and input */
 t_ll			*ll_new(long long data);
 void			ll_push(t_ll **head, t_ll *new);
 int				ll_clear(t_ll **head);
 int				input_to_ll(t_ll_meta *ll, char *arg);
-void			ll_to_ph(t_ll_meta ll, t_philo_meta *ph);
+t_philo_meta	*ll_to_ph(t_ll_meta ll);
 
 /* forks */
 pthread_mutex_t	*make_forks(int num_philos);
@@ -47,8 +44,9 @@ void			*dining(void *data);
 pthread_t		*make_monitor(t_philo *philos);
 void			*monitoring(void *data);
 
-/* atexit */
-void			release(t_philo *philos, t_philo_meta ph, pthread_t *monitor);
+/* release */
+void			*release_rscs(pthread_mutex_t *forks, struct timeval *start, t_time *lastmeals);
+void			release(t_philo *philos, t_philo_meta *ph, pthread_t *monitor);
 
 /* etc. */
 int				left(t_philo *philo);

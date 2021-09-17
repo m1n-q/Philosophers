@@ -6,7 +6,7 @@
 /*   By: mishin <mishin@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/13 18:48:24 by mishin            #+#    #+#             */
-/*   Updated: 2021/09/17 16:30:08 by mishin           ###   ########.fr       */
+/*   Updated: 2021/09/17 17:29:29 by mishin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,11 +22,11 @@ void	*monitoring(void *data)
 	while (1)
 	{
 		i = -1;
-		while (++i < *(philos[0].info->num_philos))
+		while (++i < philos[0].info->num_philos)
 		{
 			pthread_mutex_lock(&philos[i].last_meal.lock);
 			time_in_mill = (int)timestamp(&philos[i], NULL);
-			if (time_in_mill > *philos[0].info->time_to_die)
+			if (time_in_mill > philos[0].info->time_to_die)
 			{
 				timestamp(&philos[i], "is died");
 				pthread_mutex_unlock(&philos[i].last_meal.lock);

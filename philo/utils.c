@@ -6,7 +6,7 @@
 /*   By: mishin <mishin@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/07 18:51:42 by mishin            #+#    #+#             */
-/*   Updated: 2021/09/15 14:29:40 by mishin           ###   ########.fr       */
+/*   Updated: 2021/09/17 18:53:23 by mishin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,9 @@ double	timestamp(t_philo *philo, char *msg)
 		gettimeofday(&now, NULL);
 		time_in_mill = (now.tv_sec - philo->start->tv_sec) * 1000 + \
 					(now.tv_usec - philo->start->tv_usec) / 1000;
+		// pthread_mutex_lock(philo->info->print);
 		printf("[%.0fms] %d %s\n", time_in_mill, philo->id, msg);
+		// pthkread_mutex_unlock(philo->info->print);
 	}
 	else
 	{
@@ -40,18 +42,18 @@ int	left(t_philo *philo)
 
 int	right(t_philo *philo)
 {
-	return (philo->id % *(philo->info->num_philos));
+	return (philo->id % philo->info->num_philos);
 }
 
 int	last(t_philo *philo)
 {
-	return (philo->id == *(philo->info->num_philos));
+	return (philo->id == philo->info->num_philos);
 }
 
 void	msleep(t_philo *philo)
 {
 	timestamp(philo, "is sleeping");
-	slp(*(philo->info->time_to_sleep));
+	slp(philo->info->time_to_sleep);
 	timestamp(philo, "is thinking");
 	usleep(100);
 }
