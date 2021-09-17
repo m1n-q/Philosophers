@@ -6,7 +6,7 @@
 /*   By: mishin <mishin@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/08 19:12:41 by mishin            #+#    #+#             */
-/*   Updated: 2021/09/15 16:28:19 by mishin           ###   ########.fr       */
+/*   Updated: 2021/09/17 16:30:13 by mishin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,6 @@ pthread_mutex_t	*make_forks(int num_philos)
 	forks = (pthread_mutex_t *)malloc(sizeof(pthread_mutex_t) * num_philos);
 	if (!forks)
 		return (NULL);
-	printf("forks origin = %p\n", forks);
 	while (--num_philos >= 0)
 		pthread_mutex_init(&forks[num_philos], NULL);
 	return (forks);

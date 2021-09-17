@@ -6,7 +6,7 @@
 /*   By: mishin <mishin@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/13 18:48:24 by mishin            #+#    #+#             */
-/*   Updated: 2021/09/16 02:52:03 by mishin           ###   ########.fr       */
+/*   Updated: 2021/09/17 16:30:08 by mishin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,11 +41,7 @@ pthread_t	*make_monitor(t_philo *philos)
 {
 	pthread_t	*monitor;
 	int			error;
-	// t_philo		*philos2;
 
-	// philos2 = (t_philo *)malloc(sizeof(philos));
-	// *philos2 = *philos;			//ISSUE: [incorrect checksum for freed object] while checking if philos freed because it is arg for monitor
-	printf("in monitor : %d\n", (*philos).id);
 	monitor = (pthread_t *)malloc(sizeof(pthread_t));
 	if (!monitor)
 		return (NULL);

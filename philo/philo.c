@@ -6,12 +6,12 @@
 /*   By: mishin <mishin@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/07 19:30:59 by mishin            #+#    #+#             */
-/*   Updated: 2021/09/15 16:27:54 by mishin           ###   ########.fr       */
+/*   Updated: 2021/09/17 17:14:17 by mishin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "philo.h"
-//TODO: last meal
+
 t_philo	*make_philos(t_philo_meta *ph)
 {
 	t_philo			*philos;
@@ -33,7 +33,7 @@ t_philo	*make_philos(t_philo_meta *ph)
 	last_meals = (t_time *)malloc(sizeof(t_time) * *(ph->num_philos));
 	if (!last_meals)
 		return (NULL);
-	ph->last_meals = last_meals;
+	ph->ptr_last_meals = last_meals;
 	gettimeofday(start, NULL);
 	i = -1;
 	while (++i < *(ph->num_philos))
@@ -46,11 +46,9 @@ t_philo	*make_philos(t_philo_meta *ph)
 	{
 		philos[i].start = start;
 		philos[i].forks = forks;
-		philos[i].last_meal = ph->last_meals[i];
+		philos[i].last_meal = last_meals[i];
 		philos[i].info = ph;
 		philos[i].id = i + 1;
-		printf("forks[%d] => %p | %p\n", i, philos[i].forks, forks);
-
 	}
 	i = -1;
 	while (++i < *(ph->num_philos))
@@ -58,6 +56,9 @@ t_philo	*make_philos(t_philo_meta *ph)
 		error = pthread_create(&philos[i].tid, NULL, dining, &philos[i]);
 		if (error)
 			return (NULL);
+		timestamp(&philos[i], "CREATED");
+		// pthread_detach(philos[i].tid);		//NOTE: detach here? (right after being created)
+		// timestamp(&philos[i], "DETACHED");
 	}
 	return (philos);
 }

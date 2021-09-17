@@ -6,7 +6,7 @@
 /*   By: mishin <mishin@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/07 16:42:25 by mishin            #+#    #+#             */
-/*   Updated: 2021/09/15 15:58:54 by mishin           ###   ########.fr       */
+/*   Updated: 2021/09/17 16:32:52 by mishin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,8 +48,7 @@ pthread_t		*make_monitor(t_philo *philos);
 void			*monitoring(void *data);
 
 /* atexit */
-void			release_philos(t_philo *philos);
-void			release_ph(t_philo_meta ph);
+void			release(t_philo *philos, t_philo_meta ph, pthread_t *monitor);
 
 /* etc. */
 int				left(t_philo *philo);
