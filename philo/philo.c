@@ -6,7 +6,7 @@
 /*   By: mishin <mishin@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/07 19:30:59 by mishin            #+#    #+#             */
-/*   Updated: 2021/09/17 23:14:53 by mishin           ###   ########.fr       */
+/*   Updated: 2021/09/18 12:22:18 by mishin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,8 +33,8 @@ t_init_val	init_philos(t_philo_meta *ph)
 		last_meals[i].time = *start;
 		pthread_mutex_init(&(last_meals[i].lock), NULL);
 	}
-	gettimeofday(start, NULL);
 	ph->ptr_last_meals = last_meals;
+	gettimeofday(start, NULL);
 	return ((t_init_val){forks, start, last_meals});
 }
 
@@ -57,11 +57,13 @@ t_philo	*make_philos(t_philo_meta *ph)
 		philos[i].last_meal = init_val.last_meals[i];
 		philos[i].info = ph;
 		philos[i].id = i + 1;
-		error = pthread_create(&philos[i].tid, NULL, dining, &philos[i]);
-		if (error)
-			return (release_rscs(init_val.forks, init_val.start, init_val.last_meals));
-		pthread_detach(philos[i].tid);
 	}
+	i = -1;
+	error = 0;
+	while (++i < ph->num_philos && !error)
+		error = pthread_create(&philos[i].tid, NULL, dining, &philos[i]);
+	if (error)
+		return (release_rscs(init_val.forks, init_val.start, init_val.last_meals));
 	return (philos);
 }
 
@@ -107,7 +109,7 @@ void	*dining(void *data)
 	must_eat = philo->info->must_eat;
 
 	if (philo->id % 2 == 1)
-		usleep(2000);
+		usleep(60000);
 	while (must_eat--)
 	{
 		if (!last(philo))

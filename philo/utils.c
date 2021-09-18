@@ -6,7 +6,7 @@
 /*   By: mishin <mishin@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/07 18:51:42 by mishin            #+#    #+#             */
-/*   Updated: 2021/09/17 18:53:23 by mishin           ###   ########.fr       */
+/*   Updated: 2021/09/18 12:20:22 by mishin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,7 @@ double	timestamp(t_philo *philo, char *msg)
 					(now.tv_usec - philo->start->tv_usec) / 1000;
 		// pthread_mutex_lock(philo->info->print);
 		printf("[%.0fms] %d %s\n", time_in_mill, philo->id, msg);
+		// setvbuf(stdout, NULL, _IONBF, BUFSIZ);
 		// pthkread_mutex_unlock(philo->info->print);
 	}
 	else
@@ -70,6 +71,6 @@ void	slp(int ms)
 	while ((cur.tv_sec - start.tv_sec) * 1000 + (cur.tv_usec - start.tv_usec) / 1000 < ms)
 	{
 		gettimeofday(&cur, NULL);
-		usleep(100);
+		usleep(50);
 	}
 }
