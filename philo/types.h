@@ -6,7 +6,7 @@
 /*   By: mishin <mishin@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/07 19:09:14 by mishin            #+#    #+#             */
-/*   Updated: 2021/09/17 23:12:03 by mishin           ###   ########.fr       */
+/*   Updated: 2021/09/20 02:05:06 by mishin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,6 +39,7 @@ typedef struct s_philo_meta
 	int				time_to_sleep;
 	int				must_eat;
 	t_time			*ptr_last_meals;
+	pthread_mutex_t	*start;
 }				t_philo_meta;
 
 typedef struct s_philo
@@ -49,8 +50,6 @@ typedef struct s_philo
 	pthread_mutex_t	*forks;
 	pthread_t		tid;
 	int				id;
-	pthread_mutex_t	*detached;
-
 }				t_philo;
 
 typedef struct s_init_val

@@ -6,7 +6,7 @@
 /*   By: mishin <mishin@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/07 19:30:59 by mishin            #+#    #+#             */
-/*   Updated: 2021/09/18 12:22:18 by mishin           ###   ########.fr       */
+/*   Updated: 2021/09/20 02:12:24 by mishin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -107,9 +107,10 @@ void	*dining(void *data)
 
 	philo = ((t_philo *)data);
 	must_eat = philo->info->must_eat;
-
 	if (philo->id % 2 == 1)
-		usleep(60000);
+		slp(60);
+	pthread_mutex_lock(philo->info->start);
+	pthread_mutex_unlock(philo->info->start);
 	while (must_eat--)
 	{
 		if (!last(philo))

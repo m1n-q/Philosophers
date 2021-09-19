@@ -6,7 +6,7 @@
 /*   By: mishin <mishin@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/07 17:05:56 by mishin            #+#    #+#             */
-/*   Updated: 2021/09/18 12:16:11 by mishin           ###   ########.fr       */
+/*   Updated: 2021/09/20 02:11:45 by mishin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@ int	main(int argc, char **argv)
 	t_philo_meta	*ph;
 	t_philo			*philos;
 	// pthread_t		*monitor;
+	pthread_mutex_t	*start;
 	long long		exit;
 	int				i;
 
@@ -29,19 +30,33 @@ int	main(int argc, char **argv)
 		if (input_to_ll(&ll, argv[i]) == -1)
 			return (1);
 	if (ll.size != 4 && ll.size != 5)
-		return (2);
+		return (ll_clear(&ll.head));
 	ph = ll_to_ph(ll);
 	if (!ph)
-		return (312);
-	ll_clear(&ll.head);
+		return (ll_clear(&ll.head));
+
+
+	start = (pthread_mutex_t *)malloc(sizeof(pthread_mutex_t));
+	pthread_mutex_init(start, NULL);
+	ph->start = start;
+
+
+
+	pthread_mutex_lock(start);
 	philos = make_philos(ph);
 	if (!philos)
 		return (3);
+	pthread_mutex_unlock(start);
+
+
 	// monitor = make_monitor(philos);			//TODO: if no monitor, free previous allocated rsrcs
+	pthread_join(*make_monitor(philos), (void *)&exit);
+
+
+
 	i = -1;
 	while (++i < ph->num_philos)
 		pthread_detach(philos[i].tid);
-	pthread_join(*make_monitor(philos), (void *)&exit);
 	// if (exit == 0LL)
 	// {
 	// 	sleep(3);

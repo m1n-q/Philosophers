@@ -6,7 +6,7 @@
 /*   By: mishin <mishin@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/09 16:51:12 by mishin            #+#    #+#             */
-/*   Updated: 2021/09/17 23:11:52 by mishin           ###   ########.fr       */
+/*   Updated: 2021/09/20 02:10:51 by mishin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -109,5 +109,6 @@ t_philo_meta	*ll_to_ph(t_ll_meta ll)
 		}
 		cur = cur->next;
 	}
+	ll_clear(&ll.head);
 	return (ph);
 }
