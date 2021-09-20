@@ -6,7 +6,7 @@
 /*   By: mishin <mishin@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/07 18:51:42 by mishin            #+#    #+#             */
-/*   Updated: 2021/09/18 12:20:22 by mishin           ###   ########.fr       */
+/*   Updated: 2021/09/20 15:36:15 by mishin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,10 +22,8 @@ double	timestamp(t_philo *philo, char *msg)
 		gettimeofday(&now, NULL);
 		time_in_mill = (now.tv_sec - philo->start->tv_sec) * 1000 + \
 					(now.tv_usec - philo->start->tv_usec) / 1000;
-		// pthread_mutex_lock(philo->info->print);
+
 		printf("[%.0fms] %d %s\n", time_in_mill, philo->id, msg);
-		// setvbuf(stdout, NULL, _IONBF, BUFSIZ);
-		// pthkread_mutex_unlock(philo->info->print);
 	}
 	else
 	{
@@ -51,26 +49,46 @@ int	last(t_philo *philo)
 	return (philo->id == philo->info->num_philos);
 }
 
-void	msleep(t_philo *philo)
+void	sleep_think(t_philo *philo)
 {
 	timestamp(philo, "is sleeping");
-	slp(philo->info->time_to_sleep);
+	msleep(philo->info->time_to_sleep);
+	// usleep(1000 * philo->info->time_to_sleep);
 	timestamp(philo, "is thinking");
+	// slp(philo, 0.1);
 	usleep(100);
 }
 
-//NOTE: cannot switching thread during "while" ? or monitoring thread fault ?
-//NOTE: it does works w/o mutex(lastmeal)
-void	slp(int ms)
-{
-	struct timeval	start;
-	struct timeval	cur;
+//NOTE: cannot switching thread during "while" loop ?
+//https://stackoverflow.com/questions/43419402/what-happens-when-you-write-a-simple-program-with-a-while1-loop-in-a-system-wi
 
-	gettimeofday(&start, NULL);
-	gettimeofday(&cur, NULL);
-	while ((cur.tv_sec - start.tv_sec) * 1000 + (cur.tv_usec - start.tv_usec) / 1000 < ms)
-	{
-		gettimeofday(&cur, NULL);
-		usleep(50);
-	}
+//NOTE: mutex and context switching, (is busy waiting better?)
+
+//
+
+void	msleep(double ms)
+{
+	/*
+	 * if #(threads) <= #(logical cores)
+	 *     busy waiting
+	 * else
+	 *     sleep and awake
+	 */
+
+	// struct timeval	start;
+	// struct timeval	cur;
+
+	// gettimeofday(&start, NULL);
+	// gettimeofday(&cur, NULL);
+	// while ((cur.tv_sec - start.tv_sec) * 1000 + (cur.tv_usec - start.tv_usec) / 1000 < ms)
+	// {
+	// 	// usleep(10);
+
+	// 	GETCPU(CPU)
+	// 	printf("[%d]=> cpu [%d]\n", philo->id, CPU);
+	// 	gettimeofday(&cur, NULL);
+	// }
+
+	//NOTE: with large caese, usleep has better perfomance.
+	usleep(ms * 1000);
 }

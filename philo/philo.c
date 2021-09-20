@@ -6,7 +6,7 @@
 /*   By: mishin <mishin@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/07 19:30:59 by mishin            #+#    #+#             */
-/*   Updated: 2021/09/20 02:12:24 by mishin           ###   ########.fr       */
+/*   Updated: 2021/09/20 15:35:31 by mishin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -73,7 +73,8 @@ static inline void	eat(t_philo *philo)
 	gettimeofday(&(philo->last_meal.time), NULL);
 	pthread_mutex_unlock(&philo->last_meal.lock);
 	timestamp(philo, "is eating");
-	slp(philo->info->time_to_eat);
+	msleep(philo->info->time_to_eat);
+	// usleep(1000 * philo->info->time_to_eat);
 }
 
 static inline void	leftright(t_philo *philo)
@@ -85,7 +86,7 @@ static inline void	leftright(t_philo *philo)
 	eat(philo);
 	pthread_mutex_unlock(&(philo->forks[right(philo)]));
 	pthread_mutex_unlock(&(philo->forks[left(philo)]));
-	msleep(philo);
+	sleep_think(philo);
 }
 
 static inline void	rightleft(t_philo *philo)
@@ -97,7 +98,7 @@ static inline void	rightleft(t_philo *philo)
 	eat(philo);
 	pthread_mutex_unlock(&(philo->forks[left(philo)]));
 	pthread_mutex_unlock(&(philo->forks[right(philo)]));
-	msleep(philo);
+	sleep_think(philo);
 }
 
 void	*dining(void *data)
@@ -108,7 +109,7 @@ void	*dining(void *data)
 	philo = ((t_philo *)data);
 	must_eat = philo->info->must_eat;
 	if (philo->id % 2 == 1)
-		slp(60);
+		usleep(60 * 1000);
 	pthread_mutex_lock(philo->info->start);
 	pthread_mutex_unlock(philo->info->start);
 	while (must_eat--)

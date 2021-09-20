@@ -6,7 +6,7 @@
 /*   By: mishin <mishin@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/07 16:42:25 by mishin            #+#    #+#             */
-/*   Updated: 2021/09/17 19:39:33 by mishin           ###   ########.fr       */
+/*   Updated: 2021/09/20 15:35:24 by mishin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,7 +52,7 @@ void			release(t_philo *philos, t_philo_meta *ph, pthread_t *monitor);
 int				left(t_philo *philo);
 int				right(t_philo *philo);
 int				last(t_philo *philo);
-void			msleep(t_philo *philo);
-void			slp(int ms);
+void			sleep_think(t_philo *philo);
+void			msleep(double ms);
 double			timestamp(t_philo *philo, char *msg);
 #endif
