@@ -6,7 +6,7 @@
 /*   By: mishin <mishin@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/07 18:51:42 by mishin            #+#    #+#             */
-/*   Updated: 2021/09/20 15:36:15 by mishin           ###   ########.fr       */
+/*   Updated: 2021/09/20 16:23:34 by mishin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ double	timestamp(t_philo *philo, char *msg)
 		time_in_mill = (now.tv_sec - philo->start->tv_sec) * 1000 + \
 					(now.tv_usec - philo->start->tv_usec) / 1000;
 
-		printf("[%.0fms] %d %s\n", time_in_mill, philo->id, msg);
+		printf("\e[36m[%.0fms]\e[0m %d %s\n", time_in_mill, philo->id, msg);
 	}
 	else
 	{
@@ -49,16 +49,6 @@ int	last(t_philo *philo)
 	return (philo->id == philo->info->num_philos);
 }
 
-void	sleep_think(t_philo *philo)
-{
-	timestamp(philo, "is sleeping");
-	msleep(philo->info->time_to_sleep);
-	// usleep(1000 * philo->info->time_to_sleep);
-	timestamp(philo, "is thinking");
-	// slp(philo, 0.1);
-	usleep(100);
-}
-
 //NOTE: cannot switching thread during "while" loop ?
 //https://stackoverflow.com/questions/43419402/what-happens-when-you-write-a-simple-program-with-a-while1-loop-in-a-system-wi
 
@@ -75,20 +65,17 @@ void	msleep(double ms)
 	 *     sleep and awake
 	 */
 
-	// struct timeval	start;
-	// struct timeval	cur;
+	struct timeval	start;
+	struct timeval	cur;
 
-	// gettimeofday(&start, NULL);
-	// gettimeofday(&cur, NULL);
-	// while ((cur.tv_sec - start.tv_sec) * 1000 + (cur.tv_usec - start.tv_usec) / 1000 < ms)
-	// {
-	// 	// usleep(10);
-
-	// 	GETCPU(CPU)
-	// 	printf("[%d]=> cpu [%d]\n", philo->id, CPU);
-	// 	gettimeofday(&cur, NULL);
-	// }
+	gettimeofday(&start, NULL);
+	gettimeofday(&cur, NULL);
+	while ((cur.tv_sec - start.tv_sec) * 1000 + (cur.tv_usec - start.tv_usec) / 1000 < ms)
+	{
+		// usleep(10);
+		gettimeofday(&cur, NULL);
+	}
 
 	//NOTE: with large caese, usleep has better perfomance.
-	usleep(ms * 1000);
+	// usleep(ms * 1000);
 }

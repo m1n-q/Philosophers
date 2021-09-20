@@ -6,7 +6,7 @@
 /*   By: mishin <mishin@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/07 17:05:56 by mishin            #+#    #+#             */
-/*   Updated: 2021/09/20 02:11:45 by mishin           ###   ########.fr       */
+/*   Updated: 2021/09/20 16:03:17 by mishin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ int	main(int argc, char **argv)
 	t_ll_meta		ll;
 	t_philo_meta	*ph;
 	t_philo			*philos;
-	// pthread_t		*monitor;
+	pthread_t		*monitors;
 	pthread_mutex_t	*start;
 	long long		exit;
 	int				i;
@@ -49,14 +49,15 @@ int	main(int argc, char **argv)
 	pthread_mutex_unlock(start);
 
 
-	// monitor = make_monitor(philos);			//TODO: if no monitor, free previous allocated rsrcs
-	pthread_join(*make_monitor(philos), (void *)&exit);
-
-
+	monitors = make_monitors(philos);			//TODO: if no monitor, free previous allocated rsrcs
+	i = -1;
+	while (++i < ph->num_philos)
+		pthread_join(monitors[i], (void *)&exit);
 
 	i = -1;
 	while (++i < ph->num_philos)
 		pthread_detach(philos[i].tid);
+
 	// if (exit == 0LL)
 	// {
 	// 	sleep(3);
