@@ -6,7 +6,7 @@
 /*   By: mishin <mishin@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/07 19:30:59 by mishin            #+#    #+#             */
-/*   Updated: 2021/09/20 16:13:39 by mishin           ###   ########.fr       */
+/*   Updated: 2021/09/22 17:24:03 by mishin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,21 +74,19 @@ static inline void	eat(t_philo *philo)
 	// pthread_mutex_unlock(&philo->last_meal.lock);
 	timestamp(philo, "is eating");
 
-
-	// msleep(philo->info->time_to_eat);
-	usleep(1000 * philo->info->time_to_eat);
+	msleep(philo->info->time_to_eat);
+	// usleep(1000 * philo->info->time_to_eat);
 }
 
 static inline void	sleep_think(t_philo *philo)
 {
 	timestamp(philo, "is sleeping");
 
-	// msleep(philo->info->time_to_sleep);
-	usleep(1000 * philo->info->time_to_sleep);
+	msleep(philo->info->time_to_sleep);
+	// usleep(1000 * philo->info->time_to_sleep);
 
 
 	timestamp(philo, "is thinking");
-	// slp(philo, 0.1);
 	usleep(100);
 }
 

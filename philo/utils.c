@@ -6,7 +6,7 @@
 /*   By: mishin <mishin@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/07 18:51:42 by mishin            #+#    #+#             */
-/*   Updated: 2021/09/20 16:23:34 by mishin           ###   ########.fr       */
+/*   Updated: 2021/09/22 17:31:35 by mishin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,12 +69,8 @@ void	msleep(double ms)
 	struct timeval	cur;
 
 	gettimeofday(&start, NULL);
-	gettimeofday(&cur, NULL);
-	while ((cur.tv_sec - start.tv_sec) * 1000 + (cur.tv_usec - start.tv_usec) / 1000 < ms)
-	{
-		// usleep(10);
-		gettimeofday(&cur, NULL);
-	}
+	while (!gettimeofday(&cur, NULL) && (cur.tv_sec - start.tv_sec) * 1000.0 + (cur.tv_usec - start.tv_usec) / 1000.0 <= ms)
+		usleep(100);
 
 	//NOTE: with large caese, usleep has better perfomance.
 	// usleep(ms * 1000);
