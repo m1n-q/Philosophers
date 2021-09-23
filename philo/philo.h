@@ -6,7 +6,7 @@
 /*   By: mishin <mishin@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/07 16:42:25 by mishin            #+#    #+#             */
-/*   Updated: 2021/09/20 16:11:23 by mishin           ###   ########.fr       */
+/*   Updated: 2021/09/23 11:26:01 by mishin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,7 @@
 # define NON_NUMERIC -4444444444LL
 # define LEFT 42
 # define RIGHT 24
+# define DIED -1.0
 
 /* linked list and input */
 t_ll			*ll_new(long long data);
@@ -34,7 +35,7 @@ t_philo_meta	*ll_to_ph(t_ll_meta ll);
 
 /* forks */
 pthread_mutex_t	*make_forks(int num_philos);
-int				get_fork(t_philo *philo, int direction);
+double			get_fork(t_philo *philo, int direction);
 
 /* dining philosophers */
 t_philo			*make_philos(t_philo_meta *ph);

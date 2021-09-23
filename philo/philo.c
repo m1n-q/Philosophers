@@ -6,7 +6,7 @@
 /*   By: mishin <mishin@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/07 19:30:59 by mishin            #+#    #+#             */
-/*   Updated: 2021/09/22 17:24:03 by mishin           ###   ########.fr       */
+/*   Updated: 2021/09/23 11:34:30 by mishin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,70 +67,102 @@ t_philo	*make_philos(t_philo_meta *ph)
 	return (philos);
 }
 
-static inline void	eat(t_philo *philo)
+static inline double	eat(t_philo *philo)
 {
-	// pthread_mutex_lock(&philo->last_meal.lock);
+	double	status;
+
+	pthread_mutex_lock(&philo->last_meal.lock);
 	gettimeofday(&(philo->last_meal.time), NULL);
-	// pthread_mutex_unlock(&philo->last_meal.lock);
-	timestamp(philo, "is eating");
-
+	status = timestamp(philo, "is eating");
+	pthread_mutex_unlock(&philo->last_meal.lock);
+	if (status == DIED)
+		return (status);
 	msleep(philo->info->time_to_eat);
-	// usleep(1000 * philo->info->time_to_eat);
+	return (status);
 }
 
-static inline void	sleep_think(t_philo *philo)
+static inline double	sleep_think(t_philo *philo)
 {
-	timestamp(philo, "is sleeping");
+	double	status;
 
+	status = timestamp(philo, "is sleeping");
+	if (status == DIED)
+		return (status);
 	msleep(philo->info->time_to_sleep);
-	// usleep(1000 * philo->info->time_to_sleep);
 
-
-	timestamp(philo, "is thinking");
+	status = timestamp(philo, "is thinking");
+	if (status == DIED)
+		return (status);
 	usleep(100);
+	return (status);
 }
 
-static inline void	leftright(t_philo *philo)
+static inline double	leftright(t_philo *philo)
 {
+	double	status;
+
 	pthread_mutex_lock(&(philo->forks[left(philo)]));
-	get_fork(philo, LEFT);
+	status = get_fork(philo, LEFT);
+	if (status == DIED && !pthread_mutex_unlock(&(philo->forks[left(philo)])))
+		return (status);
 	pthread_mutex_lock(&(philo->forks[right(philo)]));
-	get_fork(philo, RIGHT);
-	eat(philo);
+	status = get_fork(philo, RIGHT);
+	if (status == DIED && !pthread_mutex_unlock(&(philo->forks[left(philo)])) && !pthread_mutex_unlock(&(philo->forks[right(philo)])))
+		return (status);
+	status = eat(philo);
+	if (status == DIED && !pthread_mutex_unlock(&(philo->forks[left(philo)])) && !pthread_mutex_unlock(&(philo->forks[right(philo)])))
+		return (status);
 	pthread_mutex_unlock(&(philo->forks[right(philo)]));
 	pthread_mutex_unlock(&(philo->forks[left(philo)]));
-	sleep_think(philo);
+	status = sleep_think(philo);
+	return (status);
+
 }
 
-static inline void	rightleft(t_philo *philo)
+static inline double	rightleft(t_philo *philo)
 {
+	double	status;
+
 	pthread_mutex_lock(&(philo->forks[right(philo)]));
-	get_fork(philo, RIGHT);
+	status = get_fork(philo, RIGHT);
+	if (status == DIED && !pthread_mutex_unlock(&(philo->forks[right(philo)])))
+		return (status);
 	pthread_mutex_lock(&(philo->forks[left(philo)]));
-	get_fork(philo, LEFT);
-	eat(philo);
+	status = get_fork(philo, LEFT);
+	if (status == DIED && !pthread_mutex_unlock(&(philo->forks[left(philo)])) && !pthread_mutex_unlock(&(philo->forks[right(philo)])))
+		return (status);
+	status = eat(philo);
+	if (status == DIED && !pthread_mutex_unlock(&(philo->forks[left(philo)])) && !pthread_mutex_unlock(&(philo->forks[right(philo)])))
+		return (status);
 	pthread_mutex_unlock(&(philo->forks[left(philo)]));
 	pthread_mutex_unlock(&(philo->forks[right(philo)]));
-	sleep_think(philo);
+	status = sleep_think(philo);
+	return (status);
 }
 
 void	*dining(void *data)
 {
 	t_philo	*philo;
 	int		must_eat;
+	double	status;
 
 	philo = ((t_philo *)data);
 	must_eat = philo->info->must_eat;
+	status = 0.0;
 	if (philo->id % 2 == 1)
 		usleep(60 * 1000);
 	pthread_mutex_lock(philo->info->start);
 	pthread_mutex_unlock(philo->info->start);
 	while (must_eat--)
 	{
+		if (philo->info->someone_died)
+			return (NULL);
 		if (!last(philo))
-			leftright(philo);
+			status = leftright(philo);
 		else
-			rightleft(philo);
+			status = rightleft(philo);
+		if (status == DIED)
+			return (NULL);
 	}
 	return (NULL);
 }

@@ -6,7 +6,7 @@
 /*   By: mishin <mishin@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/07 18:51:42 by mishin            #+#    #+#             */
-/*   Updated: 2021/09/22 17:31:35 by mishin           ###   ########.fr       */
+/*   Updated: 2021/09/23 11:38:17 by mishin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,13 +17,16 @@ double	timestamp(t_philo *philo, char *msg)
 	struct timeval	now;
 	double			time_in_mill;
 
+	if (philo->info->someone_died && strcmp(msg, "is \e[91mdied\e[0m"))
+		return (DIED);
 	if (msg)
 	{
 		gettimeofday(&now, NULL);
 		time_in_mill = (now.tv_sec - philo->start->tv_sec) * 1000 + \
 					(now.tv_usec - philo->start->tv_usec) / 1000;
-
+		pthread_mutex_lock(philo->info->print);
 		printf("\e[36m[%.0fms]\e[0m %d %s\n", time_in_mill, philo->id, msg);
+		pthread_mutex_unlock(philo->info->print);
 	}
 	else
 	{
@@ -52,26 +55,23 @@ int	last(t_philo *philo)
 //NOTE: cannot switching thread during "while" loop ?
 //https://stackoverflow.com/questions/43419402/what-happens-when-you-write-a-simple-program-with-a-while1-loop-in-a-system-wi
 
-//NOTE: mutex and context switching, (is busy waiting better?)
-
-//
 
 void	msleep(double ms)
 {
-	/*
-	 * if #(threads) <= #(logical cores)
-	 *     busy waiting
-	 * else
-	 *     sleep and awake
-	 */
-
 	struct timeval	start;
 	struct timeval	cur;
 
 	gettimeofday(&start, NULL);
-	while (!gettimeofday(&cur, NULL) && (cur.tv_sec - start.tv_sec) * 1000.0 + (cur.tv_usec - start.tv_usec) / 1000.0 <= ms)
-		usleep(100);
-
-	//NOTE: with large caese, usleep has better perfomance.
-	// usleep(ms * 1000);
+	while (!gettimeofday(&cur, NULL) && \
+		(cur.tv_sec - start.tv_sec) * 1000.0 + \
+		(cur.tv_usec - start.tv_usec) / 1000.0 <= ms)
+		usleep(200);
 }
+//NOTE: mutex and context switching, (is busy waiting better?)
+//NOTE: with large caese, usleep has better perfomance.
+/*
+ * if #(threads) <= #(logical cores)
+ *     busy waiting
+ * else
+ *     sleep and awake
+ */
