@@ -6,7 +6,7 @@
 /*   By: mishin <mishin@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/13 18:48:24 by mishin            #+#    #+#             */
-/*   Updated: 2021/09/22 18:00:32 by mishin           ###   ########.fr       */
+/*   Updated: 2021/09/23 19:11:14 by mishin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,9 @@ void	*monitoring(void *data)
 			time_in_mill = (int)timestamp(&philos[i], NULL);
 			if (time_in_mill > philos[0].info->time_to_die)
 			{
+				pthread_mutex_lock(philos[i].info->dying);
 				philos[0].info->someone_died = philos[i].id;
+				pthread_mutex_unlock(philos[i].info->dying);
 				timestamp(&philos[i], "is \e[91mdied\e[0m");
 				pthread_mutex_unlock(&philos[i].last_meal.lock);
 				return (NULL);
@@ -37,7 +39,6 @@ void	*monitoring(void *data)
 		}
 	}
 }
-
 
 pthread_t	*make_monitor(t_philo *philos)
 {
@@ -73,7 +74,6 @@ void	*monitoring_each(void *data)
 	}
 }
 
-
 pthread_t	*make_monitors(t_philo *philos)
 {
 	pthread_t	*monitors;
@@ -91,5 +91,3 @@ pthread_t	*make_monitors(t_philo *philos)
 		return (NULL);
 	return (monitors);
 }
-
-

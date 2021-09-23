@@ -6,7 +6,7 @@
 /*   By: mishin <mishin@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/07 16:42:25 by mishin            #+#    #+#             */
-/*   Updated: 2021/09/23 11:26:01 by mishin           ###   ########.fr       */
+/*   Updated: 2021/09/23 19:05:17 by mishin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,20 +24,21 @@
 # define NON_NUMERIC -4444444444LL
 # define LEFT 42
 # define RIGHT 24
-# define DIED -1.0
+# define ERROR -1
 
 /* linked list and input */
 t_ll			*ll_new(long long data);
 void			ll_push(t_ll **head, t_ll *new);
 int				ll_clear(t_ll **head);
 int				input_to_ll(t_ll_meta *ll, char *arg);
-t_philo_meta	*ll_to_ph(t_ll_meta ll);
+int				input(t_ll_meta *ll, int argc, char **argv);
 
 /* forks */
 pthread_mutex_t	*make_forks(int num_philos);
-double			get_fork(t_philo *philo, int direction);
+void			get_fork(t_philo *philo, int direction);
 
 /* dining philosophers */
+int				make_phmeta(t_ll_meta ll, t_philo_meta **ptr_ph);
 t_philo			*make_philos(t_philo_meta *ph);
 void			*dining(void *data);
 
@@ -49,13 +50,13 @@ void			*monitoring_each(void *data);
 
 /* release */
 void			*release_rscs(pthread_mutex_t *forks, struct timeval *start, t_time *lastmeals);
+void			*release_ph(t_philo_meta *ph);
 void			release(t_philo *philos, t_philo_meta *ph, pthread_t *monitor);
 
 /* etc. */
 int				left(t_philo *philo);
 int				right(t_philo *philo);
 int				last(t_philo *philo);
-// void			sleep_think(t_philo *philo);
 void			msleep(double ms);
 double			timestamp(t_philo *philo, char *msg);
 #endif

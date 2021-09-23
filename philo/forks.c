@@ -6,7 +6,7 @@
 /*   By: mishin <mishin@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/08 19:12:41 by mishin            #+#    #+#             */
-/*   Updated: 2021/09/23 11:34:02 by mishin           ###   ########.fr       */
+/*   Updated: 2021/09/23 17:46:30 by mishin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,14 +24,10 @@ pthread_mutex_t	*make_forks(int num_philos)
 	return (forks);
 }
 
-double	get_fork(t_philo *philo, int direction)
+void	get_fork(t_philo *philo, int direction)
 {
-	double	status;
-
-	status = 0.0;
 	if (direction == LEFT)
-		status = timestamp(philo, "take left fork");
+		timestamp(philo, "take left fork");
 	else if (direction == RIGHT)
-		status = timestamp(philo, "take right fork");
-	return (status);
+		timestamp(philo, "take right fork");
 }

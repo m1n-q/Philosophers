@@ -6,7 +6,7 @@
 /*   By: mishin <mishin@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/09 16:51:12 by mishin            #+#    #+#             */
-/*   Updated: 2021/09/22 17:59:41 by mishin           ###   ########.fr       */
+/*   Updated: 2021/09/23 18:59:31 by mishin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -78,38 +78,15 @@ int	input_to_ll(t_ll_meta *ll, char *arg)
 	return (0);
 }
 
-t_philo_meta	*ll_to_ph(t_ll_meta ll)
+int	input(t_ll_meta *ll, int argc, char **argv)
 {
-	t_philo_meta	*ph;
-	t_ll			*cur;
-	int				i;
+	int	i;
 
-	ph = (t_philo_meta *)malloc(sizeof(t_philo_meta));
-	if (!ph)
-		return (NULL);
 	i = 0;
-	cur = ll.head;
-	while (++i)
-	{
-		if (i == 1)
-			ph->num_philos = (int)cur->data;
-		else if (i == 2)
-			ph->time_to_die = (int)cur->data;
-		else if (i == 3)
-			ph->time_to_eat = (int)cur->data;
-		else if (i == 4)
-			ph->time_to_sleep = (int)cur->data;
-		else if (i == 5)
-		{
-			if (cur)
-				ph->must_eat = (int)cur->data;
-			else
-				ph->must_eat = -1;
-			break ;
-		}
-		cur = cur->next;
-	}
-	ll_clear(&ll.head);
-	ph->someone_died = 0;
-	return (ph);
+	while (++i < argc)
+		if (input_to_ll(ll, argv[i]) == ERROR)
+			return (ERROR);
+	if (ll->size != 4 && ll->size != 5)
+		return (ll_clear(&ll->head));
+	return (0);
 }

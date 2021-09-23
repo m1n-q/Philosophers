@@ -6,7 +6,7 @@
 /*   By: mishin <mishin@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/02 18:45:54 by mishin            #+#    #+#             */
-/*   Updated: 2021/09/07 19:16:22 by mishin           ###   ########.fr       */
+/*   Updated: 2021/09/23 18:58:56 by mishin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,7 +47,7 @@ int	ll_clear(t_ll **head)
 	t_ll	*tmp;
 
 	if (!head)
-		return (-1);
+		return (ERROR);
 	cur = *head;
 	while (cur)
 	{
@@ -56,5 +56,5 @@ int	ll_clear(t_ll **head)
 		cur = tmp;
 	}
 	*head = NULL;
-	return (-1);
+	return (ERROR);
 }
