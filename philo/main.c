@@ -6,7 +6,7 @@
 /*   By: mishin <mishin@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/07 17:05:56 by mishin            #+#    #+#             */
-/*   Updated: 2021/09/23 19:11:03 by mishin           ###   ########.fr       */
+/*   Updated: 2021/09/24 15:50:53 by mishin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,7 +46,7 @@ int	main(int argc, char **argv)
 	//ISSUE: ACCESSING PHILOS CAUSES SEGFAULT AFTER PTHREAD_JOIN
 	//ISSUE: Value of var philos is changed after pthread_join
 	/* ISSUE_CLOSED */
-	/* void **retval of pthread_join() should be ptr to ptr(64-bit).
+	/* void **retval of pthread_join() should be ptr to ptr(64-bit). */
 	/* integer 'exit' was 32-bit. so retval overwrites philos that follows 'exit' in memory. */
 
 	//TODO: release all resources at exit
