@@ -6,7 +6,7 @@
 /*   By: mishin <mishin@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/24 17:56:11 by mishin            #+#    #+#             */
-/*   Updated: 2021/09/24 18:24:00 by mishin           ###   ########.fr       */
+/*   Updated: 2021/09/25 02:10:50 by mishin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ static int	ft_strcmp(const char *s1, const char *s2)
 {
 	const unsigned char	*s1_tmp;
 	const unsigned char	*s2_tmp;
-	size_t i;
+	int					i;
 
 	s1_tmp = (unsigned char *)s1;
 	s2_tmp = (unsigned char *)s2;

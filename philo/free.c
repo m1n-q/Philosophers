@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   release.c                                          :+:      :+:    :+:   */
+/*   free.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mishin <mishin@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -18,17 +18,22 @@
 /*                         */
 /*	- philo & meta         */
 /*	- mutex (fork)         */
-/*	- mutex (meal)         */
+/*	- mutex (lastmeal)     */
+/*	- mutex (ph->init)     */
+/*	- mutex (ph->print)    */
+/*                         */
 /*	- timeval (start)      */
-/*	- t_time (meal)        */
+/*	- t_time (lastmeal)    */
 /*	- forks                */
 /*		                   */
 /*	- linked list          */
 /*	- monitor (joined)     */
 /*	- threads (detached)   */
+/*                         */
 /* *********************** */
 
-void	*release_rscs(pthread_mutex_t *forks, struct timeval *start, t_time *lastmeals)
+void	*free_rscs(pthread_mutex_t *forks, struct timeval *start, \
+				t_time *lastmeals)
 {
 	if (forks)
 		free(forks);
@@ -39,11 +44,10 @@ void	*release_rscs(pthread_mutex_t *forks, struct timeval *start, t_time *lastme
 	return (NULL);
 }
 
-static void	release_philos(t_philo *philos)
+static void	free_philos(t_philo *philos)
 {
 	int	num_philos;
 	int	i;
-
 
 	num_philos = philos[0].info->num_philos;
 	i = -1;
@@ -57,14 +61,14 @@ static void	release_philos(t_philo *philos)
 	free(philos);
 }
 
-void	*release_ph(t_philo_meta *ph)
+void	*free_phmeta(t_philo_meta *ph)
 {
 	if (ph->ptr_last_meals)
 		free(ph->ptr_last_meals);
-	if (ph->start)
+	if (ph->init)
 	{
-		pthread_mutex_destroy(ph->start);
-		free(ph->start);
+		pthread_mutex_destroy(ph->init);
+		free(ph->init);
 	}
 	if (ph->print)
 	{
@@ -75,9 +79,9 @@ void	*release_ph(t_philo_meta *ph)
 	return (NULL);
 }
 
-void	release(t_philo *philos, t_philo_meta *ph, pthread_t *monitor)
+void	free_all(t_philo *philos, t_philo_meta *ph, pthread_t *monitor)
 {
-	release_philos(philos);
-	release_ph(ph);
+	free_philos(philos);
+	free_phmeta(ph);
 	free(monitor);
 }

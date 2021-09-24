@@ -6,7 +6,7 @@
 /*   By: mishin <mishin@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/07 19:30:59 by mishin            #+#    #+#             */
-/*   Updated: 2021/09/24 17:46:45 by mishin           ###   ########.fr       */
+/*   Updated: 2021/09/25 02:18:35 by mishin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ t_init_val	init_philos(t_philo_meta *ph)
 	last_meals = (t_time *)malloc(sizeof(t_time) * ph->num_philos);
 	if (!forks || !start || !last_meals)
 	{
-		release_rscs(forks, start, last_meals);
+		free_rscs(forks, start, last_meals);
 		return ((t_init_val){NULL, NULL, NULL});
 	}
 	i = -1;
@@ -48,7 +48,7 @@ t_philo	*make_philos(t_philo_meta *ph)
 	init_val = init_philos(ph);
 	philos = (t_philo *)malloc(sizeof(t_philo) * ph->num_philos);
 	if (!init_val.forks || !philos)
-		return (release_rscs(init_val.forks, init_val.start, init_val.last_meals));
+		return (free_rscs(init_val.forks, init_val.start, init_val.last_meals));
 	i = -1;
 	while (++i < ph->num_philos)
 	{
@@ -63,23 +63,23 @@ t_philo	*make_philos(t_philo_meta *ph)
 	while (++i < ph->num_philos && !error)
 		error = pthread_create(&philos[i].tid, NULL, dining, &philos[i]);
 	if (error)
-		return (release_rscs(init_val.forks, init_val.start, init_val.last_meals));
+		return (free_rscs(init_val.forks, init_val.start, init_val.last_meals));
 	return (philos);
 }
 
-static t_philo_meta		*init_phmeta(void)
+static t_philo_meta	*init_phmeta(void)
 {
 	t_philo_meta	*ph;
 
 	ph = (t_philo_meta *)malloc(sizeof(t_philo_meta));
 	if (!ph)
-		return (release_ph(ph));
+		return (free_phmeta(ph));
 	ph->someone_died = 0;
-	ph->start = (pthread_mutex_t *)malloc(sizeof(pthread_mutex_t));
+	ph->init = (pthread_mutex_t *)malloc(sizeof(pthread_mutex_t));
 	ph->print = (pthread_mutex_t *)malloc(sizeof(pthread_mutex_t));
-	if (!ph->start || !ph->print)
-		return (release_ph(ph));
-	pthread_mutex_init(ph->start, NULL);
+	if (!ph->init || !ph->print)
+		return (free_phmeta(ph));
+	pthread_mutex_init(ph->init, NULL);
 	pthread_mutex_init(ph->print, NULL);
 	return (ph);
 }

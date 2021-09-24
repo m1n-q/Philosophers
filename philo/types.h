@@ -6,7 +6,7 @@
 /*   By: mishin <mishin@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/07 19:09:14 by mishin            #+#    #+#             */
-/*   Updated: 2021/09/24 17:46:56 by mishin           ###   ########.fr       */
+/*   Updated: 2021/09/25 02:18:13 by mishin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,7 @@ typedef struct s_philo_meta
 	int				must_eat;
 	int				someone_died;
 	t_time			*ptr_last_meals;
-	pthread_mutex_t	*start;
+	pthread_mutex_t	*init;
 	pthread_mutex_t	*print;
 }				t_philo_meta;
 

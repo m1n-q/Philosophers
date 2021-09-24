@@ -6,7 +6,7 @@
 /*   By: mishin <mishin@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/07 16:42:25 by mishin            #+#    #+#             */
-/*   Updated: 2021/09/24 18:23:23 by mishin           ###   ########.fr       */
+/*   Updated: 2021/09/25 02:11:41 by mishin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,10 +51,11 @@ void			*monitoring(void *data);
 void			lock(pthread_mutex_t *mutex);
 double			unlock(pthread_mutex_t *mutex);
 
-/* release */
-void			*release_rscs(pthread_mutex_t *forks, struct timeval *start, t_time *lastmeals);
-void			*release_ph(t_philo_meta *ph);
-void			release(t_philo *philos, t_philo_meta *ph, pthread_t *monitor);
+/* free */
+void			*free_rscs(pthread_mutex_t *forks, struct timeval *start, \
+							t_time *lastmeals);
+void			*free_phmeta(t_philo_meta *ph);
+void			free_all(t_philo *philos, t_philo_meta *ph, pthread_t *monitor);
 
 /* etc. */
 int				left(t_philo *philo);

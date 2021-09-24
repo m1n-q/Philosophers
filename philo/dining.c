@@ -6,7 +6,7 @@
 /*   By: mishin <mishin@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/23 17:52:29 by mishin            #+#    #+#             */
-/*   Updated: 2021/09/24 18:22:09 by mishin           ###   ########.fr       */
+/*   Updated: 2021/09/25 02:18:47 by mishin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,8 +62,8 @@ void	*dining(void *data)
 	must_eat = philo->info->must_eat;
 	if (philo->id % 2 == 1)
 		usleep(60 * 1000);
-	lock(philo->info->start);
-	unlock(philo->info->start);
+	lock(philo->info->init);
+	unlock(philo->info->init);
 	while (must_eat--)
 	{
 		if (philo->info->someone_died)
