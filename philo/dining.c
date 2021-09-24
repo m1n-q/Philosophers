@@ -6,7 +6,7 @@
 /*   By: mishin <mishin@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/23 17:52:29 by mishin            #+#    #+#             */
-/*   Updated: 2021/09/23 18:36:33 by mishin           ###   ########.fr       */
+/*   Updated: 2021/09/24 18:22:09 by mishin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,10 @@
 
 static inline void	eat(t_philo *philo)
 {
-	pthread_mutex_lock(&philo->last_meal.lock);
+	lock(&philo->last_meal.lock);
 	gettimeofday(&(philo->last_meal.time), NULL);
 	timestamp(philo, "is eating");
-	pthread_mutex_unlock(&philo->last_meal.lock);
+	unlock(&philo->last_meal.lock);
 	msleep(philo->info->time_to_eat);
 }
 
@@ -31,25 +31,25 @@ static inline void	sleep_think(t_philo *philo)
 
 static inline void	leftright(t_philo *philo)
 {
-	pthread_mutex_lock(&(philo->forks[left(philo)]));
+	lock(&(philo->forks[left(philo)]));
 	get_fork(philo, LEFT);
-	pthread_mutex_lock(&(philo->forks[right(philo)]));
+	lock(&(philo->forks[right(philo)]));
 	get_fork(philo, RIGHT);
 	eat(philo);
-	pthread_mutex_unlock(&(philo->forks[right(philo)]));
-	pthread_mutex_unlock(&(philo->forks[left(philo)]));
+	unlock(&(philo->forks[right(philo)]));
+	unlock(&(philo->forks[left(philo)]));
 	sleep_think(philo);
 }
 
 static inline void	rightleft(t_philo *philo)
 {
-	pthread_mutex_lock(&(philo->forks[right(philo)]));
+	lock(&(philo->forks[right(philo)]));
 	get_fork(philo, RIGHT);
-	pthread_mutex_lock(&(philo->forks[left(philo)]));
+	lock(&(philo->forks[left(philo)]));
 	get_fork(philo, LEFT);
 	eat(philo);
-	pthread_mutex_unlock(&(philo->forks[left(philo)]));
-	pthread_mutex_unlock(&(philo->forks[right(philo)]));
+	unlock(&(philo->forks[left(philo)]));
+	unlock(&(philo->forks[right(philo)]));
 	sleep_think(philo);
 }
 
@@ -62,14 +62,12 @@ void	*dining(void *data)
 	must_eat = philo->info->must_eat;
 	if (philo->id % 2 == 1)
 		usleep(60 * 1000);
-	pthread_mutex_lock(philo->info->start);
-	pthread_mutex_unlock(philo->info->start);
+	lock(philo->info->start);
+	unlock(philo->info->start);
 	while (must_eat--)
 	{
-		pthread_mutex_lock(philo->info->dying);
 		if (philo->info->someone_died)
 			return (NULL);
-		pthread_mutex_unlock(philo->info->dying);
 		if (!last(philo))
 			leftright(philo);
 		else
@@ -77,5 +75,3 @@ void	*dining(void *data)
 	}
 	return (NULL);
 }
-
-//NOTE: it will not print even without dying lock

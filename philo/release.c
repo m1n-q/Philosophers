@@ -6,7 +6,7 @@
 /*   By: mishin <mishin@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/15 13:57:56 by mishin            #+#    #+#             */
-/*   Updated: 2021/09/23 18:37:19 by mishin           ###   ########.fr       */
+/*   Updated: 2021/09/24 17:47:12 by mishin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,11 +70,6 @@ void	*release_ph(t_philo_meta *ph)
 	{
 		pthread_mutex_destroy(ph->print);
 		free(ph->print);
-	}
-	if (ph->dying)
-	{
-		pthread_mutex_destroy(ph->dying);
-		free(ph->dying);
 	}
 	free(ph);
 	return (NULL);

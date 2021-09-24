@@ -6,7 +6,7 @@
 /*   By: mishin <mishin@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/07 19:30:59 by mishin            #+#    #+#             */
-/*   Updated: 2021/09/23 19:04:56 by mishin           ###   ########.fr       */
+/*   Updated: 2021/09/24 17:46:45 by mishin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -77,12 +77,10 @@ static t_philo_meta		*init_phmeta(void)
 	ph->someone_died = 0;
 	ph->start = (pthread_mutex_t *)malloc(sizeof(pthread_mutex_t));
 	ph->print = (pthread_mutex_t *)malloc(sizeof(pthread_mutex_t));
-	ph->dying = (pthread_mutex_t *)malloc(sizeof(pthread_mutex_t));
-	if (!ph->start || !ph->print || !ph->dying)
+	if (!ph->start || !ph->print)
 		return (release_ph(ph));
 	pthread_mutex_init(ph->start, NULL);
 	pthread_mutex_init(ph->print, NULL);
-	pthread_mutex_init(ph->dying, NULL);
 	return (ph);
 }
 

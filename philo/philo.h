@@ -6,7 +6,7 @@
 /*   By: mishin <mishin@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/07 16:42:25 by mishin            #+#    #+#             */
-/*   Updated: 2021/09/23 19:05:17 by mishin           ###   ########.fr       */
+/*   Updated: 2021/09/24 18:23:23 by mishin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,7 @@
 # define LEFT 42
 # define RIGHT 24
 # define ERROR -1
+# define DIED -1.0
 
 /* linked list and input */
 t_ll			*ll_new(long long data);
@@ -45,8 +46,10 @@ void			*dining(void *data);
 /* monitoring thread */
 pthread_t		*make_monitor(t_philo *philos);
 void			*monitoring(void *data);
-pthread_t		*make_monitors(t_philo *philos);
-void			*monitoring_each(void *data);
+
+/* lock (mutex) */
+void			lock(pthread_mutex_t *mutex);
+double			unlock(pthread_mutex_t *mutex);
 
 /* release */
 void			*release_rscs(pthread_mutex_t *forks, struct timeval *start, t_time *lastmeals);
