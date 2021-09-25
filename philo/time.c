@@ -6,7 +6,7 @@
 /*   By: mishin <mishin@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/24 17:56:11 by mishin            #+#    #+#             */
-/*   Updated: 2021/09/25 02:10:50 by mishin           ###   ########.fr       */
+/*   Updated: 2021/09/25 14:11:48 by mishin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,6 +54,7 @@ double	timestamp(t_philo *philo, char *msg)
 		printf("\e[36m[%.0fms]\e[0m %d %s\n", time_in_mill, philo->id, msg);
 		if (!ft_strcmp(msg, "is \e[91mdied\e[0m"))
 		{
+			printf("\e[91mfrom last eat \e[36m[%.0fms]\e[0m\n", timestamp(philo, NULL));
 			philo->info->someone_died = philo->id;
 			return (unlock(philo->info->print));
 		}
