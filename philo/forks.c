@@ -6,20 +6,11 @@
 /*   By: mishin <mishin@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/08 19:12:41 by mishin            #+#    #+#             */
-/*   Updated: 2021/09/27 23:15:50 by mishin           ###   ########.fr       */
+/*   Updated: 2021/09/29 18:16:54 by mishin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "philo.h"
-
-static void	destroy_till(int cur_index, pthread_mutex_t *forks)
-{
-	int	i;
-
-	i = -1;
-	while (++i < cur_index)
-		pthread_mutex_destroy(&forks[i]);
-}
 
 pthread_mutex_t	*init_forks(int num_philos)
 {
@@ -37,7 +28,7 @@ pthread_mutex_t	*init_forks(int num_philos)
 		error = pthread_mutex_init(&forks[i], NULL);
 		if (error)
 		{
-			destroy_till(i, forks);
+			destroy_till(i, forks, "pthread_mutex_t");
 			return (NULL);
 		}
 	}

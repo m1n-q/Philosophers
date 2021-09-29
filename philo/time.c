@@ -6,13 +6,13 @@
 /*   By: mishin <mishin@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/24 17:56:11 by mishin            #+#    #+#             */
-/*   Updated: 2021/09/28 12:40:47 by mishin           ###   ########.fr       */
+/*   Updated: 2021/09/29 19:02:44 by mishin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "philo.h"
 
-static int	ft_strcmp(const char *s1, const char *s2)
+int	ft_strcmp(const char *s1, const char *s2)
 {
 	const unsigned char	*s1_tmp;
 	const unsigned char	*s2_tmp;

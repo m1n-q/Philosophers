@@ -6,7 +6,7 @@
 /*   By: mishin <mishin@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/07 16:42:25 by mishin            #+#    #+#             */
-/*   Updated: 2021/09/29 11:13:34 by mishin           ###   ########.fr       */
+/*   Updated: 2021/09/29 18:10:12 by mishin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,8 +52,8 @@ void			lock(pthread_mutex_t *mutex);
 double			unlock(pthread_mutex_t *mutex);
 
 /* free */
+void			destroy_till(int cur_index, void *arr, char *type);
 void			destroy_meta_mutex(t_philo_meta *ph);
-void			*free_forks(pthread_mutex_t *forks);
 void			free_philos(t_philo *philos);
 int				free_phmeta(t_philo_meta *ph);
 void			free_all(t_philo *philos, t_philo_meta *ph, pthread_t *monitor);
@@ -63,6 +63,7 @@ double			timestamp(t_philo *philo, char *msg);
 double			time_from(struct timeval *from, struct timeval *now);
 
 /* etc. */
+int				ft_strcmp(const char *s1, const char *s2);
 int				left(t_philo *philo);
 int				right(t_philo *philo);
 int				last(t_philo *philo);

@@ -6,20 +6,11 @@
 /*   By: mishin <mishin@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/27 23:17:25 by mishin            #+#    #+#             */
-/*   Updated: 2021/09/29 14:08:35 by mishin           ###   ########.fr       */
+/*   Updated: 2021/09/29 18:41:37 by mishin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "philo.h"
-
-static void	destroy_till(int cur_index, t_time *last_meals)
-{
-	int	i;
-
-	i = -1;
-	while (++i < cur_index)
-		pthread_mutex_destroy(&last_meals[i].lock);
-}
 
 static int	init_last_meals(t_time *last_meals, int num)
 {
@@ -32,7 +23,7 @@ static int	init_last_meals(t_time *last_meals, int num)
 		error = pthread_mutex_init(&last_meals[i].lock, NULL);
 		if (error)
 		{
-			destroy_till(i, last_meals);
+			destroy_till(i, last_meals, "t_time");
 			return (ERROR);
 		}
 	}
@@ -74,7 +65,10 @@ static t_philo_meta	*init_phmeta(t_ll_meta ll)
 
 	ph = (t_philo_meta *)malloc(sizeof(t_philo_meta));
 	if (!ph)
+	{
+		ll_clear(&ll.head);
 		return (NULL);
+	}
 	ll_to_phmeta(ll, ph);
 	ph->someone_died = 0;
 	ph->init = (pthread_mutex_t *)malloc(sizeof(pthread_mutex_t));
@@ -99,7 +93,7 @@ int	make_phmeta(t_ll_meta ll, t_philo_meta **ptr_ph)
 
 	ph = init_phmeta(ll);
 	if (!ph)
-		return (ll_clear(&ll.head));
+		return (ERROR);
 	error = pthread_mutex_init(ph->init, NULL);
 	if (error)
 		return (free_phmeta(ph));

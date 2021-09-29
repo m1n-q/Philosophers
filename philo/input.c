@@ -6,7 +6,7 @@
 /*   By: mishin <mishin@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/09 16:51:12 by mishin            #+#    #+#             */
-/*   Updated: 2021/09/23 18:59:31 by mishin           ###   ########.fr       */
+/*   Updated: 2021/09/29 18:48:39 by mishin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,8 +48,8 @@ static long long	atonum(const char *str, int *len)
 		}
 		str++;
 	}
-	if ((sign * ret) < 0)
-		return (-1);
+	if ((sign * ret) <= 0)
+		return (ERROR);
 	return ((sign * ret));
 }
 
@@ -69,7 +69,7 @@ int	input_to_ll(t_ll_meta *ll, char *arg)
 		if (arg[i] != '-' && arg[i] != '+' && !('0' <= arg[i] && arg[i] <= '9'))
 			return (ll_clear(&(ll->head)));
 		new = ll_new(atonum(arg + i, &len));
-		if (!new || new->data == -1 || new->data == NON_NUMERIC)
+		if (!new || new->data == ERROR || new->data == NON_NUMERIC)
 			return (ll_clear(&(ll->head)));
 		ll_push(&(ll->head), new);
 		ll->size++;

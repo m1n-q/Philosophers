@@ -6,7 +6,7 @@
 /*   By: mishin <mishin@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/07 19:30:59 by mishin            #+#    #+#             */
-/*   Updated: 2021/09/29 14:57:51 by mishin           ###   ########.fr       */
+/*   Updated: 2021/09/29 18:42:48 by mishin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,8 @@ t_philo	*init_philos(t_philo_meta *ph)
 	philos = (t_philo *)malloc(sizeof(t_philo) * ph->num_philos);
 	if (!philos)
 	{
-		free_forks(forks);
+		destroy_till(ph->num_philos, forks, "pthread_mutex_t");
+		free(forks);
 		return (NULL);
 	}
 	i = -1;
@@ -41,6 +42,7 @@ t_philo	*make_philos(t_philo_meta *ph)
 	philos = init_philos(ph);
 	if (!philos)
 	{
+		unlock(ph->init);
 		destroy_meta_mutex(ph);
 		free_phmeta(ph);
 		return (NULL);
@@ -54,25 +56,10 @@ t_philo	*make_philos(t_philo_meta *ph)
 		philos[i].id = i + 1;
 		philos[i].terminated = 0;
 	}
-
-	pthread_attr_t attr;
-    struct sched_param schedParam;
-
-
-    pthread_attr_init(&attr);
-    pthread_attr_setinheritsched(&attr, PTHREAD_EXPLICIT_SCHED);
-    pthread_attr_setschedpolicy(&attr, SCHED_FIFO);
-    schedParam.sched_priority = 1;
-    pthread_attr_setschedparam(&attr, &schedParam);
-
 	i = -1;
 	while (!ph->create_philo_error && ++i < ph->num_philos)
-	{	printf("error ? %d\n", ph->create_philo_error = pthread_create(&philos[i].tid, NULL, dining, \
-												&philos[i]));
-		if (i>4)
-		printf("error ? %d\n", ph->create_philo_error = pthread_create(&philos[i].tid, &attr, dining, \
-												&philos[i]));
-	}
-												//TODO: make philo create error
+		ph->create_philo_error = pthread_create(&philos[i].tid, NULL, dining, \
+												&philos[i]);
+	ph->total_created = i;
 	return (philos);
 }

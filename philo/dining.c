@@ -6,7 +6,7 @@
 /*   By: mishin <mishin@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/23 17:52:29 by mishin            #+#    #+#             */
-/*   Updated: 2021/09/29 14:12:07 by mishin           ###   ########.fr       */
+/*   Updated: 2021/09/29 19:16:21 by mishin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,10 +60,10 @@ void	*dining(void *data)
 
 	philo = (t_philo *)data;
 	must_eat = philo->info->must_eat;
-	if (philo->id % 2 == 1)
-		usleep(60 * 1000);
 	lock(philo->info->init);
 	unlock(philo->info->init);
+	if (philo->id % 2 == 1)
+		usleep(philo->info->time_to_eat * 1000); //FIXIT : set properly (what if odd philos)
 	while (must_eat--)
 	{
 		if (philo->info->someone_died || \
@@ -71,6 +71,7 @@ void	*dining(void *data)
 			philo->info->create_monitor_error)
 		{
 			philo->terminated = 1;
+			printf("%d\n", philo->terminated);
 			return (NULL);
 		}
 		if (!last(philo))
@@ -80,3 +81,4 @@ void	*dining(void *data)
 	}
 	return (NULL);
 }
+//FIXIT: num == 1, a philo should died

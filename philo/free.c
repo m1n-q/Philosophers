@@ -33,54 +33,54 @@
 /*                          */
 /* ************************ */
 
-static void	destroy_till(int cur_index, t_time *last_meals)
+void	destroy_till(int cur_index, void *arr, char *type)
 {
-	int	i;
+	int				i;
+	t_time			*last_meals;
+	pthread_mutex_t	*forks;
 
 	i = -1;
-	while (++i < cur_index)
-		pthread_mutex_destroy(&last_meals[i].lock);
-}
-
-void	*free_forks(pthread_mutex_t *forks)
-{
-	if (forks)
-		free(forks);
-	return (NULL);
+	if (!ft_strcmp(type, "t_time"))
+	{
+		last_meals = (t_time*)arr;
+		while (++i < cur_index)
+			pthread_mutex_destroy(&last_meals[i].lock);
+	}
+	else if (!ft_strcmp(type, "pthread_mutex_t"))
+	{
+		forks = (pthread_mutex_t *)arr;
+		while (++i < cur_index)
+			pthread_mutex_destroy(&forks[i]);
+	}
+	else
+		printf("%s is not supported\n", type);
 }
 
 void	free_philos(t_philo *philos)
 {
 	int	num_philos;
-	int	i;
 
 	num_philos = philos[0].info->num_philos;
-	i = -1;
-	while (++i < num_philos)
-		pthread_mutex_destroy(&philos->forks[i]);
+	destroy_till(num_philos, philos->forks, "pthread_mutex_t");
 	free(philos->forks);
 	free(philos);
 }
 
 int	free_phmeta(t_philo_meta *ph)
 {
-	if (ph->start)
-		free(ph->start);
-	if (ph->init)
-		free(ph->init);
-	if (ph->print)
-		free(ph->print);
-	if (ph->ptr_last_meals)
-		free(ph->ptr_last_meals);
+	free(ph->start);
+	free(ph->init);
+	free(ph->print);
+	free(ph->ptr_last_meals);
 	free(ph);
-	return (-1);
+	return (ERROR);
 }
 
 void	destroy_meta_mutex(t_philo_meta *ph)
 {
 	pthread_mutex_destroy(ph->init);
 	pthread_mutex_destroy(ph->print);
-	destroy_till(ph->num_philos, ph->ptr_last_meals);
+	destroy_till(ph->num_philos, ph->ptr_last_meals, "t_time");
 }
 
 void	free_all(t_philo *philos, t_philo_meta *ph, pthread_t *monitor)
@@ -88,6 +88,5 @@ void	free_all(t_philo *philos, t_philo_meta *ph, pthread_t *monitor)
 	free_philos(philos);
 	destroy_meta_mutex(ph);
 	free_phmeta(ph);
-	if (monitor)
-		free(monitor);
+	free(monitor);
 }
