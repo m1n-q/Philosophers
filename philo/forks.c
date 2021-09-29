@@ -6,21 +6,41 @@
 /*   By: mishin <mishin@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/08 19:12:41 by mishin            #+#    #+#             */
-/*   Updated: 2021/09/23 17:46:30 by mishin           ###   ########.fr       */
+/*   Updated: 2021/09/27 23:15:50 by mishin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "philo.h"
 
-pthread_mutex_t	*make_forks(int num_philos)
+static void	destroy_till(int cur_index, pthread_mutex_t *forks)
+{
+	int	i;
+
+	i = -1;
+	while (++i < cur_index)
+		pthread_mutex_destroy(&forks[i]);
+}
+
+pthread_mutex_t	*init_forks(int num_philos)
 {
 	pthread_mutex_t	*forks;
+	int				error;
+	int				i;
 
 	forks = (pthread_mutex_t *)malloc(sizeof(pthread_mutex_t) * num_philos);
 	if (!forks)
 		return (NULL);
-	while (--num_philos >= 0)
-		pthread_mutex_init(&forks[num_philos], NULL);
+	i = -1;
+	error = 0;
+	while (++i < num_philos)
+	{
+		error = pthread_mutex_init(&forks[i], NULL);
+		if (error)
+		{
+			destroy_till(i, forks);
+			return (NULL);
+		}
+	}
 	return (forks);
 }
 

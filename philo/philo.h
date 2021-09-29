@@ -6,7 +6,7 @@
 /*   By: mishin <mishin@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/07 16:42:25 by mishin            #+#    #+#             */
-/*   Updated: 2021/09/25 02:11:41 by mishin           ###   ########.fr       */
+/*   Updated: 2021/09/29 11:13:34 by mishin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ int				input_to_ll(t_ll_meta *ll, char *arg);
 int				input(t_ll_meta *ll, int argc, char **argv);
 
 /* forks */
-pthread_mutex_t	*make_forks(int num_philos);
+pthread_mutex_t	*init_forks(int num_philos);
 void			get_fork(t_philo *philo, int direction);
 
 /* dining philosophers */
@@ -44,7 +44,7 @@ t_philo			*make_philos(t_philo_meta *ph);
 void			*dining(void *data);
 
 /* monitoring thread */
-pthread_t		*make_monitor(t_philo *philos);
+pthread_t		*make_monitor(t_philo *philos, t_philo_meta *ph);
 void			*monitoring(void *data);
 
 /* lock (mutex) */
@@ -52,15 +52,21 @@ void			lock(pthread_mutex_t *mutex);
 double			unlock(pthread_mutex_t *mutex);
 
 /* free */
-void			*free_rscs(pthread_mutex_t *forks, struct timeval *start, \
-							t_time *lastmeals);
-void			*free_phmeta(t_philo_meta *ph);
+void			destroy_meta_mutex(t_philo_meta *ph);
+void			*free_forks(pthread_mutex_t *forks);
+void			free_philos(t_philo *philos);
+int				free_phmeta(t_philo_meta *ph);
 void			free_all(t_philo *philos, t_philo_meta *ph, pthread_t *monitor);
+
+/* time */
+double			timestamp(t_philo *philo, char *msg);
+double			time_from(struct timeval *from, struct timeval *now);
 
 /* etc. */
 int				left(t_philo *philo);
 int				right(t_philo *philo);
 int				last(t_philo *philo);
 void			msleep(double ms);
-double			timestamp(t_philo *philo, char *msg);
+int				check_terminated(t_philo *philos);
+
 #endif

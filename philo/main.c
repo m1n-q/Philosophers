@@ -6,47 +6,54 @@
 /*   By: mishin <mishin@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/07 17:05:56 by mishin            #+#    #+#             */
-/*   Updated: 2021/09/25 02:41:44 by mishin           ###   ########.fr       */
+/*   Updated: 2021/09/29 11:16:03 by mishin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "philo.h"
 
-static t_philo	*init(t_philo_meta *ph)
+static t_init_val	init(t_philo_meta *ph)
 {
-	t_philo	*philos;
-	int			i;
+	t_init_val	init_val;
+	int		i;
 
 	lock(ph->init);
-	philos = make_philos(ph);
-	if (!philos)
-		return (NULL);			//TODO: if no philos, free all
+	init_val.philos = make_philos(ph);
+	if (!init_val.philos)		// malloc failed
+	{
+		unlock(ph->init);
+		return ((t_init_val){NULL, NULL});
+	}
+	init_val.monitor = make_monitor(init_val.philos, ph);
+	if (!init_val.monitor)		// malloc failed
+		return ((t_init_val){NULL, NULL});
 	i = -1;
 	while (++i < ph->num_philos)
-		pthread_detach(philos[i].tid);
+		pthread_detach(init_val.philos[i].tid);
 	unlock(ph->init);
-	return (philos);
+	return (init_val);
 }
 
 int	main(int argc, char **argv)
 {
 	t_ll_meta		ll;
 	t_philo_meta	*ph;
-	t_philo			*philos;
-	pthread_t		*monitor;
-	// int				i;
+	t_init_val		init_val;
 
 	ll.head = NULL;
 	ll.size = 0;
 	if (input(&ll, argc, argv) == ERROR)
 		return (1);
-	if (make_phmeta(ll, &ph))
+	if (make_phmeta(ll, &ph) == ERROR)
 		return (2);
-	philos = init(ph);
-	monitor = make_monitor(philos);
-	pthread_join(*monitor, NULL);
-	usleep(200 * 1000);
-	free_all(philos, ph, monitor);
+	init_val = init(ph);
+	if (!init_val.philos && !init_val.monitor)	// malloc failed.
+		return (3);
+	pthread_join(*(init_val.monitor), NULL);
+	if (check_terminated(init_val.philos))
+		free_all(init_val.philos, ph, init_val.monitor);
 }
+
 //TODO: free all resources at exit
-//TODO: if no monitor, free all -> have to send signal to deatached threads
+//TODO: test check_termintated, malloc error, create error
+//TODO: leaks, large case, fsanitize=address&pthread, norminette

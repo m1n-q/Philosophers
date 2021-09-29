@@ -6,7 +6,7 @@
 /*   By: mishin <mishin@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/07 19:09:14 by mishin            #+#    #+#             */
-/*   Updated: 2021/09/25 02:18:13 by mishin           ###   ########.fr       */
+/*   Updated: 2021/09/28 13:38:20 by mishin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,26 +39,29 @@ typedef struct s_philo_meta
 	int				time_to_sleep;
 	int				must_eat;
 	int				someone_died;
+	int				create_philo_error;
+	int				create_monitor_error;
+	int				total_created;
 	t_time			*ptr_last_meals;
+	struct timeval	*start;
 	pthread_mutex_t	*init;
 	pthread_mutex_t	*print;
 }				t_philo_meta;
 
 typedef struct s_philo
 {
-	struct timeval	*start;
 	t_time			last_meal;
 	t_philo_meta	*info;
 	pthread_mutex_t	*forks;
 	pthread_t		tid;
 	int				id;
+	int				terminated;
 }				t_philo;
 
 typedef struct s_init_val
 {
-	pthread_mutex_t	*forks;
-	struct timeval	*start;
-	t_time			*last_meals;
+	t_philo			*philos;
+	pthread_t		*monitor;
 }				t_init_val;
 
 #endif

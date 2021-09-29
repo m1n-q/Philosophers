@@ -6,121 +6,73 @@
 /*   By: mishin <mishin@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/07 19:30:59 by mishin            #+#    #+#             */
-/*   Updated: 2021/09/25 02:18:35 by mishin           ###   ########.fr       */
+/*   Updated: 2021/09/29 14:57:51 by mishin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "philo.h"
 
-t_init_val	init_philos(t_philo_meta *ph)
+t_philo	*init_philos(t_philo_meta *ph)
 {
-	struct timeval	*start;
-	t_time			*last_meals;
 	pthread_mutex_t	*forks;
+	t_philo			*philos;
 	int				i;
 
-	forks = make_forks(ph->num_philos);
-	start = (struct timeval *)malloc(sizeof(struct timeval));
-	last_meals = (t_time *)malloc(sizeof(t_time) * ph->num_philos);
-	if (!forks || !start || !last_meals)
+	forks = init_forks(ph->num_philos);
+	if (!forks)
+		return (NULL);
+	philos = (t_philo *)malloc(sizeof(t_philo) * ph->num_philos);
+	if (!philos)
 	{
-		free_rscs(forks, start, last_meals);
-		return ((t_init_val){NULL, NULL, NULL});
+		free_forks(forks);
+		return (NULL);
 	}
 	i = -1;
 	while (++i < ph->num_philos)
-	{
-		last_meals[i].time = *start;
-		pthread_mutex_init(&(last_meals[i].lock), NULL);
-	}
-	ph->ptr_last_meals = last_meals;
-	gettimeofday(start, NULL);
-	return ((t_init_val){forks, start, last_meals});
+		philos[i].forks = forks;
+	return (philos);
 }
 
 t_philo	*make_philos(t_philo_meta *ph)
 {
 	t_philo			*philos;
-	t_init_val		init_val;
-	int				error;
 	int				i;
 
-	init_val = init_philos(ph);
-	philos = (t_philo *)malloc(sizeof(t_philo) * ph->num_philos);
-	if (!init_val.forks || !philos)
-		return (free_rscs(init_val.forks, init_val.start, init_val.last_meals));
+	philos = init_philos(ph);
+	if (!philos)
+	{
+		destroy_meta_mutex(ph);
+		free_phmeta(ph);
+		return (NULL);
+	}
 	i = -1;
 	while (++i < ph->num_philos)
 	{
-		philos[i].start = init_val.start;
-		philos[i].forks = init_val.forks;
-		philos[i].last_meal = init_val.last_meals[i];
+		philos[i].last_meal = ph->ptr_last_meals[i];
+		philos[i].last_meal.time = *(ph->start);
 		philos[i].info = ph;
 		philos[i].id = i + 1;
+		philos[i].terminated = 0;
 	}
+
+	pthread_attr_t attr;
+    struct sched_param schedParam;
+
+
+    pthread_attr_init(&attr);
+    pthread_attr_setinheritsched(&attr, PTHREAD_EXPLICIT_SCHED);
+    pthread_attr_setschedpolicy(&attr, SCHED_FIFO);
+    schedParam.sched_priority = 1;
+    pthread_attr_setschedparam(&attr, &schedParam);
+
 	i = -1;
-	error = 0;
-	while (++i < ph->num_philos && !error)
-		error = pthread_create(&philos[i].tid, NULL, dining, &philos[i]);
-	if (error)
-		return (free_rscs(init_val.forks, init_val.start, init_val.last_meals));
-	return (philos);
-}
-
-static t_philo_meta	*init_phmeta(void)
-{
-	t_philo_meta	*ph;
-
-	ph = (t_philo_meta *)malloc(sizeof(t_philo_meta));
-	if (!ph)
-		return (free_phmeta(ph));
-	ph->someone_died = 0;
-	ph->init = (pthread_mutex_t *)malloc(sizeof(pthread_mutex_t));
-	ph->print = (pthread_mutex_t *)malloc(sizeof(pthread_mutex_t));
-	if (!ph->init || !ph->print)
-		return (free_phmeta(ph));
-	pthread_mutex_init(ph->init, NULL);
-	pthread_mutex_init(ph->print, NULL);
-	return (ph);
-}
-
-static void	ll_to_phmeta(t_ll_meta ll, t_philo_meta *ph)
-{
-	t_ll	*cur;
-	int		i;
-
-	i = 0;
-	cur = ll.head;
-	while (++i)
-	{
-		if (i == 1)
-			ph->num_philos = (int)cur->data;
-		else if (i == 2)
-			ph->time_to_die = (int)cur->data;
-		else if (i == 3)
-			ph->time_to_eat = (int)cur->data;
-		else if (i == 4)
-			ph->time_to_sleep = (int)cur->data;
-		else if (i == 5)
-		{
-			ph->must_eat = -1;
-			if (cur)
-				ph->must_eat = (int)cur->data;
-			break ;
-		}
-		cur = cur->next;
+	while (!ph->create_philo_error && ++i < ph->num_philos)
+	{	printf("error ? %d\n", ph->create_philo_error = pthread_create(&philos[i].tid, NULL, dining, \
+												&philos[i]));
+		if (i>4)
+		printf("error ? %d\n", ph->create_philo_error = pthread_create(&philos[i].tid, &attr, dining, \
+												&philos[i]));
 	}
-	ll_clear(&ll.head);
-}
-
-int	make_phmeta(t_ll_meta ll, t_philo_meta **ptr_ph)
-{
-	t_philo_meta	*ph;
-
-	ph = init_phmeta();
-	if (!ph)
-		return (ll_clear(&ll.head));
-	ll_to_phmeta(ll, ph);
-	*ptr_ph = ph;
-	return (0);
+												//TODO: make philo create error
+	return (philos);
 }

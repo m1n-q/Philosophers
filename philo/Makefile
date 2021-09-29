@@ -1,6 +1,5 @@
 CC = gcc
 CFLAGS = -Wall -Wextra -Werror -pthread
-
 SRCS = $(wildcard *.c)
 
 OBJS = ${SRCS:.c=.o}

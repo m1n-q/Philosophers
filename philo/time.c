@@ -6,7 +6,7 @@
 /*   By: mishin <mishin@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/24 17:56:11 by mishin            #+#    #+#             */
-/*   Updated: 2021/09/25 14:11:48 by mishin           ###   ########.fr       */
+/*   Updated: 2021/09/28 12:40:47 by mishin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ static int	ft_strcmp(const char *s1, const char *s2)
 	return (s1_tmp[i] - s2_tmp[i]);
 }
 
-static double	time_from(struct timeval *from, struct timeval *now)
+double	time_from(struct timeval *from, struct timeval *now)
 {
 	double			time_in_mill;
 
@@ -45,24 +45,19 @@ double	timestamp(t_philo *philo, char *msg)
 	struct timeval	now;
 	double			time_in_mill;
 
-	if (msg)
+	lock(philo->info->print);
+	if (philo->info->someone_died)
+		return (unlock(philo->info->print));
+	time_in_mill = time_from(philo->info->start, &now);
+	printf("\e[36m[%.0fms]\e[0m %d %s\n", time_in_mill, philo->id, msg);
+	if (!ft_strcmp(msg, "is \e[91mdied\e[0m"))
 	{
-		lock(philo->info->print);
-		time_in_mill = time_from(philo->start, &now);
-		if (philo->info->someone_died)
-			return (unlock(philo->info->print));
-		printf("\e[36m[%.0fms]\e[0m %d %s\n", time_in_mill, philo->id, msg);
-		if (!ft_strcmp(msg, "is \e[91mdied\e[0m"))
-		{
-			printf("\e[91mfrom last eat \e[36m[%.0fms]\e[0m\n", timestamp(philo, NULL));
-			philo->info->someone_died = philo->id;
-			return (unlock(philo->info->print));
-		}
-		unlock(philo->info->print);
+		printf("\e[91mfrom last eat \e[36m[%.0fms]\e[0m\n", \
+			time_from(&philo->last_meal.time, &now));
+		philo->info->someone_died = philo->id;
+		return (unlock(philo->info->print));
 	}
-	else
-		time_in_mill = time_from(&philo->last_meal.time, &now);
+	unlock(philo->info->print);
 	return (time_in_mill);
 }
 //NOTE: gettimeofday in timestamp() for accuracy?
-//NOTE: check ft_strcmp

@@ -12,39 +12,44 @@
 
 #include "philo.h"
 
-/* *********************** */
-/*                         */
-/*   reclaimed resources   */
-/*                         */
-/*	- philo & meta         */
-/*	- mutex (fork)         */
-/*	- mutex (lastmeal)     */
-/*	- mutex (ph->init)     */
-/*	- mutex (ph->print)    */
-/*                         */
-/*	- timeval (start)      */
-/*	- t_time (lastmeal)    */
-/*	- forks                */
-/*		                   */
-/*	- linked list          */
-/*	- monitor (joined)     */
-/*	- threads (detached)   */
-/*                         */
-/* *********************** */
+/* ************************ */
+/*                          */
+/*   reclaimed resources    */
+/*                          */
+/*	- philo & meta          */
+/*                          */
+/*	- mutex (fork)          */
+/*	- mutex (lastmeal.lock) */
+/*	- mutex (ph->init)      */
+/*	- mutex (ph->print)     */
+/*                          */
+/*	- timeval (ph->start)   */
+/*	- t_time (ph->lastmeal) */
+/*	- forks                 */
+/*		                    */
+/*	- linked list           */
+/*	- monitor (joined)      */
+/*	- threads (detached)    */
+/*                          */
+/* ************************ */
 
-void	*free_rscs(pthread_mutex_t *forks, struct timeval *start, \
-				t_time *lastmeals)
+static void	destroy_till(int cur_index, t_time *last_meals)
+{
+	int	i;
+
+	i = -1;
+	while (++i < cur_index)
+		pthread_mutex_destroy(&last_meals[i].lock);
+}
+
+void	*free_forks(pthread_mutex_t *forks)
 {
 	if (forks)
 		free(forks);
-	if (start)
-		free(start);
-	if (lastmeals)
-		free(lastmeals);
 	return (NULL);
 }
 
-static void	free_philos(t_philo *philos)
+void	free_philos(t_philo *philos)
 {
 	int	num_philos;
 	int	i;
@@ -52,36 +57,37 @@ static void	free_philos(t_philo *philos)
 	num_philos = philos[0].info->num_philos;
 	i = -1;
 	while (++i < num_philos)
-	{
-		pthread_mutex_destroy(&philos[0].forks[i]);
-		pthread_mutex_destroy(&philos[i].last_meal.lock);
-	}
-	free(philos[0].forks);
-	free(philos[0].start);
+		pthread_mutex_destroy(&philos->forks[i]);
+	free(philos->forks);
 	free(philos);
 }
 
-void	*free_phmeta(t_philo_meta *ph)
+int	free_phmeta(t_philo_meta *ph)
 {
+	if (ph->start)
+		free(ph->start);
+	if (ph->init)
+		free(ph->init);
+	if (ph->print)
+		free(ph->print);
 	if (ph->ptr_last_meals)
 		free(ph->ptr_last_meals);
-	if (ph->init)
-	{
-		pthread_mutex_destroy(ph->init);
-		free(ph->init);
-	}
-	if (ph->print)
-	{
-		pthread_mutex_destroy(ph->print);
-		free(ph->print);
-	}
 	free(ph);
-	return (NULL);
+	return (-1);
+}
+
+void	destroy_meta_mutex(t_philo_meta *ph)
+{
+	pthread_mutex_destroy(ph->init);
+	pthread_mutex_destroy(ph->print);
+	destroy_till(ph->num_philos, ph->ptr_last_meals);
 }
 
 void	free_all(t_philo *philos, t_philo_meta *ph, pthread_t *monitor)
 {
 	free_philos(philos);
+	destroy_meta_mutex(ph);
 	free_phmeta(ph);
-	free(monitor);
+	if (monitor)
+		free(monitor);
 }
