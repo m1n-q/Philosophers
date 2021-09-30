@@ -6,7 +6,7 @@
 /*   By: mishin <mishin@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/13 18:48:24 by mishin            #+#    #+#             */
-/*   Updated: 2021/09/29 18:45:19 by mishin           ###   ########.fr       */
+/*   Updated: 2021/09/30 21:20:51 by mishin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,14 +15,13 @@
 void	*monitoring(void *data)
 {
 	t_philo			*philos;
-	double			time_in_mill;
 	struct timeval	now;
 	int				i;
 
 	philos = (t_philo *)data;
 	lock(philos->info->init);
 	unlock(philos->info->init);
-	if (philos->info->create_philo_error || philos->info->create_monitor_error)
+	if (philos->info->philos_error || philos->info->monitor_error)
 		return (NULL);
 	while (1)
 	{
@@ -30,8 +29,8 @@ void	*monitoring(void *data)
 		while (++i < philos->info->num_philos)
 		{
 			lock(&philos[i].last_meal.lock);
-			time_in_mill = time_from(&(philos[i].last_meal.time), &now);
-			if ((int)time_in_mill > philos->info->time_to_die)
+			if ((int)time_from(&(philos[i].last_meal.time), &now) \
+													> philos->info->time_to_die)
 			{
 				timestamp(&philos[i], "is \e[91mdied\e[0m");
 				unlock(&philos[i].last_meal.lock);
@@ -49,7 +48,7 @@ pthread_t	*make_monitor(t_philo *philos, t_philo_meta *ph)
 	monitor = (pthread_t *)malloc(sizeof(pthread_t));
 	if (!monitor)
 	{
-		// philos->info->create_monitor_error = ERROR;
+		philos->info->monitor_error = ERROR;
 		unlock(philos->info->init);
 		if (check_terminated(philos))
 		{
@@ -57,7 +56,7 @@ pthread_t	*make_monitor(t_philo *philos, t_philo_meta *ph)
 			return (NULL);
 		}
 	}
-	philos->info->create_monitor_error = \
+	philos->info->monitor_error = \
 	pthread_create(monitor, NULL, monitoring, philos);
 	return (monitor);
 }
