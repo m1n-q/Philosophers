@@ -6,7 +6,7 @@
 /*   By: mishin <mishin@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/07 18:51:42 by mishin            #+#    #+#             */
-/*   Updated: 2021/09/29 19:18:52 by mishin           ###   ########.fr       */
+/*   Updated: 2021/09/30 15:26:46 by mishin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,8 +36,9 @@ void	msleep(double ms)
 	while (!gettimeofday(&cur, NULL) && \
 		(cur.tv_sec - start.tv_sec) * 1000.0 + \
 		(cur.tv_usec - start.tv_usec) / 1000.0 <= ms)
-		usleep(200); //FIXIT: vary with num_philos, and test large case lag
+		usleep(200);
 }
+//FIXIT: vary with num_philos, and test large case lag
 
 int	check_terminated(t_philo *philos)
 {
@@ -45,15 +46,12 @@ int	check_terminated(t_philo *philos)
 	int	total_terminated;
 
 	total_terminated = 0;
-	printf("total created philos : %d\n", philos->info->total_created);
 	while (total_terminated != philos->info->total_created)
 	{
 		total_terminated = 0;
 		i = -1;
 		while (++i < philos->info->num_philos)
 			total_terminated += philos[i].terminated;
-		// printf("total terminated : %d\n", total_terminated);
 	}
-	printf("[%d] == [%d], terminating\n", philos->info->total_created, total_terminated);
 	return (1);
 }

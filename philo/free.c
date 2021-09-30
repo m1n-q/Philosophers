@@ -42,7 +42,7 @@ void	destroy_till(int cur_index, void *arr, char *type)
 	i = -1;
 	if (!ft_strcmp(type, "t_time"))
 	{
-		last_meals = (t_time*)arr;
+		last_meals = (t_time *)arr;
 		while (++i < cur_index)
 			pthread_mutex_destroy(&last_meals[i].lock);
 	}

@@ -6,7 +6,7 @@
 /*   By: mishin <mishin@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/07 19:09:14 by mishin            #+#    #+#             */
-/*   Updated: 2021/09/28 13:38:20 by mishin           ###   ########.fr       */
+/*   Updated: 2021/09/30 13:35:27 by mishin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,8 +39,8 @@ typedef struct s_philo_meta
 	int				time_to_sleep;
 	int				must_eat;
 	int				someone_died;
-	int				create_philo_error;
-	int				create_monitor_error;
+	int				philos_error;
+	int				monitor_error;
 	int				total_created;
 	t_time			*ptr_last_meals;
 	struct timeval	*start;

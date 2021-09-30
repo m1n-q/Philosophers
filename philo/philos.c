@@ -6,7 +6,7 @@
 /*   By: mishin <mishin@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/07 19:30:59 by mishin            #+#    #+#             */
-/*   Updated: 2021/09/29 18:42:48 by mishin           ###   ########.fr       */
+/*   Updated: 2021/09/30 21:34:02 by mishin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,9 +40,8 @@ t_philo	*make_philos(t_philo_meta *ph)
 	int				i;
 
 	philos = init_philos(ph);
-	if (!philos)
+	if (!philos && unlock(ph->init))
 	{
-		unlock(ph->init);
 		destroy_meta_mutex(ph);
 		free_phmeta(ph);
 		return (NULL);
@@ -57,9 +56,9 @@ t_philo	*make_philos(t_philo_meta *ph)
 		philos[i].terminated = 0;
 	}
 	i = -1;
-	while (!ph->create_philo_error && ++i < ph->num_philos)
-		ph->create_philo_error = pthread_create(&philos[i].tid, NULL, dining, \
-												&philos[i]);
+	while (!ph->philos_error && ++i < ph->num_philos)
+		ph->philos_error = pthread_create(&philos[i].tid, NULL, \
+										dining, &philos[i]);
 	ph->total_created = i;
 	return (philos);
 }
