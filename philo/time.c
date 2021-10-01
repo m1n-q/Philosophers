@@ -6,7 +6,7 @@
 /*   By: mishin <mishin@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/24 17:56:11 by mishin            #+#    #+#             */
-/*   Updated: 2021/09/29 19:02:44 by mishin           ###   ########.fr       */
+/*   Updated: 2021/10/01 15:11:59 by mishin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ int	ft_strcmp(const char *s1, const char *s2)
 
 double	time_from(struct timeval *from, struct timeval *now)
 {
-	double			time_in_mill;
+	double	time_in_mill;
 
 	gettimeofday(now, NULL);
 	time_in_mill = (now->tv_sec - from->tv_sec) * 1000 + \
@@ -46,7 +46,7 @@ double	timestamp(t_philo *philo, char *msg)
 	double			time_in_mill;
 
 	lock(philo->info->print);
-	if (philo->info->someone_died)
+	if (philo->info->someone_died || !philo->must_eat)
 		return (unlock(philo->info->print));
 	time_in_mill = time_from(philo->info->start, &now);
 	printf("\e[36m[%.0fms]\e[0m %d %s\n", time_in_mill, philo->id, msg);

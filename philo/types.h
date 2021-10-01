@@ -6,7 +6,7 @@
 /*   By: mishin <mishin@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/07 19:09:14 by mishin            #+#    #+#             */
-/*   Updated: 2021/09/30 13:35:27 by mishin           ###   ########.fr       */
+/*   Updated: 2021/10/01 14:36:25 by shin             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,6 +56,7 @@ typedef struct s_philo
 	pthread_t		tid;
 	int				id;
 	int				terminated;
+	int				must_eat;
 }				t_philo;
 
 typedef struct s_init_val

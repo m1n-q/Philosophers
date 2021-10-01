@@ -6,7 +6,7 @@
 /*   By: mishin <mishin@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/07 17:05:56 by mishin            #+#    #+#             */
-/*   Updated: 2021/09/30 15:26:23 by mishin           ###   ########.fr       */
+/*   Updated: 2021/10/01 15:15:10 by mishin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,8 +49,5 @@ int	main(int argc, char **argv)
 	pthread_join(*(init_val.monitor), NULL);
 	if (check_terminated(init_val.philos))
 		free_all(init_val.philos, ph, init_val.monitor);
+	system("leaks philo");
 }
-
-//TODO: free all resources at exit
-//TODO: test check_termintated, malloc error, create error
-//TODO: leaks, large case, fsanitize=address&pthread, norminette

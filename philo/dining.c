@@ -6,7 +6,7 @@
 /*   By: mishin <mishin@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/23 17:52:29 by mishin            #+#    #+#             */
-/*   Updated: 2021/09/30 21:18:35 by mishin           ###   ########.fr       */
+/*   Updated: 2021/10/01 15:21:10 by mishin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@ static inline void	eat(t_philo *philo)
 	lock(&philo->last_meal.lock);
 	gettimeofday(&(philo->last_meal.time), NULL);
 	timestamp(philo, "is eating");
+	philo->must_eat--;
 	unlock(&philo->last_meal.lock);
 	msleep(philo->info->time_to_eat);
 }
@@ -62,16 +63,15 @@ static inline void	rightleft(t_philo *philo)
 void	*dining(void *data)
 {
 	t_philo	*philo;
-	int		must_eat;
 
 	philo = (t_philo *)data;
-	must_eat = philo->info->must_eat;
+	philo->must_eat = philo->info->must_eat;
 	lock(philo->info->init);
 	unlock(philo->info->init);
-	if (philo->id % 2 == 1 && usleep(700))
+	if (philo->id % 2 == 1 && usleep(55 * philo->info->num_philos))
 		if (!last(philo))
-			usleep(700);
-	while (must_eat--)
+			usleep(55 * philo->info->num_philos);
+	while (philo->must_eat)
 	{
 		if (philo->info->someone_died || \
 			philo->info->philos_error || philo->info->monitor_error)
@@ -84,8 +84,9 @@ void	*dining(void *data)
 		else
 			rightleft(philo);
 	}
+	philo->terminated = 1;
 	return (NULL);
 }
 
 // 111 -> usleep(600)
-// 200 -> usleep(600)
+// 200 -> usleep(10000)
